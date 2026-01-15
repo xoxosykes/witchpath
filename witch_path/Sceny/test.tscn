@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqlgf7k0eniji"]
+
+[ext_resource type="PackedScene" uid="uid://bguhx2hbg2pi8" path="res://Sceny/test_tileset.tscn" id="1_rkm5e"]
+[ext_resource type="PackedScene" uid="uid://dg34884x4l4d2" path="res://Sceny/wiedzma.tscn" id="2_v85ue"]
+
+[node name="TEST" type="Node2D"]
+
+[node name="test_tileset" parent="." instance=ExtResource("1_rkm5e")]
+position = Vector2(-648.00006, 159)
+scale = Vector2(4.66102, 4.66102)
+
+[node name="Wiedzma" parent="." instance=ExtResource("2_v85ue")]

@@ -1,0 +1,89 @@
+[gd_scene load_steps=6 format=4 uid="uid://bguhx2hbg2pi8"]
+
+[ext_resource type="Texture2D" uid="uid://cvvqvwtnb41m" path="res://Assety (testowe)/tileset template 1.png" id="1_exqwk"]
+[ext_resource type="Script" uid="uid://dsgytwtyd1l3" path="res://Sceny/collision_shape_2d.gd" id="2_gh6c3"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gh6c3"]
+texture = ExtResource("1_exqwk")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.2950554, -4.856185, -5.036045, -5.935337, 8, -5.755479, 8, 8, -5.75548, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.935337, 8, -6.2950544, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.033119, 5.014122, -6.065468, 5.9522476, -5.2567387, 5.9845963, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.115197, -3.956891, -4.136751, -6.2950544, 8, -6.115196, 8, 6.115198, -5.75548, 5.935339)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.115196, 8, -6.115196, 8, 6.115198, -8, 5.935339)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.2950544, 4.4964676, -5.935337, 5.935337, -5.036044, 6.115196, 4.856186, 4.4964676, 6.2950554, -8, 6.115198)
+6:0/0 = 0
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.75548, -8, 8, -8, 8, 8, -6.115197, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(6.115196, 8, 6.095545, -8, -8, -8, -8, 8)
+3:1/next_alternative_id = 2
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.2430305, -8, 8, -8, 8, 5.9900064, -4.771701, 5.9900064, -6.091533, 4.771701)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 6.115198, -8, 5.935339)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 5.7971, -8, 6.3768106, 5.034324, 4.950419, 6.125095, -8, 5.7971)
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.1422963, -8, 4.6701746, -8, 8, -5.0366826, 8, 5.282376, 5.2823744, 8, -6.01945, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.888481, 8, -5.9900074, 8, 5.2793283, 4.873226, 8, -5.3957624, 8, -8, 4.856186)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -4.4964676, -5.036045, -8, 6.115196, -8, 5.75548, 8, -8, 8)
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_rh4uo"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_gh6c3")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rh4uo"]
+
+[node name="test_tileset" type="TileMapLayer"]
+tile_map_data = PackedByteArray("AAAGAAAAAAABAAEAAAAGAAEAAAABAAEAAAAGAAIAAAABAAEAAAAFAAIAAAABAAEAAAADAAIAAAABAAEAAAAEAAMAAAABAAEAAAAFAAMAAAABAAEAAAAGAAQAAAABAAEAAAAHAAUAAAABAAEAAAAIAAUAAAABAAEAAAAJAAUAAAABAAEAAAAKAAUAAAABAAEAAAALAAUAAAABAAEAAAAMAAUAAAABAAEAAAANAAUAAAABAAEAAAAOAAUAAAABAAEAAAAPAAQAAAABAAEAAAAQAAQAAAABAAEAAAARAAQAAAABAAEAAAASAAQAAAABAAEAAAATAAQAAAABAAEAAAAUAAQAAAABAAEAAAAVAAMAAAABAAEAAAAWAAMAAAABAAEAAAAXAAMAAAABAAEAAAAYAAMAAAABAAEAAAAdAAIAAAABAAEAAAAeAAIAAAABAAEAAAAfAAIAAAABAAEAAAAgAAIAAAABAAEAAAAhAAIAAAABAAEAAAAiAAIAAAABAAEAAAAjAAIAAAABAAEAAAAkAAIAAAABAAEAAAAlAAIAAAABAAEAAAAmAAIAAAABAAEAAAAnAAIAAAABAAEAAAAoAAIAAAABAAEAAAApAAIAAAABAAEAAAAqAAIAAAABAAEAAAAxAAIAAAABAAEAAAAxAAMAAAABAAEAAAAkAAYAAAABAAEAAAAlAAYAAAABAAEAAAAmAAYAAAABAAEAAAAnAAYAAAABAAEAAAA7AAMAAAABAAEAAAA8AAMAAAABAAEAAAA9AAIAAAABAAEAAAA+AAIAAAABAAEAAAA/AAIAAAABAAEAAABAAAIAAAABAAEAAABBAAIAAAABAAEAAABCAAIAAAABAAEAAABDAAIAAAABAAEAAABEAAEAAAABAAEAAABFAAEAAAABAAEAAABGAAEAAAABAAEAAABHAAEAAAABAAEAAABIAAEAAAABAAEAAABJAAEAAAABAAEAAABKAAEAAAABAAEAAAA0AAYAAAABAAEAAAA1AAYAAAABAAEAAAA2AAYAAAABAAEAAAA3AAYAAAABAAEAAAA4AAYAAAABAAEAAAA5AAYAAAABAAEAAAA6AAYAAAABAAEAAAA7AAYAAAABAAEAAAA8AAYAAAABAAEAAAA9AAYAAAABAAEAAAA+AAYAAAABAAEAAAA/AAYAAAABAAEAAABAAAYAAAABAAEAAAA=")
+tile_set = SubResource("TileSet_rh4uo")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Node2D"]
+position = Vector2(115, 263)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D"]
+shape = SubResource("WorldBoundaryShape2D_rh4uo")
+script = ExtResource("2_gh6c3")
