@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://bguhx2hbg2pi8"]
 
 [ext_resource type="Texture2D" uid="uid://cvvqvwtnb41m" path="res://Assety (testowe)/tileset template 1.png" id="1_exqwk"]
-[ext_resource type="Script" uid="uid://dsgytwtyd1l3" path="res://Sceny/collision_shape_2d.gd" id="2_gh6c3"]
+[ext_resource type="Script" uid="uid://dsgytwtyd1l3" path="res://scripts/collision_shape_2d.gd" id="2_gh6c3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gh6c3"]
 texture = ExtResource("1_exqwk")
