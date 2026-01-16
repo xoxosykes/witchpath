@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg34884x4l4d2"]
+
+[ext_resource type="Script" uid="uid://bkchfafrucno2" path="res://wiedzma.gd" id="1_7u37v"]
+[ext_resource type="Texture2D" uid="uid://cv6waewhkx3vn" path="res://icon.svg" id="2_hgy8x"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xh26e"]
+radius = 20.0
+height = 60.0
+
+[node name="Wiedzma" type="CharacterBody2D"]
+script = ExtResource("1_7u37v")
+
+[node name="Wiedzma_sprite" type="Sprite2D" parent="."]
+position = Vector2(0.5000043, 0)
+scale = Vector2(0.303, 0.467)
+texture = ExtResource("2_hgy8x")
+
+[node name="Kapsula_wiedzmy" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_xh26e")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(4, -61)
+zoom = Vector2(1.675, 1.675)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lo54lw6jke78"
+path="res://.godot/imported/the-foyer-mirror-425079.mp3-15ab497b960dae342a656a1440439e6b.mp3str"
+
+[deps]
+
+source_file="res://Assety (testowe)/MenuAssets/the-foyer-mirror-425079.mp3"
+dest_files=["res://.godot/imported/the-foyer-mirror-425079.mp3-15ab497b960dae342a656a1440439e6b.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
