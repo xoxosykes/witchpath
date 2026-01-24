@@ -1,2 +1,7 @@
-res://Sceny/controlsy.tscn
-res://Sceny/test.tres
+res://scripts/collision_shape_2d.gd
+res://scripts/killzone.gd
+res://scripts/main_menu.gd
+res://scripts/sprites.gd
+res://scripts/test.gd
+res://scripts/wiedzma.gd
+res://Sceny/main_menu.tscn

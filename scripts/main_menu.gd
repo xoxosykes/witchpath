@@ -3,8 +3,6 @@ extends Control
 @onready var main_buttons: VBoxContainer = $MainButtons
 @onready var options: Panel = $Options
 @onready var credits: Panel = $Credits
-@onready var controls: Button = $Options/controls
-
 
 
 func _process(delta):
@@ -14,7 +12,6 @@ func _ready():
 	main_buttons.visible = true
 	options.visible = false
 	credits.visible = false
-	
 
 func _on_start_game_pressed() -> void:
 	get_tree().change_scene_to_file("res://Sceny/test.tscn")
@@ -36,7 +33,3 @@ func _on_exit_pressed() -> void:
 
 func _on_back_button_pressed() -> void:
 	_ready()
-	
-
-func _on_controls_pressed() -> void:
-	get_tree().change_scene_to_file("res://Sceny/controlsy.tscn")
