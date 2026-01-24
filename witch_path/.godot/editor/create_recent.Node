@@ -1,3 +1,17 @@
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+TileMapLayer
+Label
+Panel
+Button
+Node
+TextureRect
+Control
+CanvasLayer
+=======
+>>>>>>> 7ab87dfd0fe56f87fa39ccde985187378bc85ce2
+>>>>>>> Stashed changes
 CollisionShape2D
 Area2D
 AnimatedSprite2D

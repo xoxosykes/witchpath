@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://b0ye46ry4fwwm"]
 
-[ext_resource type="Script" uid="uid://bexq7r1d5f23t" path="res://credits.gd" id="1_bjdo2"]
+[ext_resource type="Script" uid="uid://bexq7r1d5f23t" path="res://scripts/credits.gd" id="1_bjdo2"]
 [ext_resource type="Texture2D" uid="uid://2b8bnejjafo6" path="res://Assety (testowe)/MenuAssets/background.png" id="2_gxw2s"]
 [ext_resource type="Texture2D" uid="uid://bg475g0y133cj" path="res://Assety (testowe)/MenuAssets/Projekt bez nazwy (3) (1).png" id="3_psrg0"]
 [ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="4_dudef"]
