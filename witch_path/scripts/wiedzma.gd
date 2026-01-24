@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+class_name Wiedzma
 const SPEED = 210.0
 const JUMP_VELOCITY = -600.0
 

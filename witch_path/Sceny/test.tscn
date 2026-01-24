@@ -1,16 +1,100 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=8 format=4 uid="uid://cqlgf7k0eniji"]
+=======
+<<<<<<< HEAD
+[gd_scene load_steps=20 format=4 uid="uid://cqlgf7k0eniji"]
+=======
+[gd_scene load_steps=8 format=4 uid="uid://cqlgf7k0eniji"]
+>>>>>>> a72c4d9f82030f17b86c8f41b607bb2bb947cd24
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" uid="uid://fvogmc4pkxmu" path="res://scripts/test.gd" id="1_2yp2u"]
 [ext_resource type="TileSet" uid="uid://2bpg8hdom1s6" path="res://Sceny/test.tres" id="2_2yp2u"]
 [ext_resource type="PackedScene" uid="uid://dg34884x4l4d2" path="res://Sceny/wiedzma.tscn" id="2_v85ue"]
+[ext_resource type="Texture2D" uid="uid://ddmb8mdtrpcrj" path="res://Assety (testowe)/e20b6a42-41db-49b9-8bea-5bc52cc64c3e.png" id="3_kq82o"]
 [ext_resource type="Script" uid="uid://magl7qwpv8u7" path="res://scripts/killzone.gd" id="3_v85ue"]
 [ext_resource type="Texture2D" uid="uid://05d5dn0ipge4" path="res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_Without_Outline/Cosmo.png" id="4_7ns3c"]
 [ext_resource type="Script" uid="uid://87usfhyi82n7" path="res://scripts/sprites.gd" id="5_kq82o"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="Script" uid="uid://di7sqgunehxbn" path="res://scripts/kwiat.gd" id="7_67a6h"]
+[ext_resource type="Texture2D" uid="uid://cns25bt3m1xc3" path="res://Assety (testowe)/Terrain&Pickups/Terrain&Pickups/e20b6a42-41db-49b9-8bea-5bc52cc64c3e — kopia.png" id="9_1nwu6"]
+[ext_resource type="Texture2D" uid="uid://drfn780xgnsnp" path="res://Assety (testowe)/Terrain&Pickups/Terrain&Pickups/Nature — kopia.png" id="10_wtylw"]
+[ext_resource type="Texture2D" uid="uid://hqk7ikc1v1h7" path="res://Assety (testowe)/Nature — kopia.png" id="11_jm2ld"]
+>>>>>>> Stashed changes
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rkm5e"]
 distance = -80.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kq82o"]
+size = Vector2(170.14923, 39.85077)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_67a6h"]
+size = Vector2(115, 49)
+
+[sub_resource type="Animation" id="Animation_67a6h"]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(299, 288)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../kwiat/pivot/mask:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(285, 240)]
+}
+
+[sub_resource type="Animation" id="Animation_kq82o"]
+resource_name = "grow"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 0.3, 0.58, 0.87, 1.18, 1.48, 1.75, 2.05, 2.33, 2.64, 2.89, 3.196679, 3.48),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(299, 288), Vector2(299, 276.65), Vector2(299, 261.97), Vector2(299, 251.51), Vector2(299, 235.495), Vector2(299, 223.24), Vector2(299, 211.05), Vector2(299, 195.94), Vector2(299, 178.48), Vector2(299, 158.465), Vector2(299, 131.02), Vector2(299, 109.96), Vector2(299, 88.72)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../kwiat/pivot/mask:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 3.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(285, 240), Vector2(285, 1300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mh3kc"]
+_data = {
+&"RESET": SubResource("Animation_67a6h"),
+&"grow": SubResource("Animation_kq82o")
+}
+
 [node name="TEST" type="Node2D"]
+position = Vector2(299, 288)
 script = ExtResource("1_2yp2u")
 
 [node name="tilesets" type="Node" parent="."]
@@ -19,7 +103,17 @@ script = ExtResource("1_2yp2u")
 texture_filter = 1
 position = Vector2(0, 75)
 tile_map_data = PackedByteArray("AAADAAgAAQABAAIAAAADAAkAAQABAAIAAAAEAAgAAQABAAIAAAAEAAkAAQABAAIAAAAHAAcAAQABAAEAAAAKAAcAAQABAAEAAAALAAcAAQABAAEAAAAMAAcAAQABAAEAAAARAAcAAQABAAEAAAARAAgAAQABAAIAAAASAAcAAQABAAEAAAASAAgAAQABAAIAAAATAAcAAQABAAEAAAATAAgAAQABAAIAAAAUAAcAAQABAAEAAAAUAAgAAQABAAIAAAAAAAcAAQAAAAEAAAAAAAgAAQAAAAIAAAAAAAkAAQAAAAIAAAAAAAoAAQAAAAMAAAABAAcAAQABAAEAAAABAAgAAQABAAIAAAABAAkAAQABAAIAAAABAAoAAQABAAMAAAACAAcAAQABAAEAAAACAAgAAQABAAIAAAACAAkAAQABAAIAAAACAAoAAQABAAMAAAADAAcAAQABAAEAAAADAAoAAQABAAMAAAAEAAcAAQABAAEAAAAEAAoAAQABAAMAAAAFAAcAAQABAAEAAAAFAAgAAQABAAIAAAAFAAkAAQABAAIAAAAFAAoAAQABAAMAAAAGAAcAAQABAAEAAAAGAAgAAQABAAIAAAAGAAkAAQABAAIAAAAGAAoAAQABAAMAAAAHAAgAAQABAAIAAAAHAAkAAQABAAIAAAAHAAoAAQABAAMAAAAIAAcAAQABAAEAAAAIAAgAAQABAAIAAAAIAAkAAQABAAIAAAAIAAoAAQABAAMAAAAJAAcAAQABAAEAAAAJAAgAAQABAAIAAAAJAAkAAQABAAIAAAAJAAoAAQABAAMAAAAKAAgAAQABAAIAAAAKAAkAAQABAAIAAAAKAAoAAQABAAMAAAALAAgAAQABAAIAAAALAAkAAQABAAIAAAALAAoAAQABAAMAAAAMAAgAAQABAAIAAAAMAAkAAQABAAIAAAAMAAoAAQABAAMAAAANAAcAAQABAAEAAAANAAgAAQABAAIAAAANAAkAAQABAAIAAAANAAoAAQABAAMAAAAOAAcAAQABAAEAAAAOAAgAAQABAAIAAAAOAAkAAQABAAIAAAAOAAoAAQABAAMAAAAPAAcAAQABAAEAAAAPAAgAAQABAAIAAAAPAAkAAQABAAIAAAAPAAoAAQABAAMAAAAQAAcAAQABAAEAAAAQAAgAAQABAAIAAAAQAAkAAQABAAIAAAAQAAoAAQABAAMAAAARAAkAAQABAAIAAAARAAoAAQABAAMAAAASAAkAAQABAAIAAAASAAoAAQABAAMAAAATAAkAAQABAAIAAAATAAoAAQABAAMAAAAUAAkAAQABAAIAAAAUAAoAAQABAAMAAAAVAAcAAQABAAEAAAAVAAgAAQABAAIAAAAVAAkAAQABAAIAAAAVAAoAAQABAAMAAAAWAAcAAQABAAEAAAAWAAgAAQABAAIAAAAWAAkAAQABAAIAAAAWAAoAAQABAAMAAAAXAAcAAQABAAEAAAAXAAgAAQABAAIAAAAXAAkAAQABAAIAAAAXAAoAAQABAAMAAAAYAAcAAQABAAEAAAAYAAgAAQABAAIAAAAYAAkAAQABAAIAAAAYAAoAAQABAAMAAAAZAAcAAQABAAEAAAAZAAgAAQABAAIAAAAZAAkAAQABAAIAAAAZAAoAAQABAAMAAAAaAAcAAQABAAEAAAAaAAgAAQABAAIAAAAaAAkAAQABAAIAAAAaAAoAAQABAAMAAAAbAAcAAQABAAEAAAAbAAgAAQABAAIAAAAbAAkAAQABAAIAAAAbAAoAAQABAAMAAAAcAAcAAQABAAEAAAAcAAgAAQABAAIAAAAcAAkAAQABAAIAAAAcAAoAAQABAAMAAAAdAAcAAQABAAEAAAAdAAgAAQABAAIAAAAdAAkAAQABAAIAAAAdAAoAAQABAAMAAAAeAAcAAQACAAEAAAAeAAgAAQACAAIAAAAeAAkAAQACAAIAAAAeAAoAAQACAAMAAAALAP//AQAAAAQAAAAMAP//AQABAAQAAAANAP//AQACAAQAAAARAPv/AQAAAAQAAAASAPv/AQACAAQAAAALAPj/AQAAAAEAAAAMAPj/AQACAAEAAAALAPn/AQAAAAMAAAAMAPn/AQACAAMAAAAXAPH/AQADAAQAAAAbAO7/AQADAAQAAAAfAOv/AQADAAQAAAAjAOj/AQAAAAQAAAAkAOj/AQABAAQAAAAlAOj/AQABAAQAAAAmAOj/AQACAAQAAAARAAMAAQAAAAEAAAARAAQAAQAAAAMAAAASAAMAAQABAAEAAAASAAQAAQABAAMAAAATAAMAAQABAAEAAAATAAQAAQABAAMAAAAUAAMAAQACAAEAAAAUAAQAAQACAAMAAAARAPT/AQABAAEAAAASAPT/AQACAAEAAAAQAPT/AQAAAAEAAAAQAPX/AQAAAAMAAAARAPX/AQABAAMAAAASAPX/AQACAAMAAAA=")
+<<<<<<< Updated upstream
 tile_set = ExtResource("2_2yp2u")
+=======
+<<<<<<< HEAD
+tile_set = SubResource("TileSet_2yp2u")
+
+[node name="Wiedzma" parent="." groups=["player"] instance=ExtResource("2_v85ue")]
+=======
+tile_set = ExtResource("2_2yp2u")
+>>>>>>> a72c4d9f82030f17b86c8f41b607bb2bb947cd24
+>>>>>>> Stashed changes
 
 [node name="zones" type="Node" parent="."]
 
@@ -32,10 +126,10 @@ shape = SubResource("WorldBoundaryShape2D_rkm5e")
 debug_color = Color(0.75498515, 0, 0.11352757, 0.41960785)
 
 [node name="sprites" type="Node2D" parent="."]
+visible = false
 script = ExtResource("5_kq82o")
 
 [node name="flower" type="Sprite2D" parent="sprites" groups=["glowing", "interactable"]]
-position = Vector2(226, 288)
 texture = ExtResource("4_7ns3c")
 
 [node name="highlight" type="Sprite2D" parent="sprites/flower"]
@@ -43,12 +137,65 @@ modulate = Color(0.6253367, 0.1300956, 0.9999998, 1)
 texture = ExtResource("4_7ns3c")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 169.0
-offset_top = 112.0
-offset_right = 294.0
-offset_bottom = 135.0
+visible = false
+offset_right = 125.0
+offset_bottom = 23.0
 text = "przytrzymaj F ;D"
 
+<<<<<<< Updated upstream
 [node name="Wiedzma" parent="." instance=ExtResource("2_v85ue")]
+=======
+<<<<<<< HEAD
+[node name="kwiatpng" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.335, 0.335)
+texture = ExtResource("3_kq82o")
+hframes = 6
+frame = 5
+
+[node name="kwiat" type="Node2D" parent="."]
+script = ExtResource("7_67a6h")
+
+[node name="pivot" type="StaticBody2D" parent="kwiat"]
+
+[node name="mask" type="TextureRect" parent="kwiat/pivot"]
+clip_contents = true
+offset_right = 285.0
+offset_bottom = 240.0
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_1nwu6")
+expand_mode = 1
+stretch_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="collision" type="CollisionShape2D" parent="kwiat/pivot"]
+scale = Vector2(0.335, 0.335)
+shape = SubResource("RectangleShape2D_kq82o")
+debug_color = Color(0.961013, 8.085966e-06, 0.6050445, 0.41960785)
+
+[node name="detector" type="Area2D" parent="kwiat/pivot"]
+
+[node name="collisionarea" type="CollisionShape2D" parent="kwiat/pivot/detector"]
+shape = SubResource("RectangleShape2D_67a6h")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="kwiat"]
+root_node = NodePath("../../kwiatpng")
+libraries = {
+&"": SubResource("AnimationLibrary_mh3kc")
+}
+
+[node name="sprites2" type="Node2D" parent="."]
+script = ExtResource("5_kq82o")
+
+[node name="flower" type="Sprite2D" parent="sprites2" groups=["glowing", "interactable"]]
+texture = ExtResource("10_wtylw")
+
+[node name="highlight" type="Sprite2D" parent="sprites2/flower"]
+modulate = Color(0.96395415, 0.00043240667, 0.89736766, 1)
+texture = ExtResource("11_jm2ld")
+=======
+[node name="Wiedzma" parent="." instance=ExtResource("2_v85ue")]
+>>>>>>> a72c4d9f82030f17b86c8f41b607bb2bb947cd24
+>>>>>>> Stashed changes
 
 [connection signal="body_entered" from="zones/killzone" to="zones/killzone" method="_on_body_entered"]
