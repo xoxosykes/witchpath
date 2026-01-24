@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://phdjs78c8wn0"]
+[gd_scene load_steps=10 format=3 uid="uid://phdjs78c8wn0"]
 
 [ext_resource type="Script" uid="uid://cxu5sp63igofn" path="res://scripts/main_menu.gd" id="1_33ai8"]
 [ext_resource type="Texture2D" uid="uid://2b8bnejjafo6" path="res://Assety (testowe)/MenuAssets/background.png" id="1_fpnhr"]
@@ -28,6 +28,13 @@ shadow_size = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ug2md"]
 bg_color = Color(0.3160328, 0.054577522, 0.41605717, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s0l4g"]
+bg_color = Color(0.30966336, 0.027180735, 0.4778403, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -103,12 +110,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_3xecr")
 text = "exit"
 
 [node name="logo" type="Sprite2D" parent="."]
-position = Vector2(1092, 176.00002)
+position = Vector2(968.00006, 328)
 scale = Vector2(0.56701386, 0.56701386)
 texture = ExtResource("3_ysli6")
 
 [node name="Options" type="Panel" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -124,7 +130,6 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_33ai8")
 
 [node name="optionsy" type="Label" parent="Options"]
-visible = false
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -138,7 +143,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="back_options" type="Button" parent="Options"]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -157,8 +161,40 @@ theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_ug2md")
 text = "back"
 
+[node name="controls" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 64.0
+offset_right = 450.0
+offset_bottom = 120.0
+theme_override_fonts/font = ExtResource("2_ysli6")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_s0l4g")
+text = "controls"
+
+[node name="language" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 128.0
+offset_right = 450.0
+offset_bottom = 184.0
+theme_override_fonts/font = ExtResource("2_ysli6")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_s0l4g")
+text = "language"
+
+[node name="sound" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 192.0
+offset_right = 450.0
+offset_bottom = 248.0
+theme_override_fonts/font = ExtResource("2_ysli6")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_s0l4g")
+text = "sound"
+
 [node name="Credits" type="Panel" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -174,7 +210,6 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_33ai8")
 
 [node name="creditsy" type="Label" parent="Credits"]
-visible = false
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -188,28 +223,27 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="created_by" type="Label" parent="Credits"]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -225.5
-offset_top = -105.0
-offset_right = 215.5
-offset_bottom = 118.0
+offset_left = -220.5
+offset_top = -102.0
+offset_right = 216.5
+offset_bottom = 173.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/line_spacing = -16
 theme_override_fonts/font = ExtResource("2_ysli6")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 29
 text = "Created by:
 Oliwia \"Oli\" Kowalczyk
 Gabriela \"Gabi\" Stromidło
 Sandra \"Sandi\" Zienkiewicz "
 
 [node name="back_button" type="Button" parent="Credits"]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -233,4 +267,5 @@ text = "back"
 [connection signal="pressed" from="MainButtons/credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="MainButtons/exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Options/back_options" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Options/controls" to="." method="_on_controls_pressed"]
 [connection signal="pressed" from="Credits/back_button" to="." method="_on_back_button_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://cvoknmj6ag844"]
+[gd_scene load_steps=33 format=4 uid="uid://cvoknmj6ag844"]
 
 [ext_resource type="Texture2D" uid="uid://biww8qrduel5h" path="res://Assety_moon_level/Background/Clouds 3/1.png" id="1_o376i"]
 [ext_resource type="Texture2D" uid="uid://cfsyh6gbgm0eh" path="res://Assety_moon_level/Background/Clouds 3/3.png" id="3_jgh3b"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://c6fhxa2458a18" path="res://Sceny/coin.tscn" id="14_hg1cj"]
 [ext_resource type="PackedScene" uid="uid://ddbfdps7on4cd" path="res://Sceny/portal.tscn" id="15_ak10j"]
 [ext_resource type="PackedScene" uid="uid://fb2n3qmo7pac" path="res://Sceny/bozek_ksiezyca.tscn" id="16_if4cw"]
+[ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="17_r87p4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jgh3b"]
 texture = ExtResource("4_apefv")
@@ -4546,7 +4547,6 @@ frame_progress = 0.04641461
 position = Vector2(444, 248)
 
 [node name="boza_wiadomosc" type="Panel" parent="."]
-visible = false
 offset_left = 284.0
 offset_top = 166.0
 offset_right = 407.0
@@ -4554,10 +4554,17 @@ offset_bottom = 206.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_if4cw")
 
 [node name="hejka" type="Label" parent="boza_wiadomosc"]
-visible = false
 layout_mode = 0
 offset_right = 123.0
 offset_bottom = 38.0
 text = "hejka naklejka"
+
+[node name="press_x" type="Label" parent="."]
+offset_left = 321.0
+offset_top = 265.0
+offset_right = 361.0
+offset_bottom = 288.0
+theme_override_fonts/font = ExtResource("17_r87p4")
+text = "press x"
 
 [connection signal="body_entered" from="zones/killzone" to="zones/killzone" method="_on_body_entered"]

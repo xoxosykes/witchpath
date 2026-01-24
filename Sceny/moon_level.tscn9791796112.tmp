@@ -4545,16 +4545,14 @@ frame_progress = 0.04641461
 [node name="Bozek_ksiezyca" parent="." instance=ExtResource("16_if4cw")]
 position = Vector2(444, 248)
 
-[node name="boza_wiadomosc" type="Panel" parent="."]
-visible = false
+[node name="Panel" type="Panel" parent="."]
 offset_left = 284.0
 offset_top = 166.0
 offset_right = 407.0
 offset_bottom = 206.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_if4cw")
 
-[node name="hejka" type="Label" parent="boza_wiadomosc"]
-visible = false
+[node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
 offset_right = 123.0
 offset_bottom = 38.0
