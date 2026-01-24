@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 210.0
-const JUMP_VELOCITY = -530.0
+const JUMP_VELOCITY = -600.0
 
 
 func _physics_process(delta: float) -> void:
@@ -25,7 +25,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 #interakcja pod E	
-func _process(delta):
+func _process(delta) -> void:
 	if Input.is_action_just_pressed("interact"):
 		interact_with_closest()
 
