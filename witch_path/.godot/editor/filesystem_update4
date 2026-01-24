@@ -1,4 +1,7 @@
-res://Sceny/main_menu.tscn
 res://scripts/main_menu.gd
+res://Sceny/main_menu.tscn
+res://options.gd
+res://Options.tscn
+res://credits.gd
 res://Sceny/controlsy.tscn
 res://Sceny/controlsy.gd
