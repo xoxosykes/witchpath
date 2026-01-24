@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="witch_path"
-run/main_scene="uid://cqlgf7k0eniji"
+run/main_scene="uid://phdjs78c8wn0"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
