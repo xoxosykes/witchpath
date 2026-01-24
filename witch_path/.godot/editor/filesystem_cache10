@@ -1,67 +1,276 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769265989
-bg_music.tscn::PackedScene::8453935369329842418::1768948745::0::1::::<><><>0<>0<><>::uid://lo54lw6jke78::::res://Assety (testowe)/MenuAssets/the-foyer-mirror-425079.mp3
-icon.svg::CompressedTexture2D::6312138812413043583::1768948745::1768948745::1::::<><><>0<>0<>aa8a5b37c5c46553281f705cc2f892c4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-wiedzma.gd::GDScript::3092871832023679323::1768948745::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Assety (testowe)/::1768948745
-f7vEkf.png::CompressedTexture2D::5186904835355350450::1768948744::1768948744::1::::<><><>0<>0<>b627e1bbace858bc3e642a47cf015c10<>res://.godot/imported/f7vEkf.png-b4a3d8d7e6a7512e2b8e7b6e7090ea51.ctex::
-scr1.PNG::CompressedTexture2D::3653093119994854536::1768948745::1768948745::1::::<><><>0<>0<>14dbaebcbcf0aa03d8a8ce504a822977<>res://.godot/imported/scr1.PNG-323618c47edd122564457d90d3c54ed6.ctex::
-scr2.PNG::CompressedTexture2D::5692503900094956895::1768948745::1768948745::1::::<><><>0<>0<>802e0f75e9e8bcdf8d3c8455e16a337c<>res://.godot/imported/scr2.PNG-0f6223ab2d984806f660e88cd420403d.ctex::
-tileset template 1.png::CompressedTexture2D::185034387518663468::1768948745::1768948745::1::::<><><>0<>0<>2b379dab2844532be3248286e91e42b8<>res://.godot/imported/tileset template 1.png-5d698d08d42485d86e4055bd56558fef.ctex::
-tileset template 2.png::CompressedTexture2D::5625246543093098588::1768948745::1768948745::1::::<><><>0<>0<>e54d694187f07289629e758fa6cd376d<>res://.godot/imported/tileset template 2.png-bd3a3d942f3517663d341db6ae85e9f7.ctex::
-::res://Assety (testowe)/Flowers/::1768948744
-::res://Assety (testowe)/Flowers/Flowers/::1768948745
-Flowers_Without_Outline_Spritesheet.png::CompressedTexture2D::8234418679108706997::1768948744::1768948744::1::::<><><>0<>0<>b77bce21a2ddb5a809239378bb36517c<>res://.godot/imported/Flowers_Without_Outline_Spritesheet.png-fcd0c425a3a5df93f086ae9d4391a618.ctex::
-Flowers_With_Outline_Spritesheet.png::CompressedTexture2D::6580487001417179577::1768948745::1768948745::1::::<><><>0<>0<>83344c76d5177033e83bd70c190a2fa3<>res://.godot/imported/Flowers_With_Outline_Spritesheet.png-3fbae4a9d9d9dd872a3162b118b169af.ctex::
-::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/::1768948744
-::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_Without_Outline/::1768948744
-Cosmo.png::CompressedTexture2D::1816888327167729941::1768948744::1768948744::1::::<><><>0<>0<>f70b5ff44425e66cfa02e35c8fcfeada<>res://.godot/imported/Cosmo.png-46fbd4760b01aa284c24175b3cdd3834.ctex::
-Daffodil.png::CompressedTexture2D::5145574914510084454::1768948744::1768948744::1::::<><><>0<>0<>bb5b492386c4331b59c9f8a22a21df17<>res://.godot/imported/Daffodil.png-8a2a52bac2f058c348e2fe55a8fdd455.ctex::
-Daisy.png::CompressedTexture2D::4755658805647230842::1768948744::1768948744::1::::<><><>0<>0<>04def01fc88edbe4efd6b8059e7ef667<>res://.godot/imported/Daisy.png-07aefb1063ebda10526099a3824a8087.ctex::
-Lavender.png::CompressedTexture2D::3586393131880526161::1768948744::1768948744::1::::<><><>0<>0<>b5996dc5492c3561c7b935959f094033<>res://.godot/imported/Lavender.png-fb986f6cd5c48df948f983c3708e3e42.ctex::
-Lily.png::CompressedTexture2D::5777011887385756569::1768948744::1768948744::1::::<><><>0<>0<>ab77962139645d8308dcc60bd10a483d<>res://.godot/imported/Lily.png-6fa522a3da8c04a2eb767b836d4c8713.ctex::
-LilyOfTheValley.png::CompressedTexture2D::933750976437438769::1768948744::1768948744::1::::<><><>0<>0<>4109dc3d2e8079177166fd748d0a6f41<>res://.godot/imported/LilyOfTheValley.png-c624d9a07c2bddf9c08fc1a05a99177e.ctex::
-Orchid.png::CompressedTexture2D::4721683185555409745::1768948744::1768948744::1::::<><><>0<>0<>f0c37eb52cf0486d7c2a813ceb43e880<>res://.godot/imported/Orchid.png-d297b7d922a600e8e1c64ee224298f1f.ctex::
-Pansy.png::CompressedTexture2D::5411835295110566936::1768948744::1768948744::1::::<><><>0<>0<>e343d7b4f3069c734b66dd4044559dab<>res://.godot/imported/Pansy.png-b39d8ffaeb28fd31c55ff6b1474e12f1.ctex::
-Poppy.png::CompressedTexture2D::6991596835946340161::1768948744::1768948744::1::::<><><>0<>0<>12538ece661e5f3921ce5f321d0aa692<>res://.godot/imported/Poppy.png-5a38b2460b33135c0d303fd0b711d823.ctex::
-Rose.png::CompressedTexture2D::5441425612283886922::1768948744::1768948744::1::::<><><>0<>0<>14970b4a13069a59e28dece6005a29b1<>res://.godot/imported/Rose.png-0a7801136a0e20c4c99b622b73215a79.ctex::
-Sunflower.png::CompressedTexture2D::8512600002787837027::1768948744::1768948744::1::::<><><>0<>0<>7216f3a2b54eed6efcb373099564f5a1<>res://.godot/imported/Sunflower.png-2de3131d83d34877779c000478a2629e.ctex::
-Tulip.png::CompressedTexture2D::83743471567089319::1768948744::1768948744::1::::<><><>0<>0<>d7413de5736fcf436847b1b04f2029d5<>res://.godot/imported/Tulip.png-520d92272d9978f8b102cba3d1a1b42b.ctex::
-::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_With_Ouline/::1768948744
-CosmoOUTLINED.png::CompressedTexture2D::8976618215544764489::1768948744::1768948744::1::::<><><>0<>0<>61fd3ab4546842fdd2b894517cc6e3ef<>res://.godot/imported/CosmoOUTLINED.png-da64ded7ed1fb62fe3f16ad023d6bbd5.ctex::
-DaffodilOUTLINED.png::CompressedTexture2D::3399689151109626214::1768948744::1768948744::1::::<><><>0<>0<>48ead3a57c13622cca7d15e8d8947794<>res://.godot/imported/DaffodilOUTLINED.png-1734def40f840e1e0ef63c626a37375d.ctex::
-DaisyOUTLINED.png::CompressedTexture2D::594454491835152653::1768948744::1768948744::1::::<><><>0<>0<>2105552a5f5a202829a34bb1de65e947<>res://.godot/imported/DaisyOUTLINED.png-1df5db18286bb5c051229406189e1bcf.ctex::
-LavenderOUTLINED.png::CompressedTexture2D::3241261460734658142::1768948744::1768948744::1::::<><><>0<>0<>a5ea695bc67c14529570f3ab4bef4c67<>res://.godot/imported/LavenderOUTLINED.png-bce11f6fd526c89b89460c0bf9166587.ctex::
-LilyOfTheValleyOUTLINED.png::CompressedTexture2D::6268410041855533590::1768948744::1768948744::1::::<><><>0<>0<>d7c970ece3aa45f4338906246b626a5c<>res://.godot/imported/LilyOfTheValleyOUTLINED.png-b1b285632d523c7fcf81c975a77577ca.ctex::
-LilyOUTLINED.png::CompressedTexture2D::8815481562893309806::1768948744::1768948744::1::::<><><>0<>0<>c879f36e8fd98f72bc8d8729dd472999<>res://.godot/imported/LilyOUTLINED.png-79573ef54687f06b69d6b2bad241d20a.ctex::
-OrchidOUTLINED.png::CompressedTexture2D::4305442554497173785::1768948744::1768948744::1::::<><><>0<>0<>42a7d06f69f665d8eb0a39203bb52eb2<>res://.godot/imported/OrchidOUTLINED.png-e8885dc4420f2b5522a29fc2c972dd79.ctex::
-PansyOUTLINED.png::CompressedTexture2D::6309791636827303319::1768948744::1768948744::1::::<><><>0<>0<>adf04440f9340b618e9d72d56e280d7e<>res://.godot/imported/PansyOUTLINED.png-a998da123167658de7ada0c421615572.ctex::
-PoppyOUTLINED.png::CompressedTexture2D::6067663669657995587::1768948744::1768948744::1::::<><><>0<>0<>2787a4b1861fb1e38d14e484fec56cc1<>res://.godot/imported/PoppyOUTLINED.png-ab4bb5a0f4c76d68cf5315c1d81d94f8.ctex::
-RoseOUTLINED.png::CompressedTexture2D::1326222281351231738::1768948744::1768948744::1::::<><><>0<>0<>ff311e9cf73c4501cc159d6963850001<>res://.godot/imported/RoseOUTLINED.png-61a84d0af31c08be7478ba0effe5d1d3.ctex::
-SunflowerOUTLINED.png::CompressedTexture2D::8307997247229802871::1768948744::1768948744::1::::<><><>0<>0<>78439f20187156034aefe4b08309d4fa<>res://.godot/imported/SunflowerOUTLINED.png-2f5aba5820b0631c0cee0a80d6aaf87b.ctex::
-TulipOUTLINED.png::CompressedTexture2D::8327380693111126014::1768948744::1768948744::1::::<><><>0<>0<>d9a3f640897367f11cb955c41b503a4b<>res://.godot/imported/TulipOUTLINED.png-df89f54d47db75269a426dcbde672619.ctex::
-::res://Assety (testowe)/MenuAssets/::1768948745
-background.png::CompressedTexture2D::1899169291939854015::1768948745::1768948745::1::::<><><>0<>0<>d261dcaf13ce3b5e7868bf7e1d9da8ba<>res://.godot/imported/background.png-a414af30b7e4a0a74346472b65cd44f1.ctex::
-Projekt bez nazwy (3) (1).png::CompressedTexture2D::2869417572861241725::1768948745::1768948745::1::::<><><>0<>0<>1081541c930646919b4723003ae545e9<>res://.godot/imported/Projekt bez nazwy (3) (1).png-ada1c7aaf96669e534a5085769c73732.ctex::
-the-foyer-mirror-425079.mp3::AudioStreamMP3::802852479544901681::1768948745::1768948745::1::::<><><>0<>0<>0687dbbc9a1c4a9ca3bf75451a64260a<>res://.godot/imported/the-foyer-mirror-425079.mp3-15ab497b960dae342a656a1440439e6b.mp3str::
-Varnyx-Regular.ttf::FontFile::3424535791307239812::1768948745::1768948745::1::::<><><>0<>0<>e98cbccc6e58d99b5b94947ad071b668<>res://.godot/imported/Varnyx-Regular.ttf-86b395d8391f3619fde44c1cae1cc233.fontdata::
-::res://Assety (testowe)/Tileset_Grass/::1768948745
-IMG_2904.jpeg::CompressedTexture2D::5382987954193238709::1768948745::1768948745::1::::<><><>0<>0<>31d9790e55fb0eec4539ed8e3be4acea<>res://.godot/imported/IMG_2904.jpeg-11d196c428d6df7b2c0b6af38ed79606.ctex::
-Tileset_grass_128x80_x2.png::CompressedTexture2D::344186951807027598::1768948745::1768948745::1::::<><><>0<>0<>49b54b272c7991eb27e0e2e118bcc3d3<>res://.godot/imported/Tileset_grass_128x80_x2.png-e5a48458fdff2cd6bc71067d3934c1a8.ctex::
-Tileset_grass_128x80_x4.png::CompressedTexture2D::6346029702037122128::1768948745::1768948745::1::::<><><>0<>0<>9d06803549cf5a4f523751c6adcc0846<>res://.godot/imported/Tileset_grass_128x80_x4.png-2654410a4287aceaf10ee4c63b565781.ctex::
-::res://Sceny/::1769265962
-collision_shape_2d.gd::GDScript::248133524322332786::1768948745::0::1::::<>CollisionShape2D<><>0<>0<><>::
-controlsy.gd::GDScript::846666830623910033::1769265962::0::1::::<>Control<><>0<>0<><>::
-controlsy.tscn::PackedScene::4404141583765323510::1769265962::0::1::::<><><>0<>0<><>::uid://bo14usnt6i2u7::::res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf<>uid://mceqjywau5jh::::res://Sceny/controlsy.gd<>uid://2b8bnejjafo6::::res://Assety (testowe)/MenuAssets/background.png<>uid://bg475g0y133cj::::res://Assety (testowe)/MenuAssets/Projekt bez nazwy (3) (1).png
-main_menu.tscn::PackedScene::1067482518329756147::1769265962::0::1::::<><><>0<>0<><>::uid://cxu5sp63igofn::::res://scripts/main_menu.gd<>uid://2b8bnejjafo6::::res://Assety (testowe)/MenuAssets/background.png<>uid://bo14usnt6i2u7::::res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf<>uid://bg475g0y133cj::::res://Assety (testowe)/MenuAssets/Projekt bez nazwy (3) (1).png
-moon_level.tscn::PackedScene::6276339403182361931::1769265962::0::1::::<><><>0<>0<><>::
-test.tscn::PackedScene::5918945949152501282::1769265961::0::1::::<><><>0<>0<><>::uid://fvogmc4pkxmu::::res://scripts/test.gd<>uid://e5yydnchguew::::res://Assety (testowe)/Tileset_Grass/Tileset_grass_128x80_x2.png<>uid://dg34884x4l4d2::::res://Sceny/wiedzma.tscn<>uid://magl7qwpv8u7::::res://scripts/killzone.gd<>uid://05d5dn0ipge4::::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_Without_Outline/Cosmo.png<>uid://87usfhyi82n7::::res://scripts/sprites.gd
-test_tileset.tscn::PackedScene::2849308821810285829::1769265961::0::1::::<><><>0<>0<><>::uid://cvvqvwtnb41m::::res://Assety (testowe)/tileset template 1.png<>uid://dsgytwtyd1l3::::res://scripts/collision_shape_2d.gd
-wiedzma.tscn::PackedScene::7640019193164377533::1769262423::0::1::::<><><>0<>0<><>::uid://bkchfafrucno2::::res://scripts/wiedzma.gd<>uid://cv6waewhkx3vn::::res://icon.svg
-::res://scripts/::1769265962
-collision_shape_2d.gd::GDScript::248133524322332786::1768948745::0::1::::<>CollisionShape2D<><>0<>0<><>::
-killzone.gd::GDScript::842651775830505124::1769262423::0::1::::<>Area2D<><>0<>0<><>::
-main_menu.gd::GDScript::6430326817237748319::1769265962::0::1::::<>Control<><>0<>0<><>::
-sprites.gd::GDScript::2383538686863450126::1768948745::0::1::::<>Node2D<><>0<>0<><>::
-test.gd::GDScript::395157538395480040::1768948745::0::1::::<>Node2D<><>0<>0<><>::
-wiedzma.gd::GDScript::3092871832023679323::1769262423::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://::1769275386
+bg_music.tscn::PackedScene::8453935369329842418::1768862573::0::1::::<><><>0<>0<><>::uid://lo54lw6jke78::::res://Assety (testowe)/MenuAssets/the-foyer-mirror-425079.mp3
+icon.svg::CompressedTexture2D::6312138812413043583::1768862573::1769261864::1::::<><><>0<>0<>aa8a5b37c5c46553281f705cc2f892c4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Assety (testowe)/::1769261864
+f7vEkf.png::CompressedTexture2D::5186904835355350450::1768862573::1769261864::1::::<><><>0<>0<>b627e1bbace858bc3e642a47cf015c10<>res://.godot/imported/f7vEkf.png-b4a3d8d7e6a7512e2b8e7b6e7090ea51.ctex::
+scr1.PNG::CompressedTexture2D::3653093119994854536::1768862573::1769261864::1::::<><><>0<>0<>14dbaebcbcf0aa03d8a8ce504a822977<>res://.godot/imported/scr1.PNG-323618c47edd122564457d90d3c54ed6.ctex::
+scr2.PNG::CompressedTexture2D::5692503900094956895::1768862573::1769261864::1::::<><><>0<>0<>802e0f75e9e8bcdf8d3c8455e16a337c<>res://.godot/imported/scr2.PNG-0f6223ab2d984806f660e88cd420403d.ctex::
+tileset template 1.png::CompressedTexture2D::185034387518663468::1768862573::1769261864::1::::<><><>0<>0<>2b379dab2844532be3248286e91e42b8<>res://.godot/imported/tileset template 1.png-5d698d08d42485d86e4055bd56558fef.ctex::
+tileset template 2.png::CompressedTexture2D::5625246543093098588::1768862573::1769261864::1::::<><><>0<>0<>e54d694187f07289629e758fa6cd376d<>res://.godot/imported/tileset template 2.png-bd3a3d942f3517663d341db6ae85e9f7.ctex::
+::res://Assety (testowe)/Flowers/::1768859714
+::res://Assety (testowe)/Flowers/Flowers/::1769261864
+Flowers_Without_Outline_Spritesheet.png::CompressedTexture2D::8234418679108706997::1768862573::1769261864::1::::<><><>0<>0<>b77bce21a2ddb5a809239378bb36517c<>res://.godot/imported/Flowers_Without_Outline_Spritesheet.png-fcd0c425a3a5df93f086ae9d4391a618.ctex::
+Flowers_With_Outline_Spritesheet.png::CompressedTexture2D::6580487001417179577::1768862573::1769261864::1::::<><><>0<>0<>83344c76d5177033e83bd70c190a2fa3<>res://.godot/imported/Flowers_With_Outline_Spritesheet.png-3fbae4a9d9d9dd872a3162b118b169af.ctex::
+::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/::1768859714
+::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_Without_Outline/::1769261864
+Cosmo.png::CompressedTexture2D::1816888327167729941::1768862573::1769261864::1::::<><><>0<>0<>f70b5ff44425e66cfa02e35c8fcfeada<>res://.godot/imported/Cosmo.png-46fbd4760b01aa284c24175b3cdd3834.ctex::
+Daffodil.png::CompressedTexture2D::5145574914510084454::1768862573::1769261864::1::::<><><>0<>0<>bb5b492386c4331b59c9f8a22a21df17<>res://.godot/imported/Daffodil.png-8a2a52bac2f058c348e2fe55a8fdd455.ctex::
+Daisy.png::CompressedTexture2D::4755658805647230842::1768862573::1769261864::1::::<><><>0<>0<>04def01fc88edbe4efd6b8059e7ef667<>res://.godot/imported/Daisy.png-07aefb1063ebda10526099a3824a8087.ctex::
+Lavender.png::CompressedTexture2D::3586393131880526161::1768862573::1769261864::1::::<><><>0<>0<>b5996dc5492c3561c7b935959f094033<>res://.godot/imported/Lavender.png-fb986f6cd5c48df948f983c3708e3e42.ctex::
+Lily.png::CompressedTexture2D::5777011887385756569::1768862573::1769261864::1::::<><><>0<>0<>ab77962139645d8308dcc60bd10a483d<>res://.godot/imported/Lily.png-6fa522a3da8c04a2eb767b836d4c8713.ctex::
+LilyOfTheValley.png::CompressedTexture2D::933750976437438769::1768862573::1769261864::1::::<><><>0<>0<>4109dc3d2e8079177166fd748d0a6f41<>res://.godot/imported/LilyOfTheValley.png-c624d9a07c2bddf9c08fc1a05a99177e.ctex::
+Orchid.png::CompressedTexture2D::4721683185555409745::1768862573::1769261864::1::::<><><>0<>0<>f0c37eb52cf0486d7c2a813ceb43e880<>res://.godot/imported/Orchid.png-d297b7d922a600e8e1c64ee224298f1f.ctex::
+Pansy.png::CompressedTexture2D::5411835295110566936::1768862573::1769261864::1::::<><><>0<>0<>e343d7b4f3069c734b66dd4044559dab<>res://.godot/imported/Pansy.png-b39d8ffaeb28fd31c55ff6b1474e12f1.ctex::
+Poppy.png::CompressedTexture2D::6991596835946340161::1768862573::1769261864::1::::<><><>0<>0<>12538ece661e5f3921ce5f321d0aa692<>res://.godot/imported/Poppy.png-5a38b2460b33135c0d303fd0b711d823.ctex::
+Rose.png::CompressedTexture2D::5441425612283886922::1768862573::1769261864::1::::<><><>0<>0<>14970b4a13069a59e28dece6005a29b1<>res://.godot/imported/Rose.png-0a7801136a0e20c4c99b622b73215a79.ctex::
+Sunflower.png::CompressedTexture2D::8512600002787837027::1768862573::1769261864::1::::<><><>0<>0<>7216f3a2b54eed6efcb373099564f5a1<>res://.godot/imported/Sunflower.png-2de3131d83d34877779c000478a2629e.ctex::
+Tulip.png::CompressedTexture2D::83743471567089319::1768862573::1769261864::1::::<><><>0<>0<>d7413de5736fcf436847b1b04f2029d5<>res://.godot/imported/Tulip.png-520d92272d9978f8b102cba3d1a1b42b.ctex::
+::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_With_Ouline/::1769261864
+CosmoOUTLINED.png::CompressedTexture2D::8976618215544764489::1768862573::1769261864::1::::<><><>0<>0<>61fd3ab4546842fdd2b894517cc6e3ef<>res://.godot/imported/CosmoOUTLINED.png-da64ded7ed1fb62fe3f16ad023d6bbd5.ctex::
+DaffodilOUTLINED.png::CompressedTexture2D::3399689151109626214::1768862573::1769261864::1::::<><><>0<>0<>48ead3a57c13622cca7d15e8d8947794<>res://.godot/imported/DaffodilOUTLINED.png-1734def40f840e1e0ef63c626a37375d.ctex::
+DaisyOUTLINED.png::CompressedTexture2D::594454491835152653::1768862573::1769261864::1::::<><><>0<>0<>2105552a5f5a202829a34bb1de65e947<>res://.godot/imported/DaisyOUTLINED.png-1df5db18286bb5c051229406189e1bcf.ctex::
+LavenderOUTLINED.png::CompressedTexture2D::3241261460734658142::1768862573::1769261864::1::::<><><>0<>0<>a5ea695bc67c14529570f3ab4bef4c67<>res://.godot/imported/LavenderOUTLINED.png-bce11f6fd526c89b89460c0bf9166587.ctex::
+LilyOfTheValleyOUTLINED.png::CompressedTexture2D::6268410041855533590::1768862573::1769261864::1::::<><><>0<>0<>d7c970ece3aa45f4338906246b626a5c<>res://.godot/imported/LilyOfTheValleyOUTLINED.png-b1b285632d523c7fcf81c975a77577ca.ctex::
+LilyOUTLINED.png::CompressedTexture2D::8815481562893309806::1768862573::1769261864::1::::<><><>0<>0<>c879f36e8fd98f72bc8d8729dd472999<>res://.godot/imported/LilyOUTLINED.png-79573ef54687f06b69d6b2bad241d20a.ctex::
+OrchidOUTLINED.png::CompressedTexture2D::4305442554497173785::1768862573::1769261864::1::::<><><>0<>0<>42a7d06f69f665d8eb0a39203bb52eb2<>res://.godot/imported/OrchidOUTLINED.png-e8885dc4420f2b5522a29fc2c972dd79.ctex::
+PansyOUTLINED.png::CompressedTexture2D::6309791636827303319::1768862573::1769261864::1::::<><><>0<>0<>adf04440f9340b618e9d72d56e280d7e<>res://.godot/imported/PansyOUTLINED.png-a998da123167658de7ada0c421615572.ctex::
+PoppyOUTLINED.png::CompressedTexture2D::6067663669657995587::1768862573::1769261864::1::::<><><>0<>0<>2787a4b1861fb1e38d14e484fec56cc1<>res://.godot/imported/PoppyOUTLINED.png-ab4bb5a0f4c76d68cf5315c1d81d94f8.ctex::
+RoseOUTLINED.png::CompressedTexture2D::1326222281351231738::1768862573::1769261864::1::::<><><>0<>0<>ff311e9cf73c4501cc159d6963850001<>res://.godot/imported/RoseOUTLINED.png-61a84d0af31c08be7478ba0effe5d1d3.ctex::
+SunflowerOUTLINED.png::CompressedTexture2D::8307997247229802871::1768862573::1769261864::1::::<><><>0<>0<>78439f20187156034aefe4b08309d4fa<>res://.godot/imported/SunflowerOUTLINED.png-2f5aba5820b0631c0cee0a80d6aaf87b.ctex::
+TulipOUTLINED.png::CompressedTexture2D::8327380693111126014::1768862573::1769261864::1::::<><><>0<>0<>d9a3f640897367f11cb955c41b503a4b<>res://.godot/imported/TulipOUTLINED.png-df89f54d47db75269a426dcbde672619.ctex::
+::res://Assety (testowe)/MenuAssets/::1769261864
+background.png::CompressedTexture2D::1899169291939854015::1768862573::1769261864::1::::<><><>0<>0<>d261dcaf13ce3b5e7868bf7e1d9da8ba<>res://.godot/imported/background.png-a414af30b7e4a0a74346472b65cd44f1.ctex::
+Projekt bez nazwy (3) (1).png::CompressedTexture2D::2869417572861241725::1768862573::1769261864::1::::<><><>0<>0<>1081541c930646919b4723003ae545e9<>res://.godot/imported/Projekt bez nazwy (3) (1).png-ada1c7aaf96669e534a5085769c73732.ctex::
+the-foyer-mirror-425079.mp3::AudioStreamMP3::802852479544901681::1768862573::1769261864::1::::<><><>0<>0<>0687dbbc9a1c4a9ca3bf75451a64260a<>res://.godot/imported/the-foyer-mirror-425079.mp3-15ab497b960dae342a656a1440439e6b.mp3str::
+Varnyx-Regular.ttf::FontFile::3424535791307239812::1768862573::1769261864::1::::<><><>0<>0<>e98cbccc6e58d99b5b94947ad071b668<>res://.godot/imported/Varnyx-Regular.ttf-86b395d8391f3619fde44c1cae1cc233.fontdata::
+::res://Assety (testowe)/Tileset_Grass/::1769261864
+IMG_2904.jpeg::CompressedTexture2D::5382987954193238709::1768862573::1769261864::1::::<><><>0<>0<>31d9790e55fb0eec4539ed8e3be4acea<>res://.godot/imported/IMG_2904.jpeg-11d196c428d6df7b2c0b6af38ed79606.ctex::
+Tileset_grass_128x80_x2.png::CompressedTexture2D::344186951807027598::1768862573::1769261864::1::::<><><>0<>0<>49b54b272c7991eb27e0e2e118bcc3d3<>res://.godot/imported/Tileset_grass_128x80_x2.png-e5a48458fdff2cd6bc71067d3934c1a8.ctex::
+Tileset_grass_128x80_x4.png::CompressedTexture2D::6346029702037122128::1768862573::1769261864::1::::<><><>0<>0<>9d06803549cf5a4f523751c6adcc0846<>res://.godot/imported/Tileset_grass_128x80_x4.png-2654410a4287aceaf10ee4c63b565781.ctex::
+::res://Assety_moon_level/::1769278816
+Bn_UYJ (1).png::CompressedTexture2D::5389205252891812826::1769278816::1769278816::1::::<><><>0<>0<>49c3fdca37e1586c84f56c43e080da6b<>res://.godot/imported/Bn_UYJ (1).png-d1fa6733b35e5723b111d604ab4beeac.ctex::
+S001_nyknck.png::CompressedTexture2D::1777595504696838922::1769277194::1769277194::1::::<><><>0<>0<>ccddd81861d52f28d49a1339e8775873<>res://.godot/imported/S001_nyknck.png-73d9074657c12065079598c9e030601a.ctex::
+::res://Assety_moon_level/Background/::1769269383
+::res://Assety_moon_level/Background/Clouds 1/::1769266316
+1.png::CompressedTexture2D::3759167726827617617::1769266262::1769266316::1::::<><><>0<>0<>afd9810b5430741b2d8b1884858a456d<>res://.godot/imported/1.png-00d0dc4308a107ff9ecb7d31b39241df.ctex::
+2.png::CompressedTexture2D::8612570709516537119::1769266262::1769266316::1::::<><><>0<>0<>46c80caf6d1ebb3f87b29e58a39e7e98<>res://.godot/imported/2.png-2db4078d6c5f91929ae8b3ba2ecf064e.ctex::
+3.png::CompressedTexture2D::5101067938196551907::1769266262::1769266316::1::::<><><>0<>0<>f2cb88545f63d7cf6858764258d0b1ce<>res://.godot/imported/3.png-bda142817d635791cdc27155ced6d01c.ctex::
+4.png::CompressedTexture2D::5511838699041832684::1769266262::1769266316::1::::<><><>0<>0<>82d982a8b41cd45ef61c3423e516ee46<>res://.godot/imported/4.png-e88b4f7a14d0c02f5c74f556887467ea.ctex::
+::res://Assety_moon_level/Background/Clouds 2/::1769266316
+1.png::CompressedTexture2D::398335881937165328::1769266262::1769266316::1::::<><><>0<>0<>9c50135d612374516730b11522b82aa6<>res://.godot/imported/1.png-ee01b0d84634f6ae87e17e580377a561.ctex::
+2.png::CompressedTexture2D::5465005618652869161::1769266262::1769266316::1::::<><><>0<>0<>58869d54b1a740bf459d47c8d0ab0e7a<>res://.godot/imported/2.png-32d4023eb2e6f8c037f5b70d71068521.ctex::
+3.png::CompressedTexture2D::7205836120552363848::1769266262::1769266316::1::::<><><>0<>0<>c63637243cdcbc3b0d54e33ab27c6a3c<>res://.godot/imported/3.png-9a5b4cf1d928a7f14ce27e8f9e38fd6c.ctex::
+4.png::CompressedTexture2D::8190460933618205590::1769266262::1769266316::1::::<><><>0<>0<>8199a07f9155fccb6d6714da697c619d<>res://.godot/imported/4.png-374756a146cbbf14aa4abb2f79a5a66f.ctex::
+::res://Assety_moon_level/Background/Clouds 3/::1769266316
+1.png::CompressedTexture2D::2994743315224880303::1769266262::1769266316::1::::<><><>0<>0<>2b24371e06dd281404f903ca5e22a141<>res://.godot/imported/1.png-4e826f01914ae87781bd88df4c2f46df.ctex::
+2.png::CompressedTexture2D::3751959885674650666::1769266262::1769266316::1::::<><><>0<>0<>fa31e3bdc4a1de3455b1d2fd719bf52a<>res://.godot/imported/2.png-d3fa26432324ff06332fc46663210df3.ctex::
+3.png::CompressedTexture2D::5162415731079804499::1769266262::1769266316::1::::<><><>0<>0<>09fb13d53426b814481c317fccb371a1<>res://.godot/imported/3.png-2d69de586b4ee742f0c2462b278dd058.ctex::
+4.png::CompressedTexture2D::4574374900193012458::1769266262::1769266316::1::::<><><>0<>0<>88918e702652020f926f6d05f3c1b2d2<>res://.godot/imported/4.png-0eba1e6866fda92af926c9a3ed8a3486.ctex::
+::res://Assety_moon_level/Background/Clouds 4/::1769266316
+1.png::CompressedTexture2D::3520649065439029751::1769266262::1769266316::1::::<><><>0<>0<>c2eda5ccad9e00bdb7ddf6339df7613f<>res://.godot/imported/1.png-59b05d769a612083df5588f0efd73067.ctex::
+2.png::CompressedTexture2D::7422631560165775565::1769266262::1769266316::1::::<><><>0<>0<>1fc017d9a37f8fe476b0dec0a9eff738<>res://.godot/imported/2.png-6996a84c57d509f5722192486b9ab2d6.ctex::
+3.png::CompressedTexture2D::8275773203622649282::1769266262::1769266316::1::::<><><>0<>0<>9fa676cc83b6024c6dcc7f42ba3fda17<>res://.godot/imported/3.png-947820d2af875fd2ff328148aa6fa8b0.ctex::
+4.png::CompressedTexture2D::1915577946641502771::1769266262::1769266316::1::::<><><>0<>0<>847f41b94c92cea30be738c7b4e9cc76<>res://.godot/imported/4.png-8b07cd4c1b9aecca08aa2cc6a41e641f.ctex::
+::res://Assety_moon_level/Background/Clouds 5/::1769266316
+1.png::CompressedTexture2D::6834656610462771799::1769266262::1769266316::1::::<><><>0<>0<>ea500c5060369ab19e9b40dacb95c6ea<>res://.godot/imported/1.png-57bc30ba3757d0c1c1c56488c48cd579.ctex::
+2.png::CompressedTexture2D::1193082766917946675::1769266262::1769266316::1::::<><><>0<>0<>2f5de412bfa5a4444fd7038fba78a697<>res://.godot/imported/2.png-170d3582ba5800d7c22a186d092eba9c.ctex::
+3.png::CompressedTexture2D::4506345399092950633::1769266262::1769266316::1::::<><><>0<>0<>aecf846f1c443735cc6e2716a4b1febe<>res://.godot/imported/3.png-090b98fc30003f4c5c8884220d6ad4a9.ctex::
+4.png::CompressedTexture2D::7055012866132680476::1769266262::1769266316::1::::<><><>0<>0<>1aaabc70e0038f153c9fd7d8a9dd5b97<>res://.godot/imported/4.png-8bcc65c37ace0692240b21b02ca483c5.ctex::
+5.png::CompressedTexture2D::2896859625380107953::1769266262::1769266316::1::::<><><>0<>0<>16df8374d45c6990e70a4d1b7865a87d<>res://.godot/imported/5.png-bb3ddf55bca3628a054eea6854859efc.ctex::
+::res://Assety_moon_level/Background/Clouds 6/::1769266316
+1.png::CompressedTexture2D::8720442973361625234::1769266262::1769266316::1::::<><><>0<>0<>68989b4d41a6d8c4710fe8ae374e731d<>res://.godot/imported/1.png-2717889f1acd8fa2a0999131f659dd5c.ctex::
+2.png::CompressedTexture2D::2046066072675927883::1769266262::1769266316::1::::<><><>0<>0<>77879eed34e09d4989ca76d54df13a4d<>res://.godot/imported/2.png-d805f248d235b808242ccb63c6b5c7a3.ctex::
+3.png::CompressedTexture2D::4166660482030107521::1769266262::1769266316::1::::<><><>0<>0<>5eda766bd152168411341e14c2740c3b<>res://.godot/imported/3.png-826340b88cbf663025c1b12b3a627fe9.ctex::
+4.png::CompressedTexture2D::7689460599217166786::1769266262::1769266316::1::::<><><>0<>0<>f6e0d2cb08bc6ab3a967cddb17947d45<>res://.godot/imported/4.png-a52e51c0ed48d19cbfd3aeb718f69224.ctex::
+5.png::CompressedTexture2D::1667856525399182953::1769266262::1769266316::1::::<><><>0<>0<>464cfd70d6ab9cd19855692d4a6094e1<>res://.godot/imported/5.png-ee028f0e5d4375d7ba43877e6a0c9feb.ctex::
+6.png::CompressedTexture2D::5423790586036084058::1769266262::1769266316::1::::<><><>0<>0<>fb90c26f730697597789fac17f1b50a5<>res://.godot/imported/6.png-96435f172cc740419633b857418183da.ctex::
+::res://Assety_moon_level/Background/Clouds 7/::1769266316
+1.png::CompressedTexture2D::8682006629957946285::1769266262::1769266316::1::::<><><>0<>0<>e2146b67a81cb3eb885cf8955415c650<>res://.godot/imported/1.png-65e24f652a0863a2d330bd01a42d0e6b.ctex::
+2.png::CompressedTexture2D::2027343102521475629::1769266262::1769266316::1::::<><><>0<>0<>ecae9ae01ace1a19b2d71945f1cb3207<>res://.godot/imported/2.png-c295aae267e5eea389d385ac23203558.ctex::
+3.png::CompressedTexture2D::347374166712096291::1769266262::1769266316::1::::<><><>0<>0<>6ad87f9ecc70cf53608e984f03868800<>res://.godot/imported/3.png-0d58906d7c1d96bfb11bbe2b544650a4.ctex::
+4.png::CompressedTexture2D::5666130087375850904::1769266262::1769266316::1::::<><><>0<>0<>64d59e3db3ae6c49c28bf234f924d2d0<>res://.godot/imported/4.png-74d1293a539cf310d602bec89551b80d.ctex::
+::res://Assety_moon_level/Background/Clouds 8/::1769266316
+1.png::CompressedTexture2D::2391086994195270429::1769266262::1769266316::1::::<><><>0<>0<>1ff87a2389d7dce7d469a5bf2e85dc43<>res://.godot/imported/1.png-78f15576b8f1634e2b69062784110e65.ctex::
+2.png::CompressedTexture2D::3870402180219163404::1769266262::1769266316::1::::<><><>0<>0<>b0ccd7af3fa58fa99b83835d07ba99d1<>res://.godot/imported/2.png-2de5f7196a54b2ff3f1d86547c0ea65b.ctex::
+3.png::CompressedTexture2D::4322223369439204673::1769266262::1769266316::1::::<><><>0<>0<>d97be2cfb9cfba758c859b39380520b3<>res://.godot/imported/3.png-10ccb75862d4c35ecd77b1c4fc812735.ctex::
+4.png::CompressedTexture2D::7956408009425095441::1769266262::1769266316::1::::<><><>0<>0<>d1af688f84a303a07cc3b448020d2f02<>res://.godot/imported/4.png-eb6adf5890ff60d7099c004c1e5a7dd3.ctex::
+5.png::CompressedTexture2D::1092217378963523956::1769266262::1769266316::1::::<><><>0<>0<>3c90f014e65e4cc3501f89b48921060f<>res://.godot/imported/5.png-06cc8d97006dc8bc3942aa7b9dcf5074.ctex::
+6.png::CompressedTexture2D::4309123136409284957::1769266262::1769266316::1::::<><><>0<>0<>1e7b15fde989e471c1da1b8d07da8b70<>res://.godot/imported/6.png-b9f49ce8c5e97cf580eb7d083115b108.ctex::
+::res://Assety_moon_level/clouds/::1769278784
+S001_nyknck.png::CompressedTexture2D::6559012755539355749::1769278784::1769278784::1::::<><><>0<>0<>264693a398b6245cc66b4352cefcf1a3<>res://.godot/imported/S001_nyknck.png-2b33da5298126036b9512ccfd8f8ffa0.ctex::
+::res://Assety_moon_level/clouds/PNG/::1769269375
+::res://Assety_moon_level/clouds/PNG/Clouds_black/::1769269375
+::res://Assety_moon_level/clouds/PNG/Clouds_black/Shape1/::1769269384
+cloud_shape1_1.png::CompressedTexture2D::4018286019128350221::1769269375::1769269384::1::::<><><>0<>0<>9e37df0e65f9c4329c4f1bd74d5029cc<>res://.godot/imported/cloud_shape1_1.png-e0e38a24ca708c4b069b50891e43d467.ctex::
+cloud_shape1_2.png::CompressedTexture2D::2925471060256834119::1769269375::1769269384::1::::<><><>0<>0<>4afb3ec60fc5a7d186a38be339fe787e<>res://.godot/imported/cloud_shape1_2.png-d3ab877375bf136ca6c6f49bcfee718c.ctex::
+cloud_shape1_3.png::CompressedTexture2D::452195750797155399::1769269375::1769269384::1::::<><><>0<>0<>1badc89c93ecb00569cb56db10569cf4<>res://.godot/imported/cloud_shape1_3.png-a7a7c4d3ade42bd151917bc3c3274940.ctex::
+cloud_shape1_4.png::CompressedTexture2D::1093614614985926231::1769269375::1769269384::1::::<><><>0<>0<>cc1a786a4058131db45fee37a450dd10<>res://.godot/imported/cloud_shape1_4.png-fd3b67581e021932c0d772f82efbdc21.ctex::
+cloud_shape1_5.png::CompressedTexture2D::4112715756184333601::1769269375::1769269384::1::::<><><>0<>0<>e6ce1f05fda0dd80bc808c3b5db9e124<>res://.godot/imported/cloud_shape1_5.png-4d621f94a47c9adb3d7c27c64cf6e8f7.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_black/Shape2/::1769269384
+cloud_shape2_1.png::CompressedTexture2D::8880677645296884128::1769269375::1769269384::1::::<><><>0<>0<>449ffc84988f586ab4834e933c318473<>res://.godot/imported/cloud_shape2_1.png-f3a49310c5a427529b4e6d45cdc39d06.ctex::
+cloud_shape2_2.png::CompressedTexture2D::4397781274802234681::1769269375::1769269384::1::::<><><>0<>0<>15687357c200734f60b7d3cf6ad0ec4e<>res://.godot/imported/cloud_shape2_2.png-2835e18d284ed197d9d23f1c66cd0afb.ctex::
+cloud_shape2_3.png::CompressedTexture2D::7012370251971933219::1769269375::1769269384::1::::<><><>0<>0<>483d6703065dcd0422be0bb82b2de1aa<>res://.godot/imported/cloud_shape2_3.png-d385b41e3bc0d297a56a0f997c98600f.ctex::
+cloud_shape2_4.png::CompressedTexture2D::4634724964095333618::1769269375::1769269384::1::::<><><>0<>0<>9c1a7fb6c6e1eb9b5e7e0c9772c2533a<>res://.godot/imported/cloud_shape2_4.png-32ec20071e4aa6ac714c503ef37ed0df.ctex::
+cloud_shape2_5.png::CompressedTexture2D::1039783661436726659::1769269375::1769269384::1::::<><><>0<>0<>876337cc6ca30752dc2e40deec8b6e52<>res://.godot/imported/cloud_shape2_5.png-e90ecd8a9930d49708e99046cb2e65eb.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_black/Shape3/::1769269384
+cloud_shape3_1.png::CompressedTexture2D::6731403077778551772::1769269375::1769269384::1::::<><><>0<>0<>71cd8c282f7fbbf27787d266007cfbb9<>res://.godot/imported/cloud_shape3_1.png-7b6b562455664897c69cfc5b17fb3f76.ctex::
+cloud_shape3_2.png::CompressedTexture2D::3841869280043065416::1769269375::1769269384::1::::<><><>0<>0<>312217a834e457e8b0344310b47b09be<>res://.godot/imported/cloud_shape3_2.png-91e0bd018ff017edde62c869b5f3b364.ctex::
+cloud_shape3_3.png::CompressedTexture2D::4615550501182745422::1769269375::1769269384::1::::<><><>0<>0<>ad026923e5e3b64de3d90a15a7913fc7<>res://.godot/imported/cloud_shape3_3.png-e6e0f1ae1feda1c2f6af5d66a8eb9ebc.ctex::
+cloud_shape3_4.png::CompressedTexture2D::4602432746384156649::1769269375::1769269384::1::::<><><>0<>0<>75cbdf7de41ebd9e1031e2dcbef65abd<>res://.godot/imported/cloud_shape3_4.png-270a97abf581ed41e12d5dd819782501.ctex::
+cloud_shape3_5.png::CompressedTexture2D::566025965340681562::1769269375::1769269384::1::::<><><>0<>0<>3e1dc8b60a7e3055628ea6b084799fcf<>res://.godot/imported/cloud_shape3_5.png-7578e43ae368b1340d2a2a11c32576c5.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_black/Shape4/::1769269384
+cloud_shape4_1.png::CompressedTexture2D::9198212924190906185::1769269375::1769269384::1::::<><><>0<>0<>02dc85eb937371a14fc1390669ce1aab<>res://.godot/imported/cloud_shape4_1.png-9399d35a222706712afb1649bf36f495.ctex::
+cloud_shape4_2.png::CompressedTexture2D::5262060196518327433::1769269375::1769269384::1::::<><><>0<>0<>8175827d79d2bedc71e60eebaccbeedb<>res://.godot/imported/cloud_shape4_2.png-d01fbc4bb647225661de25084a2cd8f2.ctex::
+cloud_shape4_3.png::CompressedTexture2D::4859504390538842885::1769269375::1769269384::1::::<><><>0<>0<>a2182a705e6ce00caf71c50d780e4602<>res://.godot/imported/cloud_shape4_3.png-449813b92190b0ba4782b4a84f42a752.ctex::
+cloud_shape4_4.png::CompressedTexture2D::1657226914620227948::1769269375::1769269384::1::::<><><>0<>0<>97032d70dfdeedec8f52d01f17f70627<>res://.godot/imported/cloud_shape4_4.png-d87ffff748b80cd60328d4e00061ef89.ctex::
+cloud_shape4_5.png::CompressedTexture2D::7654957697446682207::1769269375::1769269384::1::::<><><>0<>0<>9292e4d7b02f1fa62040debe549533ab<>res://.godot/imported/cloud_shape4_5.png-9e51dc6d68a661d77c49ea13289ea61c.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_black/Shape5/::1769269384
+cloud_shape5_1.png::CompressedTexture2D::2453994422685908225::1769269375::1769269384::1::::<><><>0<>0<>4577b643c9a7d073931ad2b0054baad6<>res://.godot/imported/cloud_shape5_1.png-74c8ca7235ed6621a80d272b754a1ac1.ctex::
+cloud_shape5_2.png::CompressedTexture2D::4716517043383616113::1769269375::1769269384::1::::<><><>0<>0<>f1219dbe05b1e7a0e1a9988ba3b1362b<>res://.godot/imported/cloud_shape5_2.png-e69e996775735e708fe1ea7a925b06da.ctex::
+cloud_shape5_3.png::CompressedTexture2D::4811232302599396996::1769269375::1769269384::1::::<><><>0<>0<>434b4a34a3ea444ac785eaa2d48b65f3<>res://.godot/imported/cloud_shape5_3.png-9bfb8363c5cafe29e2eb62ab8385fce3.ctex::
+cloud_shape5_4.png::CompressedTexture2D::8312455497960181842::1769269375::1769269384::1::::<><><>0<>0<>204ebe0ab602d21f8ab237283f4128e8<>res://.godot/imported/cloud_shape5_4.png-c806ab044d0a7d467d18351696d56617.ctex::
+cloud_shape5_5.png::CompressedTexture2D::1639572732694348653::1769269375::1769269384::1::::<><><>0<>0<>d948b6b6c87663086f849f011ace78a1<>res://.godot/imported/cloud_shape5_5.png-2ef7b158c6e348bd608c7e1b9fd43840.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_black/Shape6/::1769269384
+cloud_shape6_1.png::CompressedTexture2D::2032674091064373169::1769269375::1769269384::1::::<><><>0<>0<>2804ea6219832811539bb1edcee77406<>res://.godot/imported/cloud_shape6_1.png-3f7612b5180397db406a25c0f87ec4fe.ctex::
+cloud_shape6_2.png::CompressedTexture2D::4815190456562718001::1769269375::1769269384::1::::<><><>0<>0<>a6707cbbe85892ed25cabaece9622300<>res://.godot/imported/cloud_shape6_2.png-601ca8f20c371e3e99a83036f24bdc0e.ctex::
+cloud_shape6_3.png::CompressedTexture2D::439268465357125229::1769269375::1769269384::1::::<><><>0<>0<>b2291184e787ef368901ee49f3a317df<>res://.godot/imported/cloud_shape6_3.png-5fe38134478200c7767a92eac7c5d2ae.ctex::
+cloud_shape6_4.png::CompressedTexture2D::2075410052477982700::1769269375::1769269384::1::::<><><>0<>0<>ba7963eea686c0fee393331c4b691f62<>res://.godot/imported/cloud_shape6_4.png-495ed578bdcf21098c4bb014985194c0.ctex::
+cloud_shape6_5.png::CompressedTexture2D::891057387463864063::1769269375::1769269384::1::::<><><>0<>0<>0bb8905f78ead216e73afda5762a496b<>res://.godot/imported/cloud_shape6_5.png-59a9218f363798c82d689e9941b1a6d3.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_black/Shape7/::1769269384
+cloud_shape7_1.png::CompressedTexture2D::112877445264023144::1769269375::1769269384::1::::<><><>0<>0<>1c250bec4f921360ec09a83368473c11<>res://.godot/imported/cloud_shape7_1.png-40853fc2bff034a65544a175ae2cde11.ctex::
+cloud_shape7_2.png::CompressedTexture2D::2980926746407584950::1769269375::1769269384::1::::<><><>0<>0<>b2692842c9f994d32afeed459b04314f<>res://.godot/imported/cloud_shape7_2.png-84f794b4be537a9fe9aa30be42d76374.ctex::
+cloud_shape7_3.png::CompressedTexture2D::2677274581814329521::1769269375::1769269384::1::::<><><>0<>0<>ca7dd66194b956d43d867d2f8bca5700<>res://.godot/imported/cloud_shape7_3.png-97f49d2d2c837e1c899b055cb6384516.ctex::
+cloud_shape7_4.png::CompressedTexture2D::846559330365710796::1769269375::1769269384::1::::<><><>0<>0<>6e373efea593f69447a913c9aedbd3b0<>res://.godot/imported/cloud_shape7_4.png-f4316c8bce8e0317e673eebe8b08f1af.ctex::
+cloud_shape7_5.png::CompressedTexture2D::7433793241803051974::1769269375::1769269384::1::::<><><>0<>0<>6a3b8e9fe3de43e7d9515391614220ed<>res://.godot/imported/cloud_shape7_5.png-96a6f0794e133f22b6a70464740f60e7.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_black/Shape8/::1769269384
+clouds_shape8_1.png::CompressedTexture2D::9213051790727229555::1769269375::1769269384::1::::<><><>0<>0<>01cb4219337729987a6f56c1b9897eb2<>res://.godot/imported/clouds_shape8_1.png-f9ae70f1d5eac96382ca7caec3767e52.ctex::
+clouds_shape8_2.png::CompressedTexture2D::1922992435015473354::1769269375::1769269384::1::::<><><>0<>0<>808ac45954f878255dfe2b998201a1c2<>res://.godot/imported/clouds_shape8_2.png-d1cd3df21fdc56b02549117804c04bb6.ctex::
+clouds_shape8_3.png::CompressedTexture2D::181465688151217304::1769269375::1769269384::1::::<><><>0<>0<>3ecda6a34dbf5a465cf9bb8d459c91c4<>res://.godot/imported/clouds_shape8_3.png-23bbbb54d4677c2fcb8d17457367f89f.ctex::
+clouds_shape8_4.png::CompressedTexture2D::2551895439845101131::1769269375::1769269384::1::::<><><>0<>0<>e11cf2b7ad3e6983787e19c4ff948398<>res://.godot/imported/clouds_shape8_4.png-1017554e646902193cdf23788650bc25.ctex::
+clouds_shape8_5.png::CompressedTexture2D::6852583078144219883::1769269375::1769269384::1::::<><><>0<>0<>2c951729cdea9e9e15b22c41f84c3782<>res://.godot/imported/clouds_shape8_5.png-6444a9a2c8288b41630c4c920fb36738.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_gray/::1769269375
+::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape1/::1769269384
+cloud_shape1_1.png::CompressedTexture2D::825497092428869161::1769269375::1769269384::1::::<><><>0<>0<>189d4ffc3ab823035bf9c302dca13ca5<>res://.godot/imported/cloud_shape1_1.png-8b3958479f266af241275a3ae1d8caf5.ctex::
+cloud_shape1_2.png::CompressedTexture2D::3197160541532676442::1769269375::1769269384::1::::<><><>0<>0<>53b1736e648afa6655b59c905ec957ff<>res://.godot/imported/cloud_shape1_2.png-8b70384cfd0d76516c926be3fbfa217e.ctex::
+cloud_shape1_3.png::CompressedTexture2D::2458585005553631195::1769269375::1769269384::1::::<><><>0<>0<>5536a7aebe594ff69f2c72409283263e<>res://.godot/imported/cloud_shape1_3.png-01ffa1fc15e76bca2b7521d41b1a66ab.ctex::
+cloud_shape1_4.png::CompressedTexture2D::1236415428231346956::1769269375::1769269384::1::::<><><>0<>0<>8b81353d558a77cb0e0d975625cf0a5e<>res://.godot/imported/cloud_shape1_4.png-834aedf9fe591625c96d61e4d34b7738.ctex::
+cloud_shape1_5.png::CompressedTexture2D::6153686900288371368::1769269375::1769269384::1::::<><><>0<>0<>d20611000169197ec3097c35179892d5<>res://.godot/imported/cloud_shape1_5.png-6d23445a8e42c64ff6c08122d885ac1c.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/::1769269384
+cloud_shape2_1.png::CompressedTexture2D::6687268047258976868::1769269375::1769269384::1::::<><><>0<>0<>51fba7f91ad61683892379de1cd53720<>res://.godot/imported/cloud_shape2_1.png-081e89d8f5d84170f7b86155b7422bf8.ctex::
+cloud_shape2_2.png::CompressedTexture2D::8791005134076748248::1769269375::1769269384::1::::<><><>0<>0<>458c5d360dca1cf6bced7b9589d21f91<>res://.godot/imported/cloud_shape2_2.png-fd67de503941db2b7503f64a108c59a5.ctex::
+cloud_shape2_3.png::CompressedTexture2D::3439739850244113196::1769269375::1769269384::1::::<><><>0<>0<>a8905c9d748a8a5d5899c3037116f0ae<>res://.godot/imported/cloud_shape2_3.png-c49bcc6174f0c2a73d38593d48f1ce5c.ctex::
+cloud_shape2_4.png::CompressedTexture2D::47819689614444794::1769269375::1769269384::1::::<><><>0<>0<>0f931bceddb56492436c90847d430c62<>res://.godot/imported/cloud_shape2_4.png-00b77d71543b0ad92ea27d43ec321074.ctex::
+cloud_shape2_5.png::CompressedTexture2D::364469794493883691::1769269375::1769269384::1::::<><><>0<>0<>f2c0b3206b11f2d95b92ab7e80ea3946<>res://.godot/imported/cloud_shape2_5.png-3654ed0ef74701907efa5b5d984723a2.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape3/::1769269384
+cloud_shape3_1.png::CompressedTexture2D::1760196285797883724::1769269375::1769269384::1::::<><><>0<>0<>63727360672fd0a157b99d8ca7c183ab<>res://.godot/imported/cloud_shape3_1.png-fecd94d7b96b6054bc022e68a9328d95.ctex::
+cloud_shape3_2.png::CompressedTexture2D::4921575819542703737::1769269375::1769269384::1::::<><><>0<>0<>f380fc1227d947dde1812983ab4b4b8a<>res://.godot/imported/cloud_shape3_2.png-88819e83a063a93ec16c6beba03ff62f.ctex::
+cloud_shape3_3.png::CompressedTexture2D::469018473069893253::1769269375::1769269384::1::::<><><>0<>0<>442d499c1ac75531470b5a2dc75a9119<>res://.godot/imported/cloud_shape3_3.png-c0ada54b593b9e41e8944b685a78a882.ctex::
+cloud_shape3_4.png::CompressedTexture2D::4338915290279952555::1769269375::1769269384::1::::<><><>0<>0<>4287d83fde98aee70d86bf9641734e6e<>res://.godot/imported/cloud_shape3_4.png-ee2dc8f51d4b6a392d9f80079eacd551.ctex::
+cloud_shape3_5.png::CompressedTexture2D::7745521480480503230::1769269375::1769269384::1::::<><><>0<>0<>f5dd47c0339b9fea615bfaefa90525ce<>res://.godot/imported/cloud_shape3_5.png-50b65dafec3171edf1617a16356a3148.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape4/::1769269384
+cloud_shape4_1.png::CompressedTexture2D::5999603093707487722::1769269375::1769269384::1::::<><><>0<>0<>8d8c2d3a0f83f5c063a2bd855f4fa1e5<>res://.godot/imported/cloud_shape4_1.png-1cd428114e04c7725f20212c6d2ede22.ctex::
+cloud_shape4_2.png::CompressedTexture2D::8475486126933764680::1769269375::1769269384::1::::<><><>0<>0<>e88f7f5ca5a0035e837ff368cb4b1601<>res://.godot/imported/cloud_shape4_2.png-c3dad4f738530fc71583a6512b8f1c32.ctex::
+cloud_shape4_3.png::CompressedTexture2D::483505131926747172::1769269375::1769269384::1::::<><><>0<>0<>74f7332c527c40cff5f32c0a6784c303<>res://.godot/imported/cloud_shape4_3.png-4caf55f02ac18246b72350e199cbb39f.ctex::
+cloud_shape4_4.png::CompressedTexture2D::1409849687893264793::1769269375::1769269384::1::::<><><>0<>0<>b5b587914c65e989014942928a00d029<>res://.godot/imported/cloud_shape4_4.png-fc9e8f6dce49b2afddc466f4c88a5dcc.ctex::
+cloud_shape4_5.png::CompressedTexture2D::2243066631487943339::1769269375::1769269384::1::::<><><>0<>0<>d410c2a29c75431137fe5c022e6dd143<>res://.godot/imported/cloud_shape4_5.png-41e3e745037beb853b36dff5e2542c14.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape5/::1769269384
+cloud_shape5_1.png::CompressedTexture2D::4429054209626684659::1769269375::1769269384::1::::<><><>0<>0<>ce3a4e924b05e4444b1082c62ecf7946<>res://.godot/imported/cloud_shape5_1.png-4caa87d7b82526b910b8ae59637cdfe7.ctex::
+cloud_shape5_2.png::CompressedTexture2D::5027672559645096992::1769269375::1769269384::1::::<><><>0<>0<>b01f299467c527983379f9c668c8ff47<>res://.godot/imported/cloud_shape5_2.png-578ab9cf1848e4e59b36beca24fc830e.ctex::
+cloud_shape5_3.png::CompressedTexture2D::2618535897812975584::1769269375::1769269384::1::::<><><>0<>0<>83187eb3e144039e961eed3cb86fe915<>res://.godot/imported/cloud_shape5_3.png-4794809a4a8b717ed121d5305e9db7c9.ctex::
+cloud_shape5_4.png::CompressedTexture2D::6518710029280511395::1769269375::1769269384::1::::<><><>0<>0<>7ebdc30106924125e1e54d7d9899223a<>res://.godot/imported/cloud_shape5_4.png-0218d51d92bc5bd9ab93aaf533f64ebd.ctex::
+cloud_shape5_5.png::CompressedTexture2D::1840441125442761530::1769269375::1769269384::1::::<><><>0<>0<>3a115abb86e275fc3dcd235968f3142f<>res://.godot/imported/cloud_shape5_5.png-7867f7794ceeb217ca6a03afe48d7d32.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape6/::1769269384
+cloud_shape6_1.png::CompressedTexture2D::1070131853811574078::1769269375::1769269384::1::::<><><>0<>0<>9f6d71aeb0bc27af42eabc97681b6ba2<>res://.godot/imported/cloud_shape6_1.png-da3e13e8107754d424c7c77c528fd0f7.ctex::
+cloud_shape6_2.png::CompressedTexture2D::8130929739833351989::1769269375::1769269384::1::::<><><>0<>0<>ca79131e3c15b67cefb46be31753e618<>res://.godot/imported/cloud_shape6_2.png-243c69b771c20bfaa316ad6bd8238e72.ctex::
+cloud_shape6_3.png::CompressedTexture2D::5341671231155608803::1769269375::1769269384::1::::<><><>0<>0<>59bf2e289ba76956cd27b81d26ac4909<>res://.godot/imported/cloud_shape6_3.png-bbf920ff61f996a47a4151c2ddc1c1ae.ctex::
+cloud_shape6_4.png::CompressedTexture2D::4397083892548737100::1769269375::1769269384::1::::<><><>0<>0<>5f5390fa02ccfbd359cf9345293271d1<>res://.godot/imported/cloud_shape6_4.png-6310de6b16aad1365c7b19a0ac52e8b2.ctex::
+cloud_shape6_5.png::CompressedTexture2D::7328589119702226481::1769269375::1769269384::1::::<><><>0<>0<>9752e91ac6c614b9c09141c33c23fa9b<>res://.godot/imported/cloud_shape6_5.png-598dae6d6857e1aa13a96210c1ff7544.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape7/::1769269384
+cloud_shape7_1.png::CompressedTexture2D::5621854503432839994::1769269375::1769269384::1::::<><><>0<>0<>ddd74ac561f56120417126e855fe48ea<>res://.godot/imported/cloud_shape7_1.png-4302b37ec6480f4be059ef4f873f35c8.ctex::
+cloud_shape7_2.png::CompressedTexture2D::4358849756052672304::1769269375::1769269384::1::::<><><>0<>0<>cbc39e5eb3b6e8dec3b3f032a2d2d8af<>res://.godot/imported/cloud_shape7_2.png-96fb9bb1ad1970a294bf46a170898056.ctex::
+cloud_shape7_3.png::CompressedTexture2D::3651297675048674889::1769269375::1769269384::1::::<><><>0<>0<>920894480f013c4c15d58579e7fd0074<>res://.godot/imported/cloud_shape7_3.png-a908a7b82baa6d914b61d0de48647d34.ctex::
+cloud_shape7_4.png::CompressedTexture2D::8780262481528360924::1769269375::1769269384::1::::<><><>0<>0<>a1a02065056e0941d01eefdbea268814<>res://.godot/imported/cloud_shape7_4.png-42235515f608f0beb4965ef2a9459608.ctex::
+cloud_shape7_5.png::CompressedTexture2D::3836534086609384447::1769269375::1769269384::1::::<><><>0<>0<>5afe916ded09cd522ad635b6974ed354<>res://.godot/imported/cloud_shape7_5.png-af138d0c5b0e49be1adc97030c5b4c37.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape8/::1769269384
+clouds_shape8_1.png::CompressedTexture2D::4269114342924524360::1769269375::1769269384::1::::<><><>0<>0<>7168af5270c42485ae7e7e4b99a3b771<>res://.godot/imported/clouds_shape8_1.png-3cfade2d0172f98256fa30316979d1fa.ctex::
+clouds_shape8_2.png::CompressedTexture2D::1224633805077949705::1769269375::1769269384::1::::<><><>0<>0<>66bf9af47583e0377a830cc39f632b5e<>res://.godot/imported/clouds_shape8_2.png-cec37c484300758c408775bf97b98ed2.ctex::
+clouds_shape8_3.png::CompressedTexture2D::9022755893915526799::1769269375::1769269384::1::::<><><>0<>0<>744b080202f01ae8818d949b29d5bdd3<>res://.godot/imported/clouds_shape8_3.png-a8859c885d770b1c4e6ab7bffd271fcd.ctex::
+clouds_shape8_4.png::CompressedTexture2D::1730297354632697780::1769269375::1769269384::1::::<><><>0<>0<>0d47daeaf5c219c221ed99f4a8d7879c<>res://.godot/imported/clouds_shape8_4.png-b9b2886b3e7d09ceaead842276b1240f.ctex::
+clouds_shape8_5.png::CompressedTexture2D::6062979210736279467::1769269375::1769269384::1::::<><><>0<>0<>4dd008f60beed0e89811d8cc1b0a3da4<>res://.godot/imported/clouds_shape8_5.png-61940dfe574093b6d89f00654a94b4b2.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_white/::1769269375
+::res://Assety_moon_level/clouds/PNG/Clouds_white/Shape1/::1769269384
+cloud_shape1_1.png::CompressedTexture2D::3290794434148503102::1769269375::1769269384::1::::<><><>0<>0<>c57fce509fe837013aaad5438f7b9386<>res://.godot/imported/cloud_shape1_1.png-ea1013e3a7e30b43f33c071e3b0701a4.ctex::
+cloud_shape1_2.png::CompressedTexture2D::2046439075559388647::1769269375::1769269384::1::::<><><>0<>0<>f9bf716349cdbacd51e2b4060a0cc557<>res://.godot/imported/cloud_shape1_2.png-35229b7c1fe21f6ff01c46b12f803c61.ctex::
+cloud_shape1_3.png::CompressedTexture2D::3802864255539057717::1769269375::1769269384::1::::<><><>0<>0<>8e5bad2dada3a4d3e52d66091a815375<>res://.godot/imported/cloud_shape1_3.png-57a4bf9cb72d5e37a86d46e1c1fa276d.ctex::
+cloud_shape1_4.png::CompressedTexture2D::1304946362132051202::1769269375::1769269384::1::::<><><>0<>0<>4433261b7f7711331afa6ef83feb69a1<>res://.godot/imported/cloud_shape1_4.png-3fe8766eaab6854d596898db29d116ec.ctex::
+cloud_shape1_5.png::CompressedTexture2D::8445051018605174432::1769269375::1769269384::1::::<><><>0<>0<>7d986f3b48ab4a419ac6e9e4abf86584<>res://.godot/imported/cloud_shape1_5.png-2d3f7acf70c983a5ddb9ff008769fddd.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_white/Shape2/::1769269384
+cloud_shape2_1.png::CompressedTexture2D::3031413158210418315::1769269375::1769269384::1::::<><><>0<>0<>faf755d2d457e6171e1a3fe192d75cc2<>res://.godot/imported/cloud_shape2_1.png-836d1434d7eb999c73bdc3bfcc99450b.ctex::
+cloud_shape2_2.png::CompressedTexture2D::4314907562545183375::1769269375::1769269384::1::::<><><>0<>0<>f38aa0d38283c7c4b137763cf4635dbf<>res://.godot/imported/cloud_shape2_2.png-8b1a3cbc2c750676da8292248fc375a4.ctex::
+cloud_shape2_3.png::CompressedTexture2D::9089428641682650194::1769269375::1769269384::1::::<><><>0<>0<>d51b70a33b11d6f854890d1fe654e512<>res://.godot/imported/cloud_shape2_3.png-f9b91b30bdaa9ecb42ada90a26a1f9f0.ctex::
+cloud_shape2_4.png::CompressedTexture2D::3712060650034217317::1769269375::1769269384::1::::<><><>0<>0<>36df7cd62112b5f39ca4284b4ed49efe<>res://.godot/imported/cloud_shape2_4.png-4fc720317555388d20d246b285727a00.ctex::
+cloud_shape2_5.png::CompressedTexture2D::3543882978464920877::1769269375::1769269384::1::::<><><>0<>0<>83952baa865950c5901001dcc8c16980<>res://.godot/imported/cloud_shape2_5.png-20b5689f7278be55fcbf154dddb8646b.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_white/Shape3/::1769269384
+cloud_shape3_1.png::CompressedTexture2D::7561340744885435710::1769269375::1769269384::1::::<><><>0<>0<>5351b2754dfd8ca3e7860bd4a31c84ed<>res://.godot/imported/cloud_shape3_1.png-fb19301cd5df4ba7ff998199a4b79cb9.ctex::
+cloud_shape3_2.png::CompressedTexture2D::3107570741354561933::1769269375::1769269384::1::::<><><>0<>0<>bb96e313d3d600fa404eb3ca70d36fa2<>res://.godot/imported/cloud_shape3_2.png-6f822856fb9e3526d57f01ad9ae97896.ctex::
+cloud_shape3_3.png::CompressedTexture2D::8603132902353521861::1769269375::1769269384::1::::<><><>0<>0<>962d8a2aee7ddbbe3e818de13f25b551<>res://.godot/imported/cloud_shape3_3.png-4bcc78254183b4625dfe5d0a3c9a93d1.ctex::
+cloud_shape3_4.png::CompressedTexture2D::1944214966480417868::1769269375::1769269384::1::::<><><>0<>0<>2358b576d20208bfa7def07e0719e5b2<>res://.godot/imported/cloud_shape3_4.png-cde5fdf1794456b778eb92afc9d20e3d.ctex::
+cloud_shape3_5.png::CompressedTexture2D::4378883531022488901::1769269375::1769269384::1::::<><><>0<>0<>0d72a50351c3272020566f64c6490f0a<>res://.godot/imported/cloud_shape3_5.png-1d9b9ac5a0681fccbde176d9cd82bd3d.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_white/Shape4/::1769269384
+cloud_shape4_1.png::CompressedTexture2D::8283077216712118283::1769269375::1769269384::1::::<><><>0<>0<>7ccf1a92556c26446fecb8eead7e9cbb<>res://.godot/imported/cloud_shape4_1.png-d5f1d4c1e04b984a66d967c6a3f7989a.ctex::
+cloud_shape4_2.png::CompressedTexture2D::4713662461979558204::1769269375::1769269384::1::::<><><>0<>0<>d45a41d93cace21e6c0d86bc6ca71aaf<>res://.godot/imported/cloud_shape4_2.png-ad2547a305718148556002045a2324b6.ctex::
+cloud_shape4_3.png::CompressedTexture2D::2384929104456864800::1769269375::1769269384::1::::<><><>0<>0<>029dd8c3e6ff9e8835053fb27e99600b<>res://.godot/imported/cloud_shape4_3.png-aad66445b0c545e6eba17cf0e49f3fbe.ctex::
+cloud_shape4_4.png::CompressedTexture2D::6303846871066248768::1769269375::1769269384::1::::<><><>0<>0<>32c2a5560c6f812c68441284afcb57ca<>res://.godot/imported/cloud_shape4_4.png-a78ebfbda26dece5ee381cf0baac53b2.ctex::
+cloud_shape4_5.png::CompressedTexture2D::5304042864003296917::1769269375::1769269384::1::::<><><>0<>0<>f3a4916d1542b2c2924f846760d223e3<>res://.godot/imported/cloud_shape4_5.png-76d7d12765292e92dd2207c496ef3931.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_white/Shape5/::1769269384
+cloud_shape5_1.png::CompressedTexture2D::4882317078999159811::1769269375::1769269384::1::::<><><>0<>0<>5a561f8f2b60462a3bf1a83234ee23a2<>res://.godot/imported/cloud_shape5_1.png-fec07a6b2d4acc37aa20375c05338771.ctex::
+cloud_shape5_2.png::CompressedTexture2D::6852397572328669892::1769269375::1769269384::1::::<><><>0<>0<>d1a9e01ddb7d60f9ad0312e3d0f0c741<>res://.godot/imported/cloud_shape5_2.png-f24b818dd96d952949f293b0a9909e0a.ctex::
+cloud_shape5_3.png::CompressedTexture2D::6906167669515903852::1769269375::1769269384::1::::<><><>0<>0<>570b19c540c568c5f73c9d6ddcdc6206<>res://.godot/imported/cloud_shape5_3.png-e4d38d1646e6c750dea29b8860c72af7.ctex::
+cloud_shape5_4.png::CompressedTexture2D::113756456431726282::1769269375::1769269384::1::::<><><>0<>0<>edd0f84201a41b3e0f5b765780517cb6<>res://.godot/imported/cloud_shape5_4.png-7599163c11aead696798a931d7b325e9.ctex::
+cloud_shape5_5.png::CompressedTexture2D::1516309466530989722::1769269375::1769269384::1::::<><><>0<>0<>2e762045e9003e74d941b7e4eb325bef<>res://.godot/imported/cloud_shape5_5.png-2ada241c1c6e8403768b9c3d3e6753a7.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_white/Shape6/::1769269384
+cloud_shape6_1.png::CompressedTexture2D::8228299577572267301::1769269375::1769269384::1::::<><><>0<>0<>d4db4b690ec9eba74422d943d6f1dc17<>res://.godot/imported/cloud_shape6_1.png-53eb9e848451f8289b2cf07e60dbcde3.ctex::
+cloud_shape6_2.png::CompressedTexture2D::2327579621863841846::1769269375::1769269384::1::::<><><>0<>0<>450d50d79ace287fd80962570fd1caa8<>res://.godot/imported/cloud_shape6_2.png-71a62675b5eda79a9115b2a546e54480.ctex::
+cloud_shape6_3.png::CompressedTexture2D::3242612496110383079::1769269375::1769269384::1::::<><><>0<>0<>55114e94b21be883b94c878d0cad5605<>res://.godot/imported/cloud_shape6_3.png-deca3dd54f1654223c4ecb5999c6049c.ctex::
+cloud_shape6_4.png::CompressedTexture2D::1695996528417228288::1769269375::1769269384::1::::<><><>0<>0<>65d9860555ab788e37679c5f67efce80<>res://.godot/imported/cloud_shape6_4.png-01a2b3482ab0790cf559dc73c456fcbf.ctex::
+cloud_shape6_5.png::CompressedTexture2D::5435565216404315835::1769269375::1769269384::1::::<><><>0<>0<>2d5dd45c90d6f5538cde7d42a8a9967b<>res://.godot/imported/cloud_shape6_5.png-7cc40a3dd666e65f7107f309125652bc.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_white/Shape7/::1769269384
+cloud_shape7_1.png::CompressedTexture2D::2217114673278289297::1769269375::1769269384::1::::<><><>0<>0<>ba5eb9558763dcbd8aacd1d0e609da39<>res://.godot/imported/cloud_shape7_1.png-055b727a7202ee153463eb57a3dfc586.ctex::
+cloud_shape7_2.png::CompressedTexture2D::1555294997963489615::1769269375::1769269384::1::::<><><>0<>0<>611df38c23522dfdfda3cd9111ca78b3<>res://.godot/imported/cloud_shape7_2.png-740386f28c6f2d8aeb00d7cdddea415b.ctex::
+cloud_shape7_3.png::CompressedTexture2D::2546223129420186634::1769269375::1769269384::1::::<><><>0<>0<>f64eb1d608738b70ce4ee838512509d6<>res://.godot/imported/cloud_shape7_3.png-9002412835a87b9d8232e4ce7559fca2.ctex::
+cloud_shape7_4.png::CompressedTexture2D::761024922157800916::1769269375::1769269384::1::::<><><>0<>0<>230d05adee0d169b467134324f24c855<>res://.godot/imported/cloud_shape7_4.png-41564b20ae3d6c6885eae2b2b3e29b51.ctex::
+cloud_shape7_5.png::CompressedTexture2D::3274418503327088225::1769269375::1769269384::1::::<><><>0<>0<>9bed21d313c3d2deb0c1cdca45e0f937<>res://.godot/imported/cloud_shape7_5.png-1feb9db83a6005bc573eb5336cf74295.ctex::
+::res://Assety_moon_level/clouds/PNG/Clouds_white/Shape8/::1769269384
+clouds_shape8_1.png::CompressedTexture2D::5545914381694669311::1769269375::1769269384::1::::<><><>0<>0<>867454c241a83757eae0a901e090f36c<>res://.godot/imported/clouds_shape8_1.png-68755fa4c39515e8c7eef00f01f237ed.ctex::
+clouds_shape8_2.png::CompressedTexture2D::220587580641309090::1769269375::1769269384::1::::<><><>0<>0<>1ae1de00cf4648ea3c47af1fd7a77e06<>res://.godot/imported/clouds_shape8_2.png-9f9258be97a5304a06b3cdacbc7e7bf6.ctex::
+clouds_shape8_3.png::CompressedTexture2D::266206246680024380::1769269375::1769269384::1::::<><><>0<>0<>2e1c9f2293c386a1f43be303b4a27456<>res://.godot/imported/clouds_shape8_3.png-d6f5244f4b7110df8bf8694e18c9e9de.ctex::
+clouds_shape8_4.png::CompressedTexture2D::550523735345118223::1769269375::1769269384::1::::<><><>0<>0<>a9086e6b6954b2e92fcb6c92bbb9a6f7<>res://.godot/imported/clouds_shape8_4.png-89b2d8f7c8bbc041576c70a4819dcd8e.ctex::
+clouds_shape8_5.png::CompressedTexture2D::8715283607441893287::1769269375::1769269384::1::::<><><>0<>0<>9a547207c8f8564d55a33480aae64210<>res://.godot/imported/clouds_shape8_5.png-4302fbfec5f6bf7d4d4228e72db186b9.ctex::
+::res://Assety_moon_level/clouds/PNG/Lightning/::1769269384
+lightning1.png::CompressedTexture2D::3739271152987688154::1769269375::1769269384::1::::<><><>0<>0<>e49140bc67de4d8d514eb715ec4cc2ab<>res://.godot/imported/lightning1.png-7e65fcf5a6e619c0c2e7e82eada2068e.ctex::
+lightning2.png::CompressedTexture2D::5287567246792396907::1769269375::1769269384::1::::<><><>0<>0<>2a5c5e8377d20a9496d4fccb1a5e8022<>res://.godot/imported/lightning2.png-89c452a3109d4ddab733a815dd9db1ea.ctex::
+lightning3.png::CompressedTexture2D::2645875442966976101::1769269375::1769269384::1::::<><><>0<>0<>4e2c3fcc378d679fadc8028cffafbdb1<>res://.godot/imported/lightning3.png-85e72954d858542cd72178cf01fe9c3e.ctex::
+lightning4.png::CompressedTexture2D::2212338190388156605::1769269375::1769269384::1::::<><><>0<>0<>4aea04e7316b46573e232e75d4d22de3<>res://.godot/imported/lightning4.png-54613f66bb05034f552947d91ba57825.ctex::
+lightning5.png::CompressedTexture2D::1093928382734281150::1769269375::1769269384::1::::<><><>0<>0<>c83c537be181c0bdcf207f20ebb7b6ef<>res://.godot/imported/lightning5.png-14a77626fe58feb6f77450b2109a7408.ctex::
+::res://Sceny/::1769277679
+animowana_chmura.tscn::PackedScene::3659477429007797249::1769272886::0::1::::<><><>0<>0<><>::uid://c2jmle3tbrh7q::::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_1.png
+chmurkowosc.tscn::PackedScene::9177393076493679903::1769273988::0::1::::<><><>0<>0<><>::uid://c2jmle3tbrh7q::::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_1.png
+chmursa_2.tscn::PackedScene::8310004105084114410::1769273677::0::1::::<><><>0<>0<><>::uid://bsexb80gri1u8::::res://Sceny/animowana_chmura.tscn<>uid://c2jmle3tbrh7q::::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_1.png
+collision_shape_2d.gd::GDScript::248133524322332786::1768862573::0::1::::<>CollisionShape2D<><>0<>0<><>::
+controlsy.gd::GDScript::846666830623910033::1769265780::0::1::::<>Control<><>0<>0<><>::
+controlsy.tscn::PackedScene::4404141583765323510::1769265772::0::1::::<><><>0<>0<><>::uid://bo14usnt6i2u7::::res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf<>uid://mceqjywau5jh::::res://Sceny/controlsy.gd<>uid://2b8bnejjafo6::::res://Assety (testowe)/MenuAssets/background.png<>uid://bg475g0y133cj::::res://Assety (testowe)/MenuAssets/Projekt bez nazwy (3) (1).png
+main_menu.tscn::PackedScene::1067482518329756147::1769275950::0::1::::<><><>0<>0<><>::uid://cxu5sp63igofn::::res://scripts/main_menu.gd<>uid://2b8bnejjafo6::::res://Assety (testowe)/MenuAssets/background.png<>uid://bo14usnt6i2u7::::res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf<>uid://bg475g0y133cj::::res://Assety (testowe)/MenuAssets/Projekt bez nazwy (3) (1).png
+moon_level.tscn::PackedScene::6276339403182361931::1769277679::0::1::::<><><>0<>0<><>::uid://biww8qrduel5h::::res://Assety_moon_level/Background/Clouds 3/1.png<>uid://cfsyh6gbgm0eh::::res://Assety_moon_level/Background/Clouds 3/3.png<>uid://bpaiao1mbaogy::::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_3.png<>uid://b6f4jy7ap1v7w::::res://Assety_moon_level/Background/Clouds 3/4.png<>uid://c653yi3tv232v::::res://Assety_moon_level/clouds/PNG/Clouds_black/Shape2/cloud_shape2_3.png<>uid://d2q8tdm45pq55::::res://Assety_moon_level/clouds/PNG/Clouds_white/Shape2/cloud_shape2_3.png<>uid://2bpg8hdom1s6::::res://Sceny/test.tres<>uid://magl7qwpv8u7::::res://scripts/killzone.gd<>uid://bq8jef8io10rg::::res://Sceny/moving_chmury.tscn<>uid://dg34884x4l4d2::::res://Sceny/wiedzma.tscn<>uid://dqnos236iiol3::::res://Sceny/chmursa_2.tscn<>uid://0lc0doji768m::::res://Assety_moon_level/S001_nyknck.png
+moving_chmury.tscn::PackedScene::3578120557874649500::1769273182::0::1::::<><><>0<>0<><>::uid://bsexb80gri1u8::::res://Sceny/animowana_chmura.tscn
+test.tres::TileSet::1898086369875563467::1769275950::0::1::::<><><>0<>0<><>::uid://e5yydnchguew::::res://Assety (testowe)/Tileset_Grass/Tileset_grass_128x80_x2.png
+test.tscn::PackedScene::5918945949152501282::1769274891::0::1::::<><><>0<>0<><>::uid://fvogmc4pkxmu::::res://scripts/test.gd<>uid://2bpg8hdom1s6::::res://Sceny/test.tres<>uid://dg34884x4l4d2::::res://Sceny/wiedzma.tscn<>uid://magl7qwpv8u7::::res://scripts/killzone.gd<>uid://05d5dn0ipge4::::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_Without_Outline/Cosmo.png<>uid://87usfhyi82n7::::res://scripts/sprites.gd
+test_tileset.tscn::PackedScene::2849308821810285829::1768862573::0::1::::<><><>0<>0<><>::uid://cvvqvwtnb41m::::res://Assety (testowe)/tileset template 1.png<>uid://dsgytwtyd1l3::::res://scripts/collision_shape_2d.gd
+wiedzma.tscn::PackedScene::7640019193164377533::1769276034::0::1::::<><><>0<>0<><>::uid://bkchfafrucno2::::res://scripts/wiedzma.gd<>uid://cv6waewhkx3vn::::res://icon.svg
+::res://scripts/::1769276034
+collision_shape_2d.gd::GDScript::248133524322332786::1768862573::0::1::::<>CollisionShape2D<><>0<>0<><>::
+killzone.gd::GDScript::842651775830505124::1769261767::0::1::::<>Area2D<><>0<>0<><>::
+main_menu.gd::GDScript::6430326817237748319::1769265772::0::1::::<>Control<><>0<>0<><>::
+sprites.gd::GDScript::2383538686863450126::1768862573::0::1::::<>Node2D<><>0<>0<><>::
+test.gd::GDScript::395157538395480040::1768862573::0::1::::<>Node2D<><>0<>0<><>::
+wiedzma.gd::GDScript::3092871832023679323::1769276034::0::1::::<>CharacterBody2D<><>0<>0<><>::

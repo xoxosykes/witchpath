@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq8jef8io10rg"]
+
+[ext_resource type="PackedScene" uid="uid://bsexb80gri1u8" path="res://Sceny/animowana_chmura.tscn" id="1_h6gq7"]
+
+[node name="MovingChmury" type="Node2D"]
+
+[node name="AnimatableBody2D" parent="." instance=ExtResource("1_h6gq7")]
