@@ -1,0 +1,64 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1769213252
+bg_music.tscn::PackedScene::8453935369329842418::1768864457::0::1::::<><><>0<>0<><>::uid://lo54lw6jke78::::res://Assety (testowe)/MenuAssets/the-foyer-mirror-425079.mp3
+icon.svg::CompressedTexture2D::6312138812413043583::1768423953::1768949059::1::::<><><>0<>0<>aa8a5b37c5c46553281f705cc2f892c4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+wiedzma.gd::GDScript::3092871832023679323::1768754558::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Assety (testowe)/::1768949059
+f7vEkf.png::CompressedTexture2D::5186904835355350450::1768515039::1768949059::1::::<><><>0<>0<>b627e1bbace858bc3e642a47cf015c10<>res://.godot/imported/f7vEkf.png-b4a3d8d7e6a7512e2b8e7b6e7090ea51.ctex::
+scr1.PNG::CompressedTexture2D::3653093119994854536::1768501039::1768949059::1::::<><><>0<>0<>14dbaebcbcf0aa03d8a8ce504a822977<>res://.godot/imported/scr1.PNG-323618c47edd122564457d90d3c54ed6.ctex::
+scr2.PNG::CompressedTexture2D::5692503900094956895::1768501039::1768949059::1::::<><><>0<>0<>802e0f75e9e8bcdf8d3c8455e16a337c<>res://.godot/imported/scr2.PNG-0f6223ab2d984806f660e88cd420403d.ctex::
+tileset template 1.png::CompressedTexture2D::185034387518663468::1768501039::1768949059::1::::<><><>0<>0<>2b379dab2844532be3248286e91e42b8<>res://.godot/imported/tileset template 1.png-5d698d08d42485d86e4055bd56558fef.ctex::
+tileset template 2.png::CompressedTexture2D::5625246543093098588::1768501039::1768949059::1::::<><><>0<>0<>e54d694187f07289629e758fa6cd376d<>res://.godot/imported/tileset template 2.png-bd3a3d942f3517663d341db6ae85e9f7.ctex::
+::res://Assety (testowe)/Flowers/::1768515039
+::res://Assety (testowe)/Flowers/Flowers/::1768949059
+Flowers_Without_Outline_Spritesheet.png::CompressedTexture2D::8234418679108706997::1768515039::1768949059::1::::<><><>0<>0<>b77bce21a2ddb5a809239378bb36517c<>res://.godot/imported/Flowers_Without_Outline_Spritesheet.png-fcd0c425a3a5df93f086ae9d4391a618.ctex::
+Flowers_With_Outline_Spritesheet.png::CompressedTexture2D::6580487001417179577::1768515039::1768949059::1::::<><><>0<>0<>83344c76d5177033e83bd70c190a2fa3<>res://.godot/imported/Flowers_With_Outline_Spritesheet.png-3fbae4a9d9d9dd872a3162b118b169af.ctex::
+::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/::1768515039
+::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_Without_Outline/::1768949059
+Cosmo.png::CompressedTexture2D::1816888327167729941::1768515039::1768949059::1::::<><><>0<>0<>f70b5ff44425e66cfa02e35c8fcfeada<>res://.godot/imported/Cosmo.png-46fbd4760b01aa284c24175b3cdd3834.ctex::
+Daffodil.png::CompressedTexture2D::5145574914510084454::1768515039::1768949059::1::::<><><>0<>0<>bb5b492386c4331b59c9f8a22a21df17<>res://.godot/imported/Daffodil.png-8a2a52bac2f058c348e2fe55a8fdd455.ctex::
+Daisy.png::CompressedTexture2D::4755658805647230842::1768515039::1768949059::1::::<><><>0<>0<>04def01fc88edbe4efd6b8059e7ef667<>res://.godot/imported/Daisy.png-07aefb1063ebda10526099a3824a8087.ctex::
+Lavender.png::CompressedTexture2D::3586393131880526161::1768515039::1768949059::1::::<><><>0<>0<>b5996dc5492c3561c7b935959f094033<>res://.godot/imported/Lavender.png-fb986f6cd5c48df948f983c3708e3e42.ctex::
+Lily.png::CompressedTexture2D::5777011887385756569::1768515039::1768949059::1::::<><><>0<>0<>ab77962139645d8308dcc60bd10a483d<>res://.godot/imported/Lily.png-6fa522a3da8c04a2eb767b836d4c8713.ctex::
+LilyOfTheValley.png::CompressedTexture2D::933750976437438769::1768515039::1768949059::1::::<><><>0<>0<>4109dc3d2e8079177166fd748d0a6f41<>res://.godot/imported/LilyOfTheValley.png-c624d9a07c2bddf9c08fc1a05a99177e.ctex::
+Orchid.png::CompressedTexture2D::4721683185555409745::1768515039::1768949059::1::::<><><>0<>0<>f0c37eb52cf0486d7c2a813ceb43e880<>res://.godot/imported/Orchid.png-d297b7d922a600e8e1c64ee224298f1f.ctex::
+Pansy.png::CompressedTexture2D::5411835295110566936::1768515039::1768949059::1::::<><><>0<>0<>e343d7b4f3069c734b66dd4044559dab<>res://.godot/imported/Pansy.png-b39d8ffaeb28fd31c55ff6b1474e12f1.ctex::
+Poppy.png::CompressedTexture2D::6991596835946340161::1768515039::1768949059::1::::<><><>0<>0<>12538ece661e5f3921ce5f321d0aa692<>res://.godot/imported/Poppy.png-5a38b2460b33135c0d303fd0b711d823.ctex::
+Rose.png::CompressedTexture2D::5441425612283886922::1768515039::1768949059::1::::<><><>0<>0<>14970b4a13069a59e28dece6005a29b1<>res://.godot/imported/Rose.png-0a7801136a0e20c4c99b622b73215a79.ctex::
+Sunflower.png::CompressedTexture2D::8512600002787837027::1768515039::1768949059::1::::<><><>0<>0<>7216f3a2b54eed6efcb373099564f5a1<>res://.godot/imported/Sunflower.png-2de3131d83d34877779c000478a2629e.ctex::
+Tulip.png::CompressedTexture2D::83743471567089319::1768515039::1768949059::1::::<><><>0<>0<>d7413de5736fcf436847b1b04f2029d5<>res://.godot/imported/Tulip.png-520d92272d9978f8b102cba3d1a1b42b.ctex::
+::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_With_Ouline/::1768949059
+CosmoOUTLINED.png::CompressedTexture2D::8976618215544764489::1768515039::1768949059::1::::<><><>0<>0<>61fd3ab4546842fdd2b894517cc6e3ef<>res://.godot/imported/CosmoOUTLINED.png-da64ded7ed1fb62fe3f16ad023d6bbd5.ctex::
+DaffodilOUTLINED.png::CompressedTexture2D::3399689151109626214::1768515039::1768949059::1::::<><><>0<>0<>48ead3a57c13622cca7d15e8d8947794<>res://.godot/imported/DaffodilOUTLINED.png-1734def40f840e1e0ef63c626a37375d.ctex::
+DaisyOUTLINED.png::CompressedTexture2D::594454491835152653::1768515039::1768949059::1::::<><><>0<>0<>2105552a5f5a202829a34bb1de65e947<>res://.godot/imported/DaisyOUTLINED.png-1df5db18286bb5c051229406189e1bcf.ctex::
+LavenderOUTLINED.png::CompressedTexture2D::3241261460734658142::1768515039::1768949059::1::::<><><>0<>0<>a5ea695bc67c14529570f3ab4bef4c67<>res://.godot/imported/LavenderOUTLINED.png-bce11f6fd526c89b89460c0bf9166587.ctex::
+LilyOfTheValleyOUTLINED.png::CompressedTexture2D::6268410041855533590::1768515039::1768949059::1::::<><><>0<>0<>d7c970ece3aa45f4338906246b626a5c<>res://.godot/imported/LilyOfTheValleyOUTLINED.png-b1b285632d523c7fcf81c975a77577ca.ctex::
+LilyOUTLINED.png::CompressedTexture2D::8815481562893309806::1768515039::1768949059::1::::<><><>0<>0<>c879f36e8fd98f72bc8d8729dd472999<>res://.godot/imported/LilyOUTLINED.png-79573ef54687f06b69d6b2bad241d20a.ctex::
+OrchidOUTLINED.png::CompressedTexture2D::4305442554497173785::1768515039::1768949059::1::::<><><>0<>0<>42a7d06f69f665d8eb0a39203bb52eb2<>res://.godot/imported/OrchidOUTLINED.png-e8885dc4420f2b5522a29fc2c972dd79.ctex::
+PansyOUTLINED.png::CompressedTexture2D::6309791636827303319::1768515039::1768949059::1::::<><><>0<>0<>adf04440f9340b618e9d72d56e280d7e<>res://.godot/imported/PansyOUTLINED.png-a998da123167658de7ada0c421615572.ctex::
+PoppyOUTLINED.png::CompressedTexture2D::6067663669657995587::1768515039::1768949059::1::::<><><>0<>0<>2787a4b1861fb1e38d14e484fec56cc1<>res://.godot/imported/PoppyOUTLINED.png-ab4bb5a0f4c76d68cf5315c1d81d94f8.ctex::
+RoseOUTLINED.png::CompressedTexture2D::1326222281351231738::1768515039::1768949059::1::::<><><>0<>0<>ff311e9cf73c4501cc159d6963850001<>res://.godot/imported/RoseOUTLINED.png-61a84d0af31c08be7478ba0effe5d1d3.ctex::
+SunflowerOUTLINED.png::CompressedTexture2D::8307997247229802871::1768515039::1768949059::1::::<><><>0<>0<>78439f20187156034aefe4b08309d4fa<>res://.godot/imported/SunflowerOUTLINED.png-2f5aba5820b0631c0cee0a80d6aaf87b.ctex::
+TulipOUTLINED.png::CompressedTexture2D::8327380693111126014::1768515039::1768949059::1::::<><><>0<>0<>d9a3f640897367f11cb955c41b503a4b<>res://.godot/imported/TulipOUTLINED.png-df89f54d47db75269a426dcbde672619.ctex::
+::res://Assety (testowe)/MenuAssets/::1768949059
+background.png::CompressedTexture2D::1899169291939854015::1768864457::1768949059::1::::<><><>0<>0<>d261dcaf13ce3b5e7868bf7e1d9da8ba<>res://.godot/imported/background.png-a414af30b7e4a0a74346472b65cd44f1.ctex::
+Projekt bez nazwy (3) (1).png::CompressedTexture2D::2869417572861241725::1768864457::1768949059::1::::<><><>0<>0<>1081541c930646919b4723003ae545e9<>res://.godot/imported/Projekt bez nazwy (3) (1).png-ada1c7aaf96669e534a5085769c73732.ctex::
+the-foyer-mirror-425079.mp3::AudioStreamMP3::802852479544901681::1768864457::1768949059::1::::<><><>0<>0<>0687dbbc9a1c4a9ca3bf75451a64260a<>res://.godot/imported/the-foyer-mirror-425079.mp3-15ab497b960dae342a656a1440439e6b.mp3str::
+Varnyx-Regular.ttf::FontFile::3424535791307239812::1768864457::1768949059::1::::<><><>0<>0<>e98cbccc6e58d99b5b94947ad071b668<>res://.godot/imported/Varnyx-Regular.ttf-86b395d8391f3619fde44c1cae1cc233.fontdata::
+::res://Assety (testowe)/Tileset_Grass/::1768949059
+IMG_2904.jpeg::CompressedTexture2D::5382987954193238709::1768864457::1768949059::1::::<><><>0<>0<>31d9790e55fb0eec4539ed8e3be4acea<>res://.godot/imported/IMG_2904.jpeg-11d196c428d6df7b2c0b6af38ed79606.ctex::
+Tileset_grass_128x80_x2.png::CompressedTexture2D::344186951807027598::1768515039::1768949059::1::::<><><>0<>0<>49b54b272c7991eb27e0e2e118bcc3d3<>res://.godot/imported/Tileset_grass_128x80_x2.png-e5a48458fdff2cd6bc71067d3934c1a8.ctex::
+Tileset_grass_128x80_x4.png::CompressedTexture2D::6346029702037122128::1768515039::1768949059::1::::<><><>0<>0<>9d06803549cf5a4f523751c6adcc0846<>res://.godot/imported/Tileset_grass_128x80_x4.png-2654410a4287aceaf10ee4c63b565781.ctex::
+::res://Sceny/::1768949182
+collision_shape_2d.gd::GDScript::248133524322332786::1768501039::0::1::::<>CollisionShape2D<><>0<>0<><>::
+main_menu.tscn::PackedScene::1067482518329756147::1768949182::0::1::::<><><>0<>0<><>::uid://cxu5sp63igofn::::res://scripts/main_menu.gd<>uid://2b8bnejjafo6::::res://Assety (testowe)/MenuAssets/background.png<>uid://bo14usnt6i2u7::::res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf<>uid://bg475g0y133cj::::res://Assety (testowe)/MenuAssets/Projekt bez nazwy (3) (1).png
+test.tscn::PackedScene::5918945949152501282::1768864339::0::1::::<><><>0<>0<><>::uid://fvogmc4pkxmu::::res://scripts/test.gd<>uid://e5yydnchguew::::res://Assety (testowe)/Tileset_Grass/Tileset_grass_128x80_x2.png<>uid://dg34884x4l4d2::::res://Sceny/wiedzma.tscn<>uid://magl7qwpv8u7::::res://scripts/killzone.gd<>uid://05d5dn0ipge4::::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_Without_Outline/Cosmo.png<>uid://87usfhyi82n7::::res://scripts/sprites.gd
+test_tileset.tscn::PackedScene::2849308821810285829::1768515039::0::1::::<><><>0<>0<><>::uid://cvvqvwtnb41m::::res://Assety (testowe)/tileset template 1.png<>uid://dsgytwtyd1l3::::res://scripts/collision_shape_2d.gd
+wiedzma.tscn::PackedScene::7640019193164377533::1768515039::0::1::::<><><>0<>0<><>::uid://bkchfafrucno2::::res://scripts/wiedzma.gd<>uid://cv6waewhkx3vn::::res://icon.svg
+::res://scripts/::1768864457
+collision_shape_2d.gd::GDScript::248133524322332786::1768515039::0::1::::<>CollisionShape2D<><>0<>0<><>::
+killzone.gd::GDScript::842651775830505124::1768515039::0::1::::<>Area2D<><>0<>0<><>::
+main_menu.gd::GDScript::6430326817237748319::1768864457::0::1::::<>Control<><>0<>0<><>::
+sprites.gd::GDScript::2383538686863450126::1768515039::0::1::::<>Node2D<><>0<>0<><>::
+test.gd::GDScript::395157538395480040::1768515039::0::1::::<>Node2D<><>0<>0<><>::
+wiedzma.gd::GDScript::3092871832023679323::1768864339::0::1::::<>CharacterBody2D<><>0<>0<><>::

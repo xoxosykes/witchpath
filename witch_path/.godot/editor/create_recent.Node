@@ -1,0 +1,8 @@
+Node
+Label
+TextureRect
+Control
+CanvasLayer
+CollisionShape2D
+Area2D
+AnimatedSprite2D
