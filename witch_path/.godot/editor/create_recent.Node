@@ -1,5 +1,7 @@
-Node
 Label
+Panel
+Button
+Node
 TextureRect
 Control
 CanvasLayer
