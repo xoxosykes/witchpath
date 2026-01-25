@@ -1,0 +1,138 @@
+[gd_scene load_steps=9 format=3 uid="uid://bs5je821idhs3"]
+
+[ext_resource type="Script" uid="uid://bnpl4b1b3onub" path="res://scripts/options.gd" id="1_djmqm"]
+[ext_resource type="Texture2D" uid="uid://2b8bnejjafo6" path="res://Assety (testowe)/MenuAssets/background.png" id="1_r65xf"]
+[ext_resource type="Texture2D" uid="uid://bg475g0y133cj" path="res://Assety (testowe)/MenuAssets/Projekt bez nazwy (3) (1).png" id="2_djmqm"]
+[ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="3_u7515"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aiotn"]
+texture = ExtResource("1_r65xf")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3jn05"]
+bg_color = Color(0.6392157, 0.47843137, 0.9843137, 0.2901961)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.2728946, 0.011650434, 0.39630523, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gsm5s"]
+bg_color = Color(0.3160328, 0.054577522, 0.41605717, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_360f5"]
+bg_color = Color(0.30966336, 0.027180735, 0.4778403, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_djmqm")
+
+[node name="background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_aiotn")
+
+[node name="logo" type="Sprite2D" parent="."]
+position = Vector2(968.00006, 328)
+scale = Vector2(0.56701386, 0.56701386)
+texture = ExtResource("2_djmqm")
+
+[node name="Options" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -253.0
+offset_top = -20.0
+offset_right = 262.0
+offset_bottom = 296.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3jn05")
+
+[node name="optionsy" type="Label" parent="Options"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 2.0
+offset_bottom = 78.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_u7515")
+theme_override_font_sizes/font_size = 32
+text = "options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="back_options" type="Button" parent="Options"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.5
+offset_top = 100.0
+offset_right = 75.5
+offset_bottom = 143.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_u7515")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_gsm5s")
+text = "back"
+
+[node name="controls" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 64.0
+offset_right = 450.0
+offset_bottom = 120.0
+theme_override_fonts/font = ExtResource("3_u7515")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_360f5")
+text = "controls"
+
+[node name="language" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 128.0
+offset_right = 450.0
+offset_bottom = 184.0
+theme_override_fonts/font = ExtResource("3_u7515")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_360f5")
+text = "language"
+
+[node name="sound" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 192.0
+offset_right = 450.0
+offset_bottom = 248.0
+theme_override_fonts/font = ExtResource("3_u7515")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_360f5")
+text = "sound"
+
+[connection signal="pressed" from="Options/back_options" to="." method="_on_back_options_pressed"]
+[connection signal="pressed" from="Options/controls" to="." method="_on_controls_pressed"]

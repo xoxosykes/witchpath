@@ -1,0 +1,13 @@
+res://Sceny/main_menu.tscn
+res://Sceny/test.tres
+res://Sceny/wiedzma.tscn
+res://scripts/wiedzma.gd
+res://scripts/options.gd
+res://Sceny/options.tscn
+res://scripts/main_menu.gd
+res://Sceny/credits.gd
+res://Sceny/credits.tscn
+res://Sceny/controlsy.tscn
+res://scripts/controlsy.gd
+res://Sceny/controlsy.gd
+res://scripts/credits.gd

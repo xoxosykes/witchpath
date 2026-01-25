@@ -1,7 +1,8 @@
 [gd_scene load_steps=24 format=3 uid="uid://c6fhxa2458a18"]
 
 [ext_resource type="Texture2D" uid="uid://ci1tonfgn0vk1" path="res://Assety_moon_level/Bn_UYJ (1).png" id="1_3lkye"]
-[ext_resource type="Script" uid="uid://pssja6sep3k5" path="res://Sceny/coin.gd" id="1_21bss"]
+[ext_resource type="Script" uid="uid://pssja6sep3k5" path="res://scripts/coin.gd" id="1_21bss"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_21bss"]
 atlas = ExtResource("1_3lkye")

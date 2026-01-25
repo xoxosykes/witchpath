@@ -1,7 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://ddbfdps7on4cd"]
 
-[ext_resource type="Script" uid="uid://djdckj31tp6lp" path="res://Sceny/portal.gd" id="1_rid3y"]
+[ext_resource type="Script" uid="uid://djdckj31tp6lp" path="res://scripts/portal.gd" id="1_rid3y"]
 [ext_resource type="Texture2D" uid="uid://bmfvtsdars44m" path="res://Assety_moon_level/Dimensional_Portal.png" id="1_ysto0"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rid3y"]
 atlas = ExtResource("1_ysto0")
