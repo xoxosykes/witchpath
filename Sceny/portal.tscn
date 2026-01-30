@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://djdckj31tp6lp" path="res://scripts/portal.gd" id="1_rid3y"]
 [ext_resource type="Texture2D" uid="uid://bmfvtsdars44m" path="res://Assety_moon_level/Dimensional_Portal.png" id="1_ysto0"]
 
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_rid3y"]
 atlas = ExtResource("1_ysto0")
 region = Rect2(0, 0, 32, 32)
@@ -51,7 +50,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t7vc5"]

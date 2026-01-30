@@ -1,3 +1,5 @@
+AudioStreamPlayer
+AnimatedSprite2D
+AnimationPlayer
 TileMapLayer
-Node2D
 Parallax2D
