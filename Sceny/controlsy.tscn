@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://b30ntldvpfmck"]
+[gd_scene load_steps=9 format=3 uid="uid://b30ntldvpfmck"]
 
 [ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="1_f8n2w"]
-[ext_resource type="Script" uid="uid://mceqjywau5jh" path="res://Sceny/controlsy.gd" id="1_mjtxm"]
+[ext_resource type="Script" uid="uid://mceqjywau5jh" path="res://scripts/controlsy.gd" id="1_mjtxm"]
 [ext_resource type="Texture2D" uid="uid://2b8bnejjafo6" path="res://Assety (testowe)/MenuAssets/background.png" id="1_ylc48"]
 [ext_resource type="Texture2D" uid="uid://bg475g0y133cj" path="res://Assety (testowe)/MenuAssets/Projekt bez nazwy (3) (1).png" id="2_s1n5v"]
 
@@ -16,6 +16,10 @@ corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 shadow_color = Color(0.2728946, 0.011650434, 0.39630523, 0.6)
 shadow_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_mjtxm"]
+line_spacing = -13.455
+font_size = 31
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13n88"]
 bg_color = Color(0.3160328, 0.054577522, 0.41605717, 1)
@@ -33,11 +37,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mjtxm")
 
-[node name="logo" type="Sprite2D" parent="."]
-position = Vector2(968.00006, 328)
-scale = Vector2(0.56701386, 0.56701386)
-texture = ExtResource("2_s1n5v")
-
 [node name="background" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -46,6 +45,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_13n88")
+
+[node name="logo" type="Sprite2D" parent="."]
+position = Vector2(968.00006, 328)
+scale = Vector2(0.56701386, 0.56701386)
+texture = ExtResource("2_s1n5v")
 
 [node name="Controlsy" type="Panel" parent="."]
 layout_mode = 1
@@ -79,25 +83,27 @@ text = "controls"
 [node name="wsad" type="Label" parent="Controlsy"]
 layout_mode = 0
 offset_left = 29.0
-offset_top = 88.0
-offset_right = 231.0
-offset_bottom = 233.0
+offset_top = 55.0
+offset_right = 281.0
+offset_bottom = 241.0
 theme_override_fonts/font = ExtResource("1_f8n2w")
 theme_override_font_sizes/font_size = 25
 text = "W / ↑  move down
 S / ↓ move down
 A / ← left
 D / → right"
+label_settings = SubResource("LabelSettings_mjtxm")
 
 [node name="space" type="Label" parent="Controlsy"]
 layout_mode = 0
 offset_left = 293.0
-offset_top = 128.0
-offset_right = 458.0
-offset_bottom = 224.0
+offset_top = 95.0
+offset_right = 465.0
+offset_bottom = 191.0
 theme_override_fonts/font = ExtResource("1_f8n2w")
 theme_override_font_sizes/font_size = 27
 text = "space - jump"
+label_settings = SubResource("LabelSettings_mjtxm")
 
 [node name="back_button2" type="Button" parent="Controlsy"]
 layout_mode = 1
