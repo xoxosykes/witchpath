@@ -5,3 +5,5 @@ res://scripts/credits.gd
 res://Sceny/platforma_kwiat.tscn
 res://Sceny/test.tscn
 res://Sceny/water_level.tscn
+res://Sceny/main_menu.tscn
+res://Sceny/portal.tscn
