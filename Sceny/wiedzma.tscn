@@ -1,22 +1,78 @@
-[gd_scene load_steps=5 format=3 uid="uid://dg34884x4l4d2"]
+[gd_scene load_steps=12 format=3 uid="uid://dg34884x4l4d2"]
 
 [ext_resource type="Script" uid="uid://bkchfafrucno2" path="res://scripts/wiedzma.gd" id="1_7u37v"]
-[ext_resource type="Texture2D" uid="uid://cv6waewhkx3vn" path="res://icon.svg" id="2_hgy8x"]
+[ext_resource type="Texture2D" uid="uid://cc8j8pi6n1eso" path="res://Assety (testowe)/Blue_witch/B_witch_idle.png" id="2_hgy8x"]
 [ext_resource type="PackedScene" uid="uid://tru7emp03pfj" path="res://Sceny/wykrywanie_wody.tscn" id="3_hgy8x"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_xh26e"]
+atlas = ExtResource("2_hgy8x")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iueal"]
+atlas = ExtResource("2_hgy8x")
+region = Rect2(0, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6wik"]
+atlas = ExtResource("2_hgy8x")
+region = Rect2(0, 96, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6ddy"]
+atlas = ExtResource("2_hgy8x")
+region = Rect2(0, 144, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h5xru"]
+atlas = ExtResource("2_hgy8x")
+region = Rect2(0, 192, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycru4"]
+atlas = ExtResource("2_hgy8x")
+region = Rect2(0, 240, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0jus1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xh26e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iueal")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6wik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6ddy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h5xru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycru4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xh26e"]
-radius = 15.0
-height = 48.0
+radius = 13.0
+height = 84.148994
 
 [node name="Wiedzma" type="CharacterBody2D"]
 script = ExtResource("1_7u37v")
 
-[node name="Wiedzma_sprite" type="Sprite2D" parent="."]
-position = Vector2(0.5000043, 0)
-scale = Vector2(0.238, 0.367)
-texture = ExtResource("2_hgy8x")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(1.51253, 0.65937954, 1.5013165, 1)
+scale = Vector2(1.815455, 1.815455)
+sprite_frames = SubResource("SpriteFrames_0jus1")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.8928128
 
 [node name="Kapsula_wiedzmy" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-1, 5)
+scale = Vector2(1, 0.59418416)
 shape = SubResource("CapsuleShape2D_xh26e")
 
 [node name="KamerkaWiedzmy" type="Camera2D" parent="."]

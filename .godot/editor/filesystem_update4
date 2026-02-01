@@ -1,9 +1,5 @@
-res://Sceny/nature_level.tscn
+res://Sceny/moving_chmury.tscn
 res://Sceny/test.tres
-res://scripts/kolce_die.gd
+res://Sceny/animowana_chmura.tscn
 res://Sceny/moon_level.tscn
-res://Sceny/eath_gem.tscn
-res://scripts/eath_gem.gd
-res://Sceny/coin.tscn
-res://scripts/portal_ziemia.gd
-res://Sceny/portal_ziemia.tscn
+res://Sceny/nature_level.tscn

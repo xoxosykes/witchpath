@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://5tc7v76265gb" path="res://Physics/wykrywanie_wody.gd" id="1_ybv5q"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xh26e"]
-radius = 15.0
-height = 48.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ybv5q"]
+radius = 13.0
+height = 84.148994
 
 [node name="wykrywanie_wody" type="Area2D"]
 collision_layer = 0
@@ -12,7 +12,9 @@ collision_mask = 2
 script = ExtResource("1_ybv5q")
 
 [node name="Wiedzma_plywanko_shape" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_xh26e")
+position = Vector2(-1, 5)
+scale = Vector2(1, 0.59418416)
+shape = SubResource("CapsuleShape2D_ybv5q")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
