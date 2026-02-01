@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://fjih5bhtdfth"
+path="res://.godot/imported/island-holiday-182905.mp3-1e8f53fc01f14e50145fb6d5879a7efb.mp3str"
+
+[deps]
+
+source_file="res://Assety (testowe)/island-holiday-182905.mp3"
+dest_files=["res://.godot/imported/island-holiday-182905.mp3-1e8f53fc01f14e50145fb6d5879a7efb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://w1cuodefo2x8"]
+[gd_scene load_steps=43 format=4 uid="uid://w1cuodefo2x8"]
 
 [ext_resource type="Texture2D" uid="uid://cdf6hawl1pnoq" path="res://Assety (testowe)/background.png" id="1_04l41"]
 [ext_resource type="Script" uid="uid://magl7qwpv8u7" path="res://scripts/killzone.gd" id="1_klt8o"]
@@ -6,9 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dg34884x4l4d2" path="res://Sceny/wiedzma.tscn" id="3_a3j5c"]
 [ext_resource type="Texture2D" uid="uid://bmfvtsdars44m" path="res://Assety_moon_level/Dimensional_Portal.png" id="4_a3j5c"]
 [ext_resource type="Texture2D" uid="uid://c24s406sgb7ab" path="res://Assety (testowe)/Horse_fullcolor_White.png" id="6_vqebx"]
-
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_a3j5c"]
-distance = -80.0
+[ext_resource type="AudioStream" uid="uid://fjih5bhtdfth" path="res://Assety (testowe)/island-holiday-182905.mp3" id="7_m300q"]
 
 [sub_resource type="Animation" id="Animation_vqebx"]
 resource_name = "fale"
@@ -260,29 +258,27 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m300q"]
+radius = 24.848581
+height = 70.186325
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_a3j5c"]
+distance = -80.0
+
 [node name="water_level" type="Node2D"]
-
-[node name="Kill_zone" type="Node" parent="."]
-
-[node name="killzone" type="Area2D" parent="Kill_zone"]
-position = Vector2(-125, 580)
-script = ExtResource("1_klt8o")
-
-[node name="boundary" type="CollisionShape2D" parent="Kill_zone/killzone"]
-shape = SubResource("WorldBoundaryShape2D_a3j5c")
-debug_color = Color(0.75498515, 0, 0.11352757, 0.41960785)
 
 [node name="Plaza_bg" type="Parallax2D" parent="."]
 texture_filter = 1
 scale = Vector2(1.9277779, 1.9277778)
-scroll_scale = Vector2(0.2, 0.2)
-scroll_offset = Vector2(159.67386, 0)
-repeat_size = Vector2(640, 0)
+scroll_offset = Vector2(-613.7443, -550)
+repeat_size = Vector2(319.925, 0)
+repeat_times = 4
+limit_begin = Vector2(-250, -10000000)
 
 [node name="Background" type="Sprite2D" parent="Plaza_bg"]
 texture_filter = 1
-position = Vector2(2.5936599, -15.043226)
-scale = Vector2(1, 0.99999994)
+position = Vector2(613.1951, 247.95389)
+scale = Vector2(1, 0.9999999)
 texture = ExtResource("1_04l41")
 
 [node name="fale_dunaju" type="TileMapLayer" parent="."]
@@ -295,10 +291,10 @@ tile_set = ExtResource("2_klt8o")
 [node name="piasek" type="TileMapLayer" parent="."]
 position = Vector2(159.67386, -1.5258788e-05)
 scale = Vector2(1, 0.9999997)
-tile_map_data = PackedByteArray("AAD1/wEAAAAAAAAAAAD1/wIAAAAAAAEAAAD1/wMAAAAAAAIAAAD2/wEAAAABAAAAAAD2/wIAAAABAAEAAAD2/wMAAAABAAIAAAD3/wEAAAABAAAAAAD3/wIAAAABAAEAAAD3/wMAAAABAAIAAAD4/wEAAAABAAAAAAD4/wIAAAABAAEAAAD4/wMAAAABAAIAAAD5/wEAAAABAAAAAAD5/wIAAAABAAEAAAD5/wMAAAABAAIAAAD6/wEAAAABAAAAAAD6/wIAAAABAAEAAAD6/wMAAAABAAIAAAD7/wEAAAABAAAAAAD7/wIAAAABAAEAAAD7/wMAAAABAAIAAAD8/wEAAAABAAAAAAD8/wIAAAABAAEAAAD8/wMAAAABAAIAAAD9/wEAAAABAAAAAAD9/wIAAAABAAEAAAD9/wMAAAABAAIAAAD+/wEAAAABAAAAAAD+/wIAAAABAAEAAAD+/wMAAAABAAIAAAD//wEAAAABAAAAAAD//wIAAAABAAEAAAD//wMAAAABAAIAAAAAAAEAAAABAAAAAAAAAAIAAAABAAEAAAAAAAMAAAABAAIAAAABAAEAAAABAAAAAAABAAIAAAABAAEAAAABAAMAAAABAAIAAAACAAEAAAABAAAAAAACAAIAAAABAAEAAAACAAMAAAABAAIAAAADAAEAAAABAAAAAAADAAIAAAABAAEAAAADAAMAAAABAAIAAAAEAAEAAAABAAAAAAAEAAIAAAABAAEAAAAEAAMAAAABAAIAAAAFAAEAAAABAAAAAAAFAAIAAAABAAEAAAAFAAMAAAABAAIAAAAGAAEAAAACAAAAAAAGAAIAAAACAAEAAAAGAAMAAAACAAIAAAA=")
+tile_map_data = PackedByteArray("AAD1/wEAAAAAAAAAAAD1/wIAAAAAAAEAAAD1/wMAAAAAAAEAAAD2/wEAAAABAAAAAAD2/wIAAAABAAEAAAD2/wMAAAABAAEAAAD3/wEAAAABAAAAAAD3/wIAAAABAAEAAAD3/wMAAAABAAEAAAD4/wEAAAABAAAAAAD4/wIAAAABAAEAAAD4/wMAAAABAAEAAAD5/wEAAAABAAAAAAD5/wIAAAABAAEAAAD5/wMAAAABAAEAAAD6/wEAAAABAAAAAAD6/wIAAAABAAEAAAD6/wMAAAABAAEAAAD7/wEAAAABAAAAAAD7/wIAAAABAAEAAAD7/wMAAAABAAEAAAD8/wEAAAABAAAAAAD8/wIAAAABAAEAAAD8/wMAAAABAAEAAAD9/wEAAAABAAAAAAD9/wIAAAABAAEAAAD9/wMAAAABAAEAAAD+/wEAAAABAAAAAAD+/wIAAAABAAEAAAD+/wMAAAABAAEAAAD//wEAAAABAAAAAAD//wIAAAABAAEAAAD//wMAAAABAAEAAAAAAAEAAAABAAAAAAAAAAIAAAABAAEAAAAAAAMAAAABAAEAAAABAAEAAAABAAAAAAABAAIAAAABAAEAAAABAAMAAAABAAEAAAACAAEAAAABAAAAAAACAAIAAAABAAEAAAACAAMAAAABAAEAAAADAAEAAAABAAAAAAADAAIAAAABAAEAAAADAAMAAAABAAEAAAAEAAEAAAABAAAAAAAEAAIAAAABAAEAAAAEAAMAAAABAAEAAAAFAAEAAAABAAAAAAAFAAIAAAABAAEAAAAFAAMAAAABAAEAAAAGAAEAAAACAAAAAAAGAAIAAAACAAEAAAAGAAMAAAACAAEAAAAGAAQAAAACAAEAAAAGAAUAAAACAAEAAAAGAAYAAAACAAEAAAD2/wQAAAABAAEAAAD3/wQAAAABAAEAAAD4/wQAAAABAAEAAAD5/wQAAAABAAEAAAD6/wQAAAABAAEAAAD7/wQAAAABAAEAAAD8/wQAAAABAAEAAAD9/wQAAAABAAEAAAD+/wQAAAABAAEAAAD//wQAAAABAAEAAAAAAAQAAAABAAEAAAABAAQAAAABAAEAAAACAAQAAAABAAEAAAADAAQAAAABAAEAAAAEAAQAAAABAAEAAAD2/wUAAAABAAEAAAD2/wYAAAABAAEAAAD2/wcAAAABAAEAAAD2/wgAAAABAAEAAAD3/wUAAAABAAEAAAD3/wYAAAABAAEAAAD3/wcAAAABAAEAAAD3/wgAAAABAAEAAAD4/wUAAAABAAEAAAD4/wYAAAABAAEAAAD4/wcAAAABAAEAAAD4/wgAAAABAAEAAAD5/wUAAAABAAEAAAD5/wYAAAABAAEAAAD5/wcAAAABAAEAAAD5/wgAAAABAAEAAAD6/wUAAAABAAEAAAD6/wYAAAABAAEAAAD6/wcAAAABAAEAAAD6/wgAAAABAAEAAAD7/wUAAAABAAEAAAD7/wYAAAABAAEAAAD7/wcAAAABAAEAAAD7/wgAAAABAAEAAAD8/wUAAAABAAEAAAD8/wYAAAABAAEAAAD8/wcAAAABAAEAAAD8/wgAAAABAAEAAAD9/wUAAAABAAEAAAD9/wYAAAABAAEAAAD9/wcAAAABAAEAAAD9/wgAAAABAAEAAAD+/wUAAAABAAEAAAD+/wYAAAABAAEAAAD+/wcAAAABAAEAAAD+/wgAAAABAAEAAAD//wUAAAABAAEAAAD//wYAAAABAAEAAAD//wcAAAABAAEAAAD//wgAAAABAAEAAAAAAAUAAAABAAEAAAAAAAYAAAABAAEAAAAAAAcAAAABAAEAAAAAAAgAAAABAAEAAAABAAUAAAABAAEAAAABAAYAAAABAAEAAAABAAcAAAABAAEAAAABAAgAAAABAAEAAAACAAUAAAABAAEAAAACAAYAAAABAAEAAAACAAcAAAABAAEAAAACAAgAAAABAAEAAAADAAUAAAABAAEAAAADAAYAAAABAAEAAAADAAcAAAABAAEAAAADAAgAAAABAAEAAAAEAAUAAAABAAEAAAAEAAYAAAABAAEAAAAEAAcAAAABAAEAAAAEAAgAAAABAAEAAAAFAAQAAAABAAEAAAAFAAUAAAABAAEAAAAFAAYAAAABAAEAAAAFAAcAAAABAAEAAAAFAAgAAAABAAEAAAD1/wQAAAAAAAEAAAD1/wUAAAAAAAEAAAD1/wYAAAAAAAEAAAD1/wcAAAAAAAEAAAD1/wgAAAAAAAIAAAA=")
 tile_set = ExtResource("2_klt8o")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="piasek"]
+[node name="woda_zdrowia_doda" type="AnimationPlayer" parent="piasek"]
 libraries = {
 &"": SubResource("AnimationLibrary_m300q")
 }
@@ -308,7 +304,7 @@ position = Vector2(-149.00002, -4)
 scale = Vector2(2.2296152, 2.2296152)
 sprite_frames = SubResource("SpriteFrames_t4l22")
 autoplay = "default"
-frame_progress = 0.9655365
+frame_progress = 0.59624064
 
 [node name="fale_dunaju_transparency" type="TileMapLayer" parent="."]
 modulate = Color(0.1992, 0.33587337, 0.83, 0.6117647)
@@ -319,14 +315,55 @@ tile_set = ExtResource("2_klt8o")
 
 [node name="Kon_morski" type="AnimatedSprite2D" parent="."]
 modulate = Color(1.9651731, 1.4793282, 1.1980497, 1)
-position = Vector2(159.67386, -27)
+position = Vector2(148, -28.000002)
 scale = Vector2(1.8529606, 1.8529606)
 sprite_frames = SubResource("SpriteFrames_7jhql")
-animation = &"Speak"
-frame_progress = 0.39726508
+animation = &"Idle"
+autoplay = "Idle"
+frame = 1
 flip_h = true
+
+[node name="Area2D" type="Area2D" parent="Kon_morski"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kon_morski/Area2D"]
+visible = false
+modulate = Color(0, 0.55335534, 1.1990644, 1)
+position = Vector2(-0.5396769, 9.714187)
+rotation = -1.5282427
+shape = SubResource("CapsuleShape2D_m300q")
+one_way_collision_margin = 9.7
 
 [node name="Wiedzma" parent="." instance=ExtResource("3_a3j5c")]
 position = Vector2(-96, 6)
+
+[node name="BGmusicPlaza" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_m300q")
+volume_db = -17.174
+autoplay = true
+mix_target = 2
+parameters/looping = true
+
+[node name="Kill_zone" type="Node" parent="."]
+
+[node name="killzone" type="Area2D" parent="Kill_zone"]
+position = Vector2(-102, 1249)
+script = ExtResource("1_klt8o")
+
+[node name="boundary" type="CollisionShape2D" parent="Kill_zone/killzone"]
+shape = SubResource("WorldBoundaryShape2D_a3j5c")
+debug_color = Color(0.75498515, 0, 0.11352757, 0.41960785)
+
+[node name="bg" type="ColorRect" parent="."]
+modulate = Color(0.07726113, 6.998211e-05, 0.24401483, 0.60784316)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(-10.287209, -4.8692575)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.2, 0.4, 1, 1)
 
 [connection signal="body_entered" from="Kill_zone/killzone" to="Kill_zone/killzone" method="_on_body_entered"]

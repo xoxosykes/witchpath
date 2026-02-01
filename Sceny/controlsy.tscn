@@ -48,7 +48,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_13n88")
 
 [node name="logo" type="Sprite2D" parent="."]
-position = Vector2(968.00006, 328)
+position = Vector2(1253, 330)
 scale = Vector2(0.56701386, 0.56701386)
 texture = ExtResource("2_s1n5v")
 
@@ -128,5 +128,7 @@ text = "back"
 [node name="BGmusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_s1n5v")
 autoplay = true
+mix_target = 2
+parameters/looping = true
 
 [connection signal="pressed" from="Controlsy/back_button2" to="." method="_on_back_button_2_pressed"]

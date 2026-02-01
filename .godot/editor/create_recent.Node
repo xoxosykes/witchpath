@@ -1,5 +1,11 @@
+TileMapLayer
+Node
+ColorRect
+Area2D
+Button
+CanvasLayer
+CollisionShape2D
 AudioStreamPlayer
 AnimatedSprite2D
 AnimationPlayer
-TileMapLayer
 Parallax2D

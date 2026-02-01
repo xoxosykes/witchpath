@@ -1,18 +1,29 @@
 extends CharacterBody2D
 
 class_name Wiedzma
-const SPEED = 210.0
-const JUMP_VELOCITY = -600.0
+@export var SPEED = 210.0
+@export var JUMP_VELOCITY = -600.0
+@export var SWIM_JUMP : float = -300.0
+@export var SWIM_GRAVITY : float = 0.25 # Spowolnienie postaci, która pływa
+@export var SWIM_VELOCITY_CAP : float = 100.0 # Limit prędkości pływania
 
+var in_water : bool = false
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
+	# Grawitacja
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		if(!in_water):
+			velocity += get_gravity() * delta
+		else:
+			velocity.y = clamp(velocity.y + (get_gravity().y * delta * SWIM_GRAVITY), -10000, SWIM_VELOCITY_CAP)
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+	# Skok
+	if Input.is_action_just_pressed("ui_accept"):
+		if is_on_floor():
+			velocity.y = JUMP_VELOCITY
+		if in_water == true:
+			velocity.y = SWIM_JUMP
+	
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -42,3 +53,8 @@ func interact_with_closest():
 	if closest and closest.has_method("interact"):
 		closest.interact()
 	
+
+#pływanie postaci
+func _on_wykrywanie_wody_water_state_changed(in_water: bool) -> void:
+	self.in_water = in_water
+	print(in_water)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dg34884x4l4d2"]
+[gd_scene load_steps=5 format=3 uid="uid://dg34884x4l4d2"]
 
 [ext_resource type="Script" uid="uid://bkchfafrucno2" path="res://scripts/wiedzma.gd" id="1_7u37v"]
 [ext_resource type="Texture2D" uid="uid://cv6waewhkx3vn" path="res://icon.svg" id="2_hgy8x"]
+[ext_resource type="PackedScene" uid="uid://tru7emp03pfj" path="res://Sceny/wykrywanie_wody.tscn" id="3_hgy8x"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xh26e"]
 radius = 15.0
@@ -22,3 +23,7 @@ shape = SubResource("CapsuleShape2D_xh26e")
 position = Vector2(3.975, -116.33)
 zoom = Vector2(2.215, 2.215)
 limit_left = -180
+
+[node name="wykrywanie_wody" parent="." instance=ExtResource("3_hgy8x")]
+
+[connection signal="water_state_changed" from="wykrywanie_wody" to="." method="_on_wykrywanie_wody_water_state_changed"]

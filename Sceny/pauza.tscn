@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=3 uid="uid://bymk6d33svxmj"]
+
+[ext_resource type="Script" uid="uid://bndphbul87a6t" path="res://scripts/pauza.gd" id="1_7mrgu"]
+[ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="1_tx3w0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mrgu"]
+bg_color = Color(0.5539132, 0.46246475, 0.65936464, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.23916209, 0.060012914, 0.29380333, 0.6)
+shadow_size = 6
+
+[node name="Pauza" type="CanvasLayer"]
+script = ExtResource("1_7mrgu")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(0.07726113, 6.998211e-05, 0.24401483, 0.60784316)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = 31.0
+offset_right = 233.0
+offset_bottom = 278.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="resume_game" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_tx3w0")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_7mrgu")
+text = "resume game
+"
+
+[node name="options" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_tx3w0")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_7mrgu")
+text = "options"
+
+[node name="main_menu" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_tx3w0")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_7mrgu")
+text = "credits"
+
+[node name="exit" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_tx3w0")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_7mrgu")
+text = "exit"
