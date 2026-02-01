@@ -1,5 +1,8 @@
+CollisionShape2D
+Area2D
+TileMapLayer
+Node2D
 AudioStreamPlayer
 AnimatedSprite2D
 AnimationPlayer
-TileMapLayer
 Parallax2D
