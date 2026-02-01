@@ -13,6 +13,7 @@ shadow_color = Color(0.23916209, 0.060012914, 0.29380333, 0.6)
 shadow_size = 6
 
 [node name="Pauza" type="CanvasLayer"]
+process_mode = 3
 script = ExtResource("1_7mrgu")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -75,3 +76,8 @@ theme_override_fonts/font = ExtResource("1_tx3w0")
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = SubResource("StyleBoxFlat_7mrgu")
 text = "exit"
+
+[connection signal="pressed" from="MainButtons/resume_game" to="." method="_on_resume_game_pressed"]
+[connection signal="pressed" from="MainButtons/options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MainButtons/main_menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="MainButtons/exit" to="." method="_on_exit_pressed"]

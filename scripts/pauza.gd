@@ -1,11 +1,29 @@
 extends CanvasLayer
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	visible = false
+	get_tree().paused = false
+
+func _input(event: InputEvent) -> void:
+	if get_tree().paused:
+		visible = false
+		get_tree().paused = false
+	else:
+		visible = true
+		get_tree().paused = true
+
+func _on_main_menu_pressed() -> void:
+	get_tree().change_scene_to_file("res://Sceny/main_menu.tscn")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_exit_pressed() -> void:
+	get_tree().quit()
+
+
+func _on_options_pressed() -> void:
+	get_tree().change_scene_to_file("res://Sceny/options.tscn")
+
+
+func _on_resume_game_pressed() -> void:
+	visible = false
+	get_tree().paused = false
