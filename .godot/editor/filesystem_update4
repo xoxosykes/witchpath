@@ -5,3 +5,4 @@ res://Sceny/pauza.tscn
 res://Sceny/animowana_chmura.tscn
 res://Sceny/nature_level.tscn
 res://Sceny/main_menu.tscn
+res://scripts/kolce_die.gd
