@@ -1,8 +1,9 @@
-res://scripts/killzone.gd
-res://Sceny/chmurkowosc.tscn
-res://Sceny/test.tres
-res://Sceny/pauza.tscn
-res://Sceny/animowana_chmura.tscn
 res://Sceny/nature_level.tscn
-res://Sceny/main_menu.tscn
+res://Sceny/test.tres
 res://scripts/kolce_die.gd
+res://Sceny/moon_level.tscn
+res://Sceny/eath_gem.tscn
+res://scripts/eath_gem.gd
+res://Sceny/coin.tscn
+res://scripts/portal_ziemia.gd
+res://Sceny/portal_ziemia.tscn

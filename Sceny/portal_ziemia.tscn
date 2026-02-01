@@ -1,0 +1,78 @@
+[gd_scene load_steps=11 format=3 uid="uid://dmx75iyx5nq6m"]
+
+[ext_resource type="Script" uid="uid://b2scaumuoji2u" path="res://scripts/portal_ziemia.gd" id="1_tdmva"]
+[ext_resource type="Texture2D" uid="uid://bmfvtsdars44m" path="res://Assety_moon_level/Dimensional_Portal.png" id="1_ukffg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rid3y"]
+atlas = ExtResource("1_ukffg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7vc5"]
+atlas = ExtResource("1_ukffg")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okume"]
+atlas = ExtResource("1_ukffg")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqhub"]
+atlas = ExtResource("1_ukffg")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wjmd"]
+atlas = ExtResource("1_ukffg")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sw3xo"]
+atlas = ExtResource("1_ukffg")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oxb2l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rid3y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7vc5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okume")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqhub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wjmd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sw3xo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0c8fp"]
+radius = 121.99999
+height = 784.0
+
+[node name="portal_ziemia" type="Node2D"]
+script = ExtResource("1_tdmva")
+
+[node name="portalanimated" type="AnimatedSprite2D" parent="."]
+position = Vector2(7493, 244)
+rotation = 1.5707964
+scale = Vector2(10.500214, 10.500214)
+sprite_frames = SubResource("SpriteFrames_oxb2l")
+autoplay = "default"
+frame_progress = 0.76161754
+
+[node name="wykrywanie" type="Area2D" parent="."]
+
+[node name="collisionportal" type="CollisionShape2D" parent="wykrywanie"]
+position = Vector2(7495, 255)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_0c8fp")
+
+[connection signal="body_entered" from="wykrywanie" to="." method="_on_wykrywanie_body_entered"]
