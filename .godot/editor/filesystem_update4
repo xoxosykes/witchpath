@@ -1,8 +1,7 @@
-res://Sceny/water_level.tscn
+res://scripts/killzone.gd
+res://Sceny/chmurkowosc.tscn
 res://Sceny/test.tres
-res://scripts/wiedzma.gd
-res://scripts/moon_level.gd
-res://Sceny/moon_level.tscn
 res://Sceny/pauza.tscn
-res://Sceny/test.tscn
-res://Sceny/wiedzma.tscn
+res://Sceny/animowana_chmura.tscn
+res://Sceny/nature_level.tscn
+res://Sceny/main_menu.tscn

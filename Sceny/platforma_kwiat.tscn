@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bpfgnaxfd6sc4"]
+[gd_scene load_steps=10 format=3 uid="uid://bpfgnaxfd6sc4"]
 
 [ext_resource type="Script" uid="uid://di7sqgunehxbn" path="res://scripts/kwiat.gd" id="1_2t3l4"]
 [ext_resource type="Texture2D" uid="uid://cns25bt3m1xc3" path="res://Assety (testowe)/Terrain&Pickups/Terrain&Pickups/e20b6a42-41db-49b9-8bea-5bc52cc64c3e ÔÇö kopia.png" id="2_r5sj2"]
@@ -7,8 +7,11 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kq82o"]
 size = Vector2(170.14923, 39.85077)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2t3l4"]
+size = Vector2(10, 190)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_67a6h"]
-size = Vector2(115, 49)
+size = Vector2(162, 382)
 
 [sub_resource type="Animation" id="Animation_67a6h"]
 length = 0.001
@@ -47,10 +50,10 @@ tracks/0/path = NodePath("..:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.033333335, 0.3, 0.58, 0.87, 1.18, 1.48, 1.75, 2.05, 2.33, 2.64, 2.89, 3.196679, 3.48),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.033333335, 0.3, 0.58, 0.87, 1.18, 1.48, 1.75, 2.05, 2.33, 2.64, 2.89, 3.196679, 3.48, 3.7579548, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(299, 288), Vector2(299, 276.65), Vector2(299, 261.97), Vector2(299, 251.51), Vector2(299, 235.495), Vector2(299, 223.24), Vector2(299, 211.05), Vector2(299, 195.94), Vector2(299, 178.48), Vector2(299, 158.465), Vector2(299, 131.02), Vector2(299, 109.96), Vector2(299, 88.72)]
+"values": [Vector2(299, 288), Vector2(299, 276.65), Vector2(299, 261.97), Vector2(299, 251.51), Vector2(299, 235.495), Vector2(299, 223.24), Vector2(299, 211.05), Vector2(299, 195.94), Vector2(299, 178.48), Vector2(299, 158.465), Vector2(299, 131.02), Vector2(299, 109.96), Vector2(299, 88.72), Vector2(299, 74.365), Vector2(299, 74.36499)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -103,10 +106,15 @@ scale = Vector2(0.335, 0.335)
 shape = SubResource("RectangleShape2D_kq82o")
 debug_color = Color(0.961013, 8.085966e-06, 0.6050445, 0.41960785)
 
+[node name="collisionlodyga" type="CollisionShape2D" parent="pivot"]
+position = Vector2(-3, 144)
+shape = SubResource("RectangleShape2D_2t3l4")
+debug_color = Color(0.865992, 0.000577569, 0.8619297, 0.41960785)
+
 [node name="detector" type="Area2D" parent="pivot"]
 
 [node name="collisionarea" type="CollisionShape2D" parent="pivot/detector"]
-position = Vector2(-2, -3)
+position = Vector2(-21, 48)
 shape = SubResource("RectangleShape2D_67a6h")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

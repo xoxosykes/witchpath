@@ -1,10 +1,7 @@
-TileMapLayer
-Node
-ColorRect
-Area2D
-Button
-CanvasLayer
 CollisionShape2D
+Area2D
+TileMapLayer
+Node2D
 AudioStreamPlayer
 AnimatedSprite2D
 AnimationPlayer
