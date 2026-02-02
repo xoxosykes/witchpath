@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=4 uid="uid://w1cuodefo2x8"]
+[gd_scene load_steps=72 format=4 uid="uid://w1cuodefo2x8"]
 
 [ext_resource type="Texture2D" uid="uid://cdf6hawl1pnoq" path="res://Assety (testowe)/background.png" id="1_04l41"]
 [ext_resource type="Script" uid="uid://ctahej4wsl3sw" path="res://scripts/water_level.gd" id="1_j78rw"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://e5yydnchguew" path="res://Assety (testowe)/Tileset_Grass/Tileset_grass_128x80_x2.png" id="11_f46hj"]
 [ext_resource type="Texture2D" uid="uid://c1je48agsh1uh" path="res://Assety (testowe)/GandalfHardcore Water Tiles sheet.png" id="12_88isx"]
 [ext_resource type="Texture2D" uid="uid://urtftbid6aog" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Pine Trees.png" id="13_xljt2"]
+[ext_resource type="Script" uid="uid://c7kj3x6qdrb" path="res://scripts/strefa_umieranka.gd" id="14_f46hj"]
+[ext_resource type="Script" uid="uid://c2snhc48troab" path="res://Sceny/coin_display.gd" id="15_88isx"]
 
 [sub_resource type="Animation" id="Animation_vqebx"]
 resource_name = "fale"
@@ -892,6 +894,34 @@ sources/0 = SubResource("TileSetAtlasSource_lx8it")
 sources/2 = SubResource("TileSetAtlasSource_sd0d3")
 sources/3 = SubResource("TileSetAtlasSource_wa3u3")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_88isx"]
+size = Vector2(268, 130)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xljt2"]
+size = Vector2(189, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2r1x"]
+size = Vector2(491, 119.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ubdv"]
+size = Vector2(271, 92)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kluwu"]
+size = Vector2(641.5, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k2b6a"]
+size = Vector2(365.5, 99)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pfvji"]
+size = Vector2(227, 110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lx8it"]
+size = Vector2(22, 66.25)
+
+[sub_resource type="LabelSettings" id="LabelSettings_xljt2"]
+font = ExtResource("9_5djc6")
+font_size = 49
+
 [node name="water_level" type="Node2D"]
 script = ExtResource("1_j78rw")
 
@@ -1219,3 +1249,103 @@ tile_set = SubResource("TileSet_pfvji")
 position = Vector2(1136, 51)
 tile_map_data = PackedByteArray("AAAOAB0AAwACAAAAAAAOAB4AAwACAAEAAAALABwAAwACAAAAAAALAB0AAwACAAEAAAAQAB0AAwACAAAAAAAQAB4AAwACAAEAAAA=")
 tile_set = SubResource("TileSet_60dxf")
+
+[node name="strefa_umieranka" type="Area2D" parent="."]
+script = ExtResource("14_f46hj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(442, 981)
+shape = SubResource("RectangleShape2D_88isx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(1023.5, 884)
+shape = SubResource("RectangleShape2D_xljt2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(1489, 1014.25)
+shape = SubResource("RectangleShape2D_m2r1x")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(2311, 931)
+shape = SubResource("RectangleShape2D_2ubdv")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(2917.25, 946)
+shape = SubResource("RectangleShape2D_kluwu")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(3902.25, 618.5)
+shape = SubResource("RectangleShape2D_k2b6a")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(4244.5, 1487)
+shape = SubResource("RectangleShape2D_pfvji")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(3887, 2274.125)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(3980, 2211)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(4077, 2303)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(4174, 2174)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(4270, 2083)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(4366, 2305)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(3884, 2432)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(3980, 2368)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(4076, 2466)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(4172, 2337)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(4268, 2241)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="strefa_umieranka"]
+position = Vector2(4364, 2466)
+shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CoinDisplay" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 15.0
+offset_right = 160.0
+offset_bottom = 81.0
+scale = Vector2(0.6668746, 0.6668746)
+text = "score: "
+label_settings = SubResource("LabelSettings_xljt2")
+script = ExtResource("15_88isx")
+
+[connection signal="body_entered" from="strefa_umieranka" to="strefa_umieranka" method="_on_body_entered"]
