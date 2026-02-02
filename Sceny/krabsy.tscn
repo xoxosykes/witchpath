@@ -1,0 +1,139 @@
+[gd_scene load_steps=20 format=3 uid="uid://c5322ssv0oflp"]
+
+[ext_resource type="Script" uid="uid://dj787ujkt57wt" path="res://krabsy.gd" id="1_a2gt7"]
+[ext_resource type="Texture2D" uid="uid://bfpmh434wn1ic" path="res://Assety (testowe)/Crab Sprite Sheet.png" id="1_bi07y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2gt7"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sem5b"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wduoa"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afb0o"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l2g86"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4eny"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flbct"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2yx6"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fllf0"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kadlo"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_402oh"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0rpy"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_72ojg"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ns14x"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ucub"]
+atlas = ExtResource("1_bi07y")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wewau"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2gt7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sem5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wduoa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afb0o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l2g86")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4eny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flbct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2yx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fllf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kadlo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_402oh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0rpy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_72ojg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ns14x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ucub")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d72wf"]
+radius = 72.85095
+
+[node name="krabsy" type="Node2D"]
+script = ExtResource("1_a2gt7")
+
+[node name="krabunie" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2.87716, 2.87716)
+sprite_frames = SubResource("SpriteFrames_wewau")
+autoplay = "default"
+frame = 14
+frame_progress = 1.0
+
+[node name="area_zbierania" type="Area2D" parent="krabunie"]
+
+[node name="kolizja_krabsa" type="CollisionShape2D" parent="krabunie/area_zbierania"]
+position = Vector2(0, 11.817207)
+scale = Vector2(0.1718188, 0.1718188)
+shape = SubResource("CircleShape2D_d72wf")
+
+[connection signal="body_entered" from="krabunie/area_zbierania" to="." method="_on_area_zbierania_body_entered"]
