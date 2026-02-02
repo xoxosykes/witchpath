@@ -158,8 +158,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xh26e"]
-radius = 13.0
-height = 84.148994
+radius = 11.0
+height = 70.68515
 
 [node name="Wiedzma" type="CharacterBody2D"]
 script = ExtResource("1_7u37v")
