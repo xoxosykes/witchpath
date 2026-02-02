@@ -2,12 +2,12 @@ extends CharacterBody2D
 
 class_name Wiedzma
 
-# --- USTAWIENIA ---
+# --- USTAWIENIA RUCHU ---
 @export var SPEED = 210.0
 @export var JUMP_VELOCITY = -600.0
-@export var SWIM_JUMP : float = -250.0
-@export var SWIM_GRAVITY : float = 0.25
-@export var SWIM_VELOCITY_CAP : float = 100.0
+@export var SWIM_JUMP : float = -250.0 
+@export var SWIM_GRAVITY : float = 0.25 
+@export var SWIM_VELOCITY_CAP : float = 100.0 
 
 # --- REFERENCJE ---
 @onready var score_label = %wynik
@@ -23,22 +23,26 @@ func _ready():
 	update_ui(GameController.total_points)
 
 func _physics_process(delta: float) -> void:
+	# Zapamiętujemy czy stała na ziemi przed ruchem (potrzebne do Coyote Time)
 	var was_on_floor = is_on_floor()
 
-	# GRAWITACJA
+	# 1. GRAWITACJA I PŁYWANIE
 	if not is_on_floor():
 		if not in_water:
 			velocity += get_gravity() * delta
 		else:
+			# Specyficzna grawitacja w wodzie z limitem prędkości (SWIM_VELOCITY_CAP)
 			velocity.y = clamp(velocity.y + (get_gravity().y * delta * SWIM_GRAVITY), -10000, SWIM_VELOCITY_CAP)
 
-	# SKOK
+	# 2. SKOK (Z uwzględnieniem Coyote Time i Wody)
 	if Input.is_action_just_pressed("ui_accept"):
 		if is_on_floor() or not CoyoteTimer.is_stopped():
 			velocity.y = JUMP_VELOCITY
-			CoyoteTimer.stop() 
+			CoyoteTimer.stop() # Resetujemy timer po skoku
+		elif in_water:
+			velocity.y = SWIM_JUMP
 
-	# RUCH
+	# 3. KIERUNEK RUCHU
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
@@ -46,16 +50,19 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	# OBSŁUGA ANIMACJI
+	# 4. OBSŁUGA ANIMACJI
 	handle_animations(direction)
 
+	# 5. RUCH
 	move_and_slide()
 	
+	# 6. LOGIKA COYOTE TIME
+	# Jeśli właśnie spadła z krawędzi (ale nie skoczyła), odpalamy timer
 	if was_on_floor and not is_on_floor() and velocity.y >= 0:
 		CoyoteTimer.start()
 
 func handle_animations(direction):
-	# Blokada: jeśli machamy magią, nie zmieniaj animacji na ruch
+	# Blokada: jeśli machamy magią (E/F), nie pozwól na animacje ruchu
 	if is_playing_magic_anim:
 		return 
 
@@ -67,32 +74,31 @@ func handle_animations(direction):
 			sprite.play("idle")
 
 func _input(event):
-	# Magic Sense (F) - teraz gra 2x
+	# Magic Sense (F)
 	if event.is_action_pressed("toggle_magic_sense"):
 		play_magic_twice()
 
-	# Interakcja (E) - teraz gra 2x
+	# Interakcja (E)
 	if event.is_action_pressed("interact"):
 		interact_with_closest()
 		play_magic_twice()
 
-# --- TA FUNKCJA ROBI CAŁĄ MAGIĘ (2 RAZY) ---
+# --- MAGIA 2 RAZY (używana pod E i F) ---
 func play_magic_twice():
-	# Jeśli już macha, nie pozwól odpalić jeszcze raz (anty-spam)
 	if is_playing_magic_anim:
 		return
 		
 	is_playing_magic_anim = true
 	
 	sprite.play("magic")
-	await sprite.animation_finished # Pierwszy raz
+	await sprite.animation_finished 
 	
 	sprite.play("magic")
-	await sprite.animation_finished # Drugi raz
+	await sprite.animation_finished 
 	
 	is_playing_magic_anim = false
 	
-	# Powrót do normy
+	# Naprawa freeze: wymuszamy powrót do ruchu po animacji
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction != 0:
 		sprite.play("levitatin")
@@ -110,8 +116,10 @@ func interact_with_closest():
 	if closest and closest.has_method("interact"):
 		closest.interact()
 
+# --- OBSŁUGA WODY (Przywrócone połączenie) ---
 func _on_wykrywanie_wody_water_state_changed(new_in_water: bool) -> void:
 	self.in_water = new_in_water
+	print("W wodzie: ", in_water)
 
 func update_ui(new_score: int):
 	if score_label:

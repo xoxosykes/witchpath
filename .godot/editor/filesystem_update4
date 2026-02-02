@@ -1,3 +1,6 @@
-res://scripts/game_controller.gd
-res://scripts/wiedzma.gd
 res://Sceny/bozek_ksiezyca.tscn
+res://Sceny/test.tres
+res://Manager/interakcja_manager.tscn
+res://Sceny/wiedzma.tscn
+res://scripts/wiedzma.gd
+res://Sceny/water_level.tscn
