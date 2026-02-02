@@ -38,8 +38,8 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_3xecr")
 
 [node name="logo" type="Sprite2D" parent="."]
-position = Vector2(1253, 330)
-scale = Vector2(0.56701386, 0.56701386)
+position = Vector2(960.00006, 194.00002)
+scale = Vector2(0.5372105, 0.5372105)
 texture = ExtResource("3_ysli6")
 
 [node name="MainButtons" type="VBoxContainer" parent="."]
@@ -96,6 +96,8 @@ text = "exit"
 
 [node name="BGmusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_ug2md")
+volume_db = -4.359
+pitch_scale = 0.71
 autoplay = true
 mix_target = 2
 playback_type = 1

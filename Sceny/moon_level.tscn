@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://cvoknmj6ag844"]
+[gd_scene load_steps=36 format=4 uid="uid://cvoknmj6ag844"]
 
 [ext_resource type="Texture2D" uid="uid://biww8qrduel5h" path="res://Assety_moon_level/Background/Clouds 3/1.png" id="1_o376i"]
 [ext_resource type="Texture2D" uid="uid://cfsyh6gbgm0eh" path="res://Assety_moon_level/Background/Clouds 3/3.png" id="3_jgh3b"]
@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://c6fhxa2458a18" path="res://Sceny/coin.tscn" id="14_hg1cj"]
 [ext_resource type="PackedScene" uid="uid://ddbfdps7on4cd" path="res://Sceny/portal.tscn" id="15_ak10j"]
 [ext_resource type="PackedScene" uid="uid://fb2n3qmo7pac" path="res://Sceny/bozek_ksiezyca.tscn" id="16_if4cw"]
+[ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="16_r87p4"]
+[ext_resource type="Script" uid="uid://c2snhc48troab" path="res://Sceny/coin_display.gd" id="17_r87p4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jgh3b"]
 texture = ExtResource("4_apefv")
@@ -4203,13 +4205,26 @@ animations = [{
 }]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_if4cw"]
+bg_color = Color(0.3529412, 0.43137255, 0.7411765, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.44196957, 0.6154181, 0.9684842, 0.6)
+shadow_size = 8
 
 [sub_resource type="LabelSettings" id="LabelSettings_r87p4"]
-font_size = 70
+line_spacing = 4.0
+font = ExtResource("16_r87p4")
+font_size = 91
 
 [sub_resource type="LabelSettings" id="LabelSettings_if4cw"]
-font_size = 42
+font_size = 24
 font_color = Color(0.03529412, 0.18039216, 0.49803922, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0kn6c"]
+font = ExtResource("16_r87p4")
+font_size = 49
 
 [node name="moon_level" type="Node2D"]
 
@@ -4244,6 +4259,10 @@ texture = ExtResource("3_jgh3b")
 [node name="Portal" parent="." instance=ExtResource("15_ak10j")]
 position = Vector2(2442, -2536)
 scale = Vector2(5.4934516, 5.5758424)
+
+[node name="Bozek_ksiezyca" parent="." instance=ExtResource("16_if4cw")]
+position = Vector2(418, 235.99998)
+scale = Vector2(4.5833044, 4.5608287)
 
 [node name="ksiezyce" type="Node" parent="."]
 
@@ -4318,7 +4337,7 @@ tile_set = SubResource("TileSet_ak10j")
 
 [node name="roślinky" type="TileMapLayer" parent="tilesety"]
 position = Vector2(-7, 12)
-tile_map_data = PackedByteArray("AAABAAgAAQAEAAAAAAACAAgAAQAFAAAAAAAJAAgAAQADAAAAAAAIAAgAAQADAAAAAAAHAAgAAQADAAAAAAADAAgAAQACAAAAAAA=")
+tile_map_data = PackedByteArray("AAABAAgAAQAEAAAAAAACAAgAAQAFAAAAAAAJAAgAAQADAAAAAAAIAAgAAQACAAAAAAAHAAgAAQADAAAAAAADAAgAAQACAAAAAAAEAAgAAQAAAAAAAAAAAAgAAQAAAAAAAAD//wgAAQACAAAAAAD+/wgAAQADAAAAAAD8/wgAAQAEAAAAAAD9/wgAAQAFAAAAAAD6/wgAAQAEAAAAAAD7/wgAAQAFAAAAAAAFAAgAAQADAAAAAAAGAAgAAQADAAAAAAA=")
 tile_set = ExtResource("7_cva2i")
 
 [node name="ziemia" type="TileMapLayer" parent="tilesety"]
@@ -4648,32 +4667,52 @@ sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.46377409
 
-[node name="Bozek_ksiezyca" parent="." instance=ExtResource("16_if4cw")]
-position = Vector2(444, 248)
-
 [node name="boza_wiadomosc" type="Panel" parent="."]
-offset_left = 284.0
-offset_top = 166.0
-offset_right = 407.0
+offset_left = 224.0
+offset_top = 149.0
+offset_right = 388.0
 offset_bottom = 206.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_if4cw")
 
 [node name="hejka" type="Label" parent="boza_wiadomosc"]
 layout_mode = 0
-offset_left = 3.0000005
-offset_top = 7.000001
-offset_right = 491.0
-offset_bottom = 103.0
-scale = Vector2(0.23817901, 0.23817901)
-text = "hejka naklejka"
+offset_left = 14.0
+offset_top = 1.0000002
+offset_right = 1146.0
+offset_bottom = 441.0
+scale = Vector2(0.11773874, 0.11773874)
+text = "Witaj w chmurach! ⋆.˚ ☾⭒.˚
+
+Zaraz sprawdzimy co wiesz 
+o fazach ksiezyca..."
 label_settings = SubResource("LabelSettings_r87p4")
 
 [node name="Olikow" type="Label" parent="."]
-offset_left = 16.0
-offset_top = 72.0
-offset_right = 364.0
-offset_bottom = 130.0
+offset_left = 93.0
+offset_top = 107.0
+offset_right = 426.0
+offset_bottom = 157.0
+scale = Vector2(0.619682, 0.619682)
 text = "Oliwia Kowalczyk"
 label_settings = SubResource("LabelSettings_if4cw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CoinDisplay" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 15.0
+offset_right = 160.0
+offset_bottom = 81.0
+scale = Vector2(0.6668746, 0.6668746)
+text = "score: "
+label_settings = SubResource("LabelSettings_0kn6c")
+script = ExtResource("17_r87p4")
 
 [connection signal="body_entered" from="zones/killzone" to="zones/killzone" method="_on_body_entered"]
