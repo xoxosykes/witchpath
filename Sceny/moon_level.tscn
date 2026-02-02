@@ -1,12 +1,15 @@
-[gd_scene load_steps=36 format=4 uid="uid://cvoknmj6ag844"]
+[gd_scene load_steps=44 format=4 uid="uid://cvoknmj6ag844"]
 
 [ext_resource type="Texture2D" uid="uid://biww8qrduel5h" path="res://Assety_moon_level/Background/Clouds 3/1.png" id="1_o376i"]
+[ext_resource type="Script" uid="uid://riim15fjyq8" path="res://scripts/moon_level.gd" id="1_uovgp"]
 [ext_resource type="Texture2D" uid="uid://cfsyh6gbgm0eh" path="res://Assety_moon_level/Background/Clouds 3/3.png" id="3_jgh3b"]
 [ext_resource type="Texture2D" uid="uid://bpaiao1mbaogy" path="res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_3.png" id="4_apefv"]
+[ext_resource type="Texture2D" uid="uid://d04ygftw5ijan" path="res://Assety_moon_level/Batxddd.png" id="5_egll1"]
 [ext_resource type="Texture2D" uid="uid://c653yi3tv232v" path="res://Assety_moon_level/clouds/PNG/Clouds_black/Shape2/cloud_shape2_3.png" id="5_s2f6d"]
 [ext_resource type="Texture2D" uid="uid://d2q8tdm45pq55" path="res://Assety_moon_level/clouds/PNG/Clouds_white/Shape2/cloud_shape2_3.png" id="6_b6sml"]
 [ext_resource type="Texture2D" uid="uid://ci1tonfgn0vk1" path="res://Assety_moon_level/Bn_UYJ (1).png" id="6_hg1cj"]
-[ext_resource type="TileSet" uid="uid://2bpg8hdom1s6" path="res://Sceny/test.tres" id="7_cva2i"]
+[ext_resource type="PackedScene" uid="uid://cr3y81tuu863p" path="res://Manager/interakcja.tscn" id="6_t2jd1"]
+[ext_resource type="TileSet" uid="uid://2bpg8hdom1s6" path="res://Sceny/tileset.tres" id="7_cva2i"]
 [ext_resource type="Script" uid="uid://magl7qwpv8u7" path="res://scripts/killzone.gd" id="9_b6sml"]
 [ext_resource type="PackedScene" uid="uid://bq8jef8io10rg" path="res://Sceny/moving_chmury.tscn" id="10_cva2i"]
 [ext_resource type="PackedScene" uid="uid://dg34884x4l4d2" path="res://Sceny/wiedzma.tscn" id="11_en4bk"]
@@ -14,9 +17,48 @@
 [ext_resource type="Texture2D" uid="uid://0lc0doji768m" path="res://Assety_moon_level/S001_nyknck.png" id="12_en4bk"]
 [ext_resource type="PackedScene" uid="uid://c6fhxa2458a18" path="res://Sceny/coin.tscn" id="14_hg1cj"]
 [ext_resource type="PackedScene" uid="uid://ddbfdps7on4cd" path="res://Sceny/portal.tscn" id="15_ak10j"]
-[ext_resource type="PackedScene" uid="uid://fb2n3qmo7pac" path="res://Sceny/bozek_ksiezyca.tscn" id="16_if4cw"]
 [ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="16_r87p4"]
-[ext_resource type="Script" uid="uid://c2snhc48troab" path="res://Sceny/coin_display.gd" id="17_r87p4"]
+[ext_resource type="Script" uid="uid://c2snhc48troab" path="res://scripts/coin_display.gd" id="17_r87p4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4h7xc"]
+atlas = ExtResource("5_egll1")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwdpb"]
+atlas = ExtResource("5_egll1")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iiu7p"]
+atlas = ExtResource("5_egll1")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccw8n"]
+atlas = ExtResource("5_egll1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ous14"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4h7xc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwdpb")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_iiu7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccw8n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a7hr7"]
+radius = 30.164314
+height = 203.90448
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jgh3b"]
 texture = ExtResource("4_apefv")
@@ -4227,6 +4269,7 @@ font = ExtResource("16_r87p4")
 font_size = 49
 
 [node name="moon_level" type="Node2D"]
+script = ExtResource("1_uovgp")
 
 [node name="Moon_paralax" type="Parallax2D" parent="."]
 scale = Vector2(0.5030496, 0.5030496)
@@ -4257,101 +4300,117 @@ scale = Vector2(1.1264323, 1.1264324)
 texture = ExtResource("3_jgh3b")
 
 [node name="Portal" parent="." instance=ExtResource("15_ak10j")]
-position = Vector2(2442, -2536)
+position = Vector2(2577, -2536)
 scale = Vector2(5.4934516, 5.5758424)
 
-[node name="Bozek_ksiezyca" parent="." instance=ExtResource("16_if4cw")]
-position = Vector2(418, 235.99998)
-scale = Vector2(4.5833044, 4.5608287)
+[node name="Bozek_ksiezyca" type="AnimatedSprite2D" parent="."]
+modulate = Color(1.8725592, 4.227738, 4.441845, 1)
+position = Vector2(512, 238)
+scale = Vector2(2.671489, 2.6583886)
+sprite_frames = SubResource("SpriteFrames_ous14")
+autoplay = "default"
+frame_progress = 0.8838125
+
+[node name="Interakcja" parent="Bozek_ksiezyca" instance=ExtResource("6_t2jd1")]
+scale = Vector2(0.72329605, 0.72329605)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bozek_ksiezyca/Interakcja"]
+position = Vector2(-27.946304, 0.52007294)
+rotation = -1.5707964
+scale = Vector2(0.9999999, 0.99999994)
+shape = SubResource("CapsuleShape2D_a7hr7")
 
 [node name="ksiezyce" type="Node" parent="."]
 
 [node name="Coin" parent="ksiezyce" instance=ExtResource("14_hg1cj")]
-position = Vector2(801.00006, 88)
+position = Vector2(936.00006, 88)
 rotation = -3.1415927
 scale = Vector2(0.1182182, 0.1182182)
 
 [node name="Coin2" parent="ksiezyce" instance=ExtResource("14_hg1cj")]
-position = Vector2(415.00006, -302)
+position = Vector2(550.00006, -302)
 rotation = -3.1415927
 scale = Vector2(0.1182182, 0.1182182)
 
 [node name="Coin3" parent="ksiezyce" instance=ExtResource("14_hg1cj")]
-position = Vector2(1206, -662)
+position = Vector2(1341, -662)
 rotation = -3.1415927
 scale = Vector2(0.1182182, 0.1182182)
 
 [node name="Coin4" parent="ksiezyce" instance=ExtResource("14_hg1cj")]
-position = Vector2(820.0001, -848.00006)
+position = Vector2(955.0001, -848.00006)
 rotation = -3.1415927
 scale = Vector2(0.1182182, 0.1182182)
 
 [node name="Coin5" parent="ksiezyce" instance=ExtResource("14_hg1cj")]
-position = Vector2(438.00006, -1217)
+position = Vector2(573.00006, -1217)
 rotation = -3.1415927
 scale = Vector2(0.1182182, 0.1182182)
 
 [node name="Coin6" parent="ksiezyce" instance=ExtResource("14_hg1cj")]
-position = Vector2(910, -1543)
+position = Vector2(1045, -1543)
 rotation = -3.1415927
 scale = Vector2(0.1182182, 0.1182182)
 
 [node name="Coin7" parent="ksiezyce" instance=ExtResource("14_hg1cj")]
-position = Vector2(502.00006, -2109)
+position = Vector2(637.00006, -2109)
 rotation = -3.1415927
 scale = Vector2(0.1182182, 0.1182182)
 
 [node name="Coin8" parent="ksiezyce" instance=ExtResource("14_hg1cj")]
-position = Vector2(1521.0001, -2381)
+position = Vector2(1656.0001, -2381)
 rotation = -3.1415927
 scale = Vector2(0.1182182, 0.1182182)
 
 [node name="Wiedzma" parent="." instance=ExtResource("11_en4bk")]
-position = Vector2(-107, -1852)
+position = Vector2(-37, -1852)
 
 [node name="tilesety" type="Node" parent="."]
 
 [node name="chmurki_szare" type="TileMapLayer" parent="tilesety"]
+position = Vector2(135, 0)
 tile_map_data = PackedByteArray("AABHANr/AwAAAAEAAABIANn/AwABAAAAAABIANr/AwABAAEAAABJANn/AwACAAAAAABJANr/AwACAAEAAABKANn/AwADAAAAAABKANr/AwADAAEAAABLANn/AwAEAAAAAABLANr/AwAEAAEAAABMANn/AwAFAAAAAABMANr/AwAFAAEAAABNANn/AwAGAAAAAABNANr/AwAGAAEAAABOANn/AwAHAAAAAABOANr/AwAHAAEAAABPANn/AwAIAAAAAABPANr/AwAIAAEAAAA8ANP/AwAAAAEAAAA9ANL/AwABAAAAAAA9ANP/AwABAAEAAAA+ANL/AwACAAAAAAA+ANP/AwACAAEAAAA/ANL/AwADAAAAAAA/ANP/AwADAAEAAABAANL/AwAEAAAAAABAANP/AwAEAAEAAABBANL/AwAFAAAAAABBANP/AwAFAAEAAABCANL/AwAGAAAAAABCANP/AwAGAAEAAABDANL/AwAHAAAAAABDANP/AwAHAAEAAABEANL/AwAIAAAAAABEANP/AwAIAAEAAAAvAM//AwAAAAEAAAAwAM7/AwABAAAAAAAwAM//AwABAAEAAAAxAM7/AwACAAAAAAAxAM//AwACAAEAAAAyAM7/AwADAAAAAAAyAM//AwADAAEAAAAzAM7/AwAEAAAAAAAzAM//AwAEAAEAAAA0AM7/AwAFAAAAAAA0AM//AwAFAAEAAAA1AM7/AwAGAAAAAAA1AM//AwAGAAEAAAA2AM7/AwAHAAAAAAA2AM//AwAHAAEAAAA3AM7/AwAIAAAAAAA3AM//AwAIAAEAAAAfANX/AwAAAAEAAAAgANT/AwABAAAAAAAgANX/AwABAAEAAAAhANT/AwACAAAAAAAhANX/AwACAAEAAAAiANT/AwADAAAAAAAiANX/AwADAAEAAAAjANT/AwAEAAAAAAAjANX/AwAEAAEAAAAkANT/AwAFAAAAAAAkANX/AwAFAAEAAAAlANT/AwAGAAAAAAAlANX/AwAGAAEAAAAmANT/AwAHAAAAAAAmANX/AwAHAAEAAAAnANT/AwAIAAAAAAAnANX/AwAIAAEAAAASAMz/AwAAAAEAAAATAMv/AwABAAAAAAATAMz/AwABAAEAAAAUAMv/AwACAAAAAAAUAMz/AwACAAEAAAAVAMv/AwADAAAAAAAVAMz/AwADAAEAAAAWAMv/AwAEAAAAAAAWAMz/AwAEAAEAAAAXAMv/AwAFAAAAAAAXAMz/AwAFAAEAAAAYAMv/AwAGAAAAAAAYAMz/AwAGAAEAAAAZAMv/AwAHAAAAAAAZAMz/AwAHAAEAAAAaAMv/AwAIAAAAAAAaAMz/AwAIAAEAAAAGAML/AwAAAAEAAAAHAMH/AwABAAAAAAAHAML/AwABAAEAAAAIAMH/AwACAAAAAAAIAML/AwACAAEAAAAJAMH/AwADAAAAAAAJAML/AwADAAEAAAAKAMH/AwAEAAAAAAAKAML/AwAEAAEAAAALAMH/AwAFAAAAAAALAML/AwAFAAEAAAAMAMH/AwAGAAAAAAAMAML/AwAGAAEAAAANAMH/AwAHAAAAAAANAML/AwAHAAEAAAAOAMH/AwAIAAAAAAAOAML/AwAIAAEAAAA=")
 tile_set = SubResource("TileSet_urq1c")
 
 [node name="chmurki_czarne" type="TileMapLayer" parent="tilesety"]
+position = Vector2(135, 0)
 tile_map_data = PackedByteArray("AAAiABAAAQAAAAEAAAAjAA8AAQABAAAAAAAjABAAAQABAAEAAAAkAA8AAQACAAAAAAAkABAAAQACAAEAAAAlAA8AAQADAAAAAAAlABAAAQADAAEAAAAmAA8AAQAEAAAAAAAmABAAAQAEAAEAAAAnAA8AAQAFAAAAAAAnABAAAQAFAAEAAAAoAA8AAQAGAAAAAAAoABAAAQAGAAEAAAApAA8AAQAHAAAAAAApABAAAQAHAAEAAAAqAA8AAQAIAAAAAAAqABAAAQAIAAEAAAAuAAkAAQAAAAEAAAAvAAgAAQABAAAAAAAvAAkAAQABAAEAAAAwAAgAAQACAAAAAAAwAAkAAQACAAEAAAAxAAgAAQADAAAAAAAxAAkAAQADAAEAAAAyAAgAAQAEAAAAAAAyAAkAAQAEAAEAAAAzAAgAAQAFAAAAAAAzAAkAAQAFAAEAAAA0AAgAAQAGAAAAAAA0AAkAAQAGAAEAAAA1AAgAAQAHAAAAAAA1AAkAAQAHAAEAAAA2AAgAAQAIAAAAAAA2AAkAAQAIAAEAAAAKAPv/AQAAAAEAAAALAPr/AQABAAAAAAALAPv/AQABAAEAAAAMAPr/AQACAAAAAAAMAPv/AQACAAEAAAANAPr/AQADAAAAAAANAPv/AQADAAEAAAAOAPr/AQAEAAAAAAAOAPv/AQAEAAEAAAAPAPr/AQAFAAAAAAAPAPv/AQAFAAEAAAAQAPr/AQAGAAAAAAAQAPv/AQAGAAEAAAARAPr/AQAHAAAAAAARAPv/AQAHAAEAAAASAPr/AQAIAAAAAAASAPv/AQAIAAEAAAAWAPD/AQAAAAEAAAAXAO//AQABAAAAAAAXAPD/AQABAAEAAAAYAO//AQACAAAAAAAYAPD/AQACAAEAAAAZAO//AQADAAAAAAAZAPD/AQADAAEAAAAaAO//AQAEAAAAAAAaAPD/AQAEAAEAAAAbAO//AQAFAAAAAAAbAPD/AQAFAAEAAAAcAO//AQAGAAAAAAAcAPD/AQAGAAEAAAAdAO//AQAHAAAAAAAdAPD/AQAHAAEAAAAeAO//AQAIAAAAAAAeAPD/AQAIAAEAAAAlAOr/AQAAAAEAAAAmAOn/AQABAAAAAAAmAOr/AQABAAEAAAAnAOn/AQACAAAAAAAnAOr/AQACAAEAAAAoAOn/AQADAAAAAAAoAOr/AQADAAEAAAApAOn/AQAEAAAAAAApAOr/AQAEAAEAAAAqAOn/AQAFAAAAAAAqAOr/AQAFAAEAAAArAOn/AQAGAAAAAAArAOr/AQAGAAEAAAAsAOn/AQAHAAAAAAAsAOr/AQAHAAEAAAAtAOn/AQAIAAAAAAAtAOr/AQAIAAEAAAA=")
 tile_set = SubResource("TileSet_lgvsn")
 
 [node name="chmurki_biale2" type="TileMapLayer" parent="tilesety"]
-position = Vector2(8, -16)
+position = Vector2(143, -16)
 tile_map_data = PackedByteArray("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")
 tile_set = SubResource("TileSet_ak10j")
 
 [node name="chmurki_biale3" type="TileMapLayer" parent="tilesety"]
-position = Vector2(8, -16)
+position = Vector2(143.00002, -16)
 scale = Vector2(1.0462989, 1.0039324)
 tile_map_data = PackedByteArray("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")
 tile_set = SubResource("TileSet_ak10j")
 
 [node name="chmurki_biale" type="TileMapLayer" parent="tilesety"]
-position = Vector2(8, -16)
+position = Vector2(143, -16)
 tile_map_data = PackedByteArray("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")
 tile_set = SubResource("TileSet_ak10j")
 
 [node name="roślinky" type="TileMapLayer" parent="tilesety"]
-position = Vector2(-7, 12)
-tile_map_data = PackedByteArray("AAABAAgAAQAEAAAAAAACAAgAAQAFAAAAAAAJAAgAAQADAAAAAAAIAAgAAQACAAAAAAAHAAgAAQADAAAAAAADAAgAAQACAAAAAAAEAAgAAQAAAAAAAAAAAAgAAQAAAAAAAAD//wgAAQACAAAAAAD+/wgAAQADAAAAAAD8/wgAAQAEAAAAAAD9/wgAAQAFAAAAAAD6/wgAAQAEAAAAAAD7/wgAAQAFAAAAAAAFAAgAAQADAAAAAAAGAAgAAQADAAAAAAA=")
+position = Vector2(128, 12)
+tile_map_data = PackedByteArray("AAABAAgAAQAEAAAAAAACAAgAAQAFAAAAAAAJAAgAAQADAAAAAAAIAAgAAQACAAAAAAAHAAgAAQADAAAAAAADAAgAAQACAAAAAAAEAAgAAQAAAAAAAAAAAAgAAQAAAAAAAAD//wgAAQACAAAAAAD+/wgAAQADAAAAAAD8/wgAAQAEAAAAAAD9/wgAAQAFAAAAAAD6/wgAAQAEAAAAAAD7/wgAAQAFAAAAAAAFAAgAAQADAAAAAAAGAAgAAQADAAAAAAD4/wgAAQABAAAAAAD1/wgAAQAEAAAAAAD2/wgAAQAFAAAAAAD3/wgAAQADAAAAAAA=")
 tile_set = ExtResource("7_cva2i")
 
 [node name="ziemia" type="TileMapLayer" parent="tilesety"]
-position = Vector2(-86, 42)
+position = Vector2(49, 42)
 tile_map_data = PackedByteArray("AAADAAkAAQAEAAIAAAAEAAgAAQAFAAEAAAAEAAkAAQAFAAIAAAAFAAgAAQAFAAIAAAAFAAkAAQAEAAIAAAAGAAgAAQAFAAIAAAAGAAkAAQAFAAIAAAAHAAgAAQAFAAIAAAAHAAkAAQAEAAIAAAADAAoAAQAFAAIAAAAEAAoAAQAFAAIAAAAFAAoAAQAFAAIAAAAGAAoAAQAFAAIAAAAHAAoAAQAFAAIAAAAIAAgAAQAFAAIAAAAIAAkAAQAFAAIAAAAIAAoAAQAFAAIAAAAJAAgAAQAFAAIAAAAJAAkAAQAEAAIAAAAJAAoAAQAFAAIAAAAKAAgAAQAFAAIAAAAKAAkAAQAEAAIAAAAKAAoAAQAFAAIAAAALAAgAAQAFAAEAAAALAAkAAQAFAAIAAAALAAoAAQAFAAIAAAAMAAgAAQAFAAIAAAAMAAkAAQAGAAIAAAAMAAoAAQAFAAIAAAANAAgAAQAFAAIAAAAOAAgAAQAFAAIAAAAPAAgAAQAFAAIAAAANAAkAAQAFAAIAAAAOAAkAAQAFAAIAAAAPAAkAAQAFAAIAAAANAAoAAQAFAAIAAAAOAAoAAQAFAAIAAAAPAAoAAQAFAAIAAAAQAAoAAQAFAAIAAAAQAAkAAQAFAAIAAAAQAAgAAQAFAAIAAAARAAgAAQAGAAEAAAARAAkAAQAFAAIAAAARAAoAAQAFAAIAAAADAAgAAQAFAAEAAAACAAgAAQAFAAEAAAABAAgAAQAFAAEAAAAAAAgAAQAFAAEAAAD//wgAAQAFAAEAAAD+/wgAAQAFAAEAAAACAAkAAQAFAAEAAAABAAkAAQAFAAEAAAAAAAkAAQAFAAEAAAD//wkAAQAFAAEAAAD+/wkAAQAFAAEAAAACAAoAAQAFAAEAAAABAAoAAQAFAAEAAAAAAAoAAQAFAAEAAAD//woAAQAFAAEAAAD+/woAAQAFAAEAAAD9/wgAAQAFAAEAAAD8/wgAAQAFAAEAAAD7/wgAAQAFAAEAAAD6/wgAAQAFAAEAAAD5/wgAAQAFAAEAAAD4/wgAAQAFAAEAAAD9/wkAAQAFAAEAAAD8/wkAAQAFAAEAAAD7/wkAAQAFAAEAAAD6/wkAAQAFAAEAAAD5/wkAAQAFAAEAAAD4/wkAAQAFAAEAAAD5/woAAQAFAAEAAAD6/woAAQAFAAEAAAD7/woAAQAFAAEAAAD8/woAAQAFAAEAAAD9/woAAQAFAAEAAAD3/wgAAQAFAAEAAAA=")
 tile_set = ExtResource("7_cva2i")
 
 [node name="moons" type="TileMapLayer" parent="tilesety"]
+position = Vector2(135, 0)
 tile_set = SubResource("TileSet_r87p4")
 
 [node name="zones" type="Node" parent="."]
 
 [node name="killzone" type="Area2D" parent="zones"]
-position = Vector2(-125, 580)
+position = Vector2(10, 580)
 script = ExtResource("9_b6sml")
 
 [node name="boundary" type="CollisionShape2D" parent="zones/killzone"]
@@ -4361,317 +4420,317 @@ debug_color = Color(0.75498515, 0, 0.11352757, 0.41960785)
 [node name="chmurki" type="Node" parent="."]
 
 [node name="MovingChmury" parent="chmurki" instance=ExtResource("10_cva2i")]
-position = Vector2(486, -25)
+position = Vector2(621, -25)
 
 [node name="MovingChmury2" parent="chmurki" instance=ExtResource("10_cva2i")]
-position = Vector2(952, -485)
+position = Vector2(1087, -485)
 
 [node name="MovingChmury3" parent="chmurki" instance=ExtResource("10_cva2i")]
-position = Vector2(449, -1150)
+position = Vector2(584, -1150)
 
 [node name="MovingChmury4" parent="chmurki" instance=ExtResource("10_cva2i")]
-position = Vector2(1152, -2220)
+position = Vector2(1287, -2220)
 
 [node name="MovingChmury6" parent="chmurki" instance=ExtResource("10_cva2i")]
-position = Vector2(1870, -2385)
+position = Vector2(2005, -2385)
 
 [node name="chmursa_2" parent="chmurki" instance=ExtResource("11_syh2d")]
-position = Vector2(1507, -2312)
+position = Vector2(1642, -2312)
 
 [node name="gwiazdky" type="Node" parent="."]
 
 [node name="gwiazdka" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(113, 85)
+position = Vector2(247.99998, 85)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.38428777
 
 [node name="gwiazdka2" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(318, 138)
+position = Vector2(453, 138)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.9731482
 
 [node name="gwiazdka3" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(547, 63.000004)
+position = Vector2(682, 63.000004)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.95028436
 
 [node name="gwiazdka4" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(898, 43.000008)
+position = Vector2(1033, 43.000008)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.9373879
 
 [node name="gwiazdka5" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(760, -121.99998)
+position = Vector2(895, -121.99998)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.69727665
 
 [node name="gwiazdka6" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1066, -270)
+position = Vector2(1201, -270)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.88984615
 
 [node name="gwiazdka7" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1009, -192.00002)
+position = Vector2(1144, -192.00002)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka8" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1076.0001, -158)
+position = Vector2(1211.0001, -158)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka9" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(158.00018, -319)
+position = Vector2(293.00018, -319)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka10" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(473.99997, -448)
+position = Vector2(608.99994, -448)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka11" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(777, -630)
+position = Vector2(912, -630)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka12" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1277, -487)
+position = Vector2(1412, -487)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka13" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1164, -875)
+position = Vector2(1299, -875)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka14" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(609.0002, -898)
+position = Vector2(744.0002, -898)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka15" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(215.00003, -725.00006)
+position = Vector2(350, -725.00006)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka16" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(965, -976)
+position = Vector2(1100, -976)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka17" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(210.00006, -1270)
+position = Vector2(345.00006, -1270)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka18" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(634, -1456)
+position = Vector2(769, -1456)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka19" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1070, -1708.0001)
+position = Vector2(1205, -1708.0001)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka20" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(622.0001, -1890.0001)
+position = Vector2(757.0001, -1890.0001)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka21" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(238.00009, -2135)
+position = Vector2(373.00006, -2135)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka22" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(967, -2015)
+position = Vector2(1102, -2015)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka23" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(908.00006, -2371)
+position = Vector2(1043, -2371)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka24" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1288, -2477.0002)
+position = Vector2(1423, -2477.0002)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka25" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1545.0001, -2159.0002)
+position = Vector2(1680.0001, -2159.0002)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka26" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1701, -2508.0002)
+position = Vector2(1836, -2508.0002)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
 [node name="gwiazdka27" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(759.99994, -1385.9655)
+position = Vector2(894.99994, -1385.9655)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.15078515
 
 [node name="gwiazdka28" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(964.99994, -1332.9655)
+position = Vector2(1099.9999, -1332.9655)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.7396435
 
 [node name="gwiazdka29" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1194, -1407.9655)
+position = Vector2(1329, -1407.9655)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.71677977
 
 [node name="gwiazdka30" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1545, -1427.9655)
+position = Vector2(1680, -1427.9655)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.7038829
 
 [node name="gwiazdka31" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1407, -1592.9655)
+position = Vector2(1542, -1592.9655)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.46377409
 
 [node name="gwiazdka32" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1390.9999, -2635.9656)
+position = Vector2(1525.9999, -2635.9656)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.15078515
 
 [node name="gwiazdka33" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1595.9999, -2582.9656)
+position = Vector2(1730.9999, -2582.9656)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.7396435
 
 [node name="gwiazdka34" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1824.9999, -2657.9656)
+position = Vector2(1959.9999, -2657.9656)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.71677977
 
 [node name="gwiazdka35" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(2176, -2677.9656)
+position = Vector2(2311, -2677.9656)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.7038829
 
 [node name="gwiazdka36" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(2037.9999, -2842.9656)
+position = Vector2(2172.9998, -2842.9656)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.46377409
 
 [node name="gwiazdka37" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(607, -1858.9655)
+position = Vector2(742, -1858.9655)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.15078515
 
 [node name="gwiazdka38" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(812, -1805.9655)
+position = Vector2(947, -1805.9655)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.7396435
 
 [node name="gwiazdka39" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1041, -1880.9655)
+position = Vector2(1176, -1880.9655)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.71677977
 
 [node name="gwiazdka40" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1392, -1900.9655)
+position = Vector2(1527, -1900.9655)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.7038829
 
 [node name="gwiazdka41" type="AnimatedSprite2D" parent="gwiazdky"]
-position = Vector2(1254, -2065.9653)
+position = Vector2(1389, -2065.9653)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.46377409
 
 [node name="boza_wiadomosc" type="Panel" parent="."]
-offset_left = 224.0
-offset_top = 149.0
-offset_right = 388.0
-offset_bottom = 206.0
+offset_left = 427.0
+offset_top = 93.0
+offset_right = 591.0
+offset_bottom = 188.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_if4cw")
 
 [node name="hejka" type="Label" parent="boza_wiadomosc"]
@@ -4688,9 +4747,9 @@ o fazach ksiezyca..."
 label_settings = SubResource("LabelSettings_r87p4")
 
 [node name="Olikow" type="Label" parent="."]
-offset_left = 93.0
+offset_left = 228.0
 offset_top = 107.0
-offset_right = 426.0
+offset_right = 561.0
 offset_bottom = 157.0
 scale = Vector2(0.619682, 0.619682)
 text = "Oliwia Kowalczyk"
@@ -4701,7 +4760,8 @@ label_settings = SubResource("LabelSettings_if4cw")
 [node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
+offset_left = 135.0
+offset_right = 175.0
 offset_bottom = 40.0
 
 [node name="CoinDisplay" type="Label" parent="CanvasLayer/Control"]

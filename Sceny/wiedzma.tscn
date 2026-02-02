@@ -158,8 +158,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xh26e"]
-radius = 13.0
-height = 84.148994
+radius = 11.0
+height = 70.68515
 
 [node name="Wiedzma" type="CharacterBody2D"]
 script = ExtResource("1_7u37v")
@@ -179,7 +179,7 @@ scale = Vector2(1, 0.59418416)
 shape = SubResource("CapsuleShape2D_xh26e")
 
 [node name="KamerkaWiedzmy" type="Camera2D" parent="."]
-position = Vector2(3.975, -116.33)
+position = Vector2(3.975, -89)
 zoom = Vector2(2.215, 2.215)
 limit_left = -180
 
