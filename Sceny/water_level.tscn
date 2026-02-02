@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=4 uid="uid://w1cuodefo2x8"]
+[gd_scene load_steps=73 format=4 uid="uid://w1cuodefo2x8"]
 
 [ext_resource type="Texture2D" uid="uid://cdf6hawl1pnoq" path="res://Assety (testowe)/background.png" id="1_04l41"]
 [ext_resource type="Script" uid="uid://ctahej4wsl3sw" path="res://scripts/water_level.gd" id="1_j78rw"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://urtftbid6aog" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Pine Trees.png" id="13_xljt2"]
 [ext_resource type="Script" uid="uid://c7kj3x6qdrb" path="res://scripts/strefa_umieranka.gd" id="14_f46hj"]
 [ext_resource type="Script" uid="uid://c2snhc48troab" path="res://Sceny/coin_display.gd" id="15_88isx"]
+[ext_resource type="PackedScene" uid="uid://c5322ssv0oflp" path="res://Sceny/krabsy.tscn" id="16_xljt2"]
 
 [sub_resource type="Animation" id="Animation_vqebx"]
 resource_name = "fale"
@@ -1347,5 +1348,31 @@ scale = Vector2(0.6668746, 0.6668746)
 text = "score: "
 label_settings = SubResource("LabelSettings_xljt2")
 script = ExtResource("15_88isx")
+
+[node name="zbieranki" type="Node" parent="."]
+
+[node name="krabsy" parent="zbieranki" instance=ExtResource("16_xljt2")]
+position = Vector2(1121, 394)
+
+[node name="krabsy2" parent="zbieranki" instance=ExtResource("16_xljt2")]
+position = Vector2(993, 713)
+
+[node name="krabsy3" parent="zbieranki" instance=ExtResource("16_xljt2")]
+position = Vector2(1987, 742)
+
+[node name="krabsy4" parent="zbieranki" instance=ExtResource("16_xljt2")]
+position = Vector2(3466, 407)
+
+[node name="krabsy5" parent="zbieranki" instance=ExtResource("16_xljt2")]
+position = Vector2(2508, 731)
+
+[node name="krabsy6" parent="zbieranki" instance=ExtResource("16_xljt2")]
+position = Vector2(4280, 1055)
+
+[node name="krabsy7" parent="zbieranki" instance=ExtResource("16_xljt2")]
+position = Vector2(3548, 2069)
+
+[node name="krabsy8" parent="zbieranki" instance=ExtResource("16_xljt2")]
+position = Vector2(4593, 2263)
 
 [connection signal="body_entered" from="strefa_umieranka" to="strefa_umieranka" method="_on_body_entered"]

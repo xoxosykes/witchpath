@@ -1,3 +1,7 @@
 res://Sceny/nature_level.tscn
 res://Sceny/test.tres
 res://scripts/nature_level.gd
+res://krabsy.gd
+res://krabsy.tscn
+res://Sceny/water_level.tscn
+res://Sceny/krabsy.tscn
