@@ -1,8 +1,9 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://2bpg8hdom1s6"]
+[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://2bpg8hdom1s6"]
 
 [ext_resource type="Texture2D" uid="uid://bl4jute4t53gp" path="res://Assety (testowe)/tilemap_new_softy_sand.png" id="1_bobq7"]
 [ext_resource type="Texture2D" uid="uid://e5yydnchguew" path="res://Assety (testowe)/Tileset_Grass/Tileset_grass_128x80_x2.png" id="1_r6v8i"]
 [ext_resource type="Texture2D" uid="uid://c1je48agsh1uh" path="res://Assety (testowe)/GandalfHardcore Water Tiles sheet.png" id="3_5ykxu"]
+[ext_resource type="Texture2D" uid="uid://urtftbid6aog" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Pine Trees.png" id="4_8ysmc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ykxu"]
 texture = ExtResource("1_bobq7")
@@ -282,6 +283,18 @@ texture_region_size = Vector2i(32, 32)
 0:1/0 = 0
 0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e5r11"]
+texture = ExtResource("4_8ysmc")
+texture_region_size = Vector2i(32, 32)
+2:0/next_alternative_id = 2
+2:0/0 = 0
+2:0/1 = 1
+2:1/next_alternative_id = 3
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.372614, 16, -3.8235683, -16, 2.8676796, -16, 5.7353554, 16)
+2:1/1 = 1
+2:1/2 = 2
+
 [resource]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
@@ -293,3 +306,4 @@ terrain_set_0/terrain_0/color = Color(3.7541986e-06, 0.6121763, 0.50659597, 1)
 sources/1 = SubResource("TileSetAtlasSource_vthpf")
 sources/0 = SubResource("TileSetAtlasSource_5ykxu")
 sources/2 = SubResource("TileSetAtlasSource_8ysmc")
+sources/3 = SubResource("TileSetAtlasSource_e5r11")

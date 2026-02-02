@@ -1,12 +1,15 @@
+CanvasLayer
+Area2D
+Node
+TileMapLayer
+RichTextLabel
 CollisionShape2D
 Interakcja
 Label
-Area2D
 Node2D
 Sprite2D
 Parallax2D
 AnimatedSprite2D
 StaticBody2D
-TileMapLayer
 AudioStreamPlayer
 AnimationPlayer

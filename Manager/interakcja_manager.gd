@@ -5,7 +5,7 @@ extends Node2D
 @onready var label = $Interakcja_label
 
 # etykietka z interakcją
-const base_text = "[E]"
+const base_text = "[color=steelblue][E][/color] "
 
 # działanie area2D, oraz ilość area2D z którymi można wejść w interakcje
 var active_areas = []

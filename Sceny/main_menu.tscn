@@ -96,6 +96,8 @@ text = "exit"
 
 [node name="BGmusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_ug2md")
+volume_db = -4.359
+pitch_scale = 0.71
 autoplay = true
 mix_target = 2
 playback_type = 1
