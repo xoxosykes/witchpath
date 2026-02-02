@@ -10,3 +10,6 @@ res://Physics/wykrywanie_wody.gd
 res://scripts/wiedzma.gd
 res://Sceny/chmurkowosc.tscn
 res://scripts/killzone.gd
+res://Sceny/wiedzma.tscn
+res://Sceny/wykrywanie_wody.tscn
+res://scripts/portal.gd
