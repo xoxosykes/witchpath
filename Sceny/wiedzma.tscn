@@ -179,7 +179,7 @@ scale = Vector2(1, 0.59418416)
 shape = SubResource("CapsuleShape2D_xh26e")
 
 [node name="KamerkaWiedzmy" type="Camera2D" parent="."]
-position = Vector2(3.975, -116.33)
+position = Vector2(3.975, -89)
 zoom = Vector2(2.215, 2.215)
 limit_left = -180
 

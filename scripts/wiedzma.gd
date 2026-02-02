@@ -5,7 +5,7 @@ class_name Wiedzma
 # --- USTAWIENIA RUCHU ---
 @export var SPEED = 210.0
 @export var JUMP_VELOCITY = -600.0
-@export var SWIM_JUMP : float = -250.0 
+@export var SWIM_JUMP : float = -200.0 
 @export var SWIM_GRAVITY : float = 0.25 
 @export var SWIM_VELOCITY_CAP : float = 100.0 
 
