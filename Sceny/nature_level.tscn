@@ -25,7 +25,8 @@
 [ext_resource type="PackedScene" uid="uid://dmx75iyx5nq6m" path="res://Sceny/portal_ziemia.tscn" id="17_0c8fp"]
 [ext_resource type="FontFile" uid="uid://fa1tna2k1yhf" path="res://assety_nature/Yabeno-9MdgL.otf" id="18_oxb2l"]
 [ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="25_8gj3v"]
-[ext_resource type="Script" uid="uid://c2snhc48troab" path="res://Sceny/coin_display.gd" id="26_0k4rb"]
+[ext_resource type="Script" uid="uid://c2snhc48troab" path="res://scripts/coin_display.gd" id="26_0k4rb"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_edcfr"]
 texture = ExtResource("9_atuq5")

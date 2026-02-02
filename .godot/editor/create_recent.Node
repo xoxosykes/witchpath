@@ -1,6 +1,6 @@
-Timer
 CollisionShape2D
 Area2D
+Timer
 AnimatedSprite2D
 TextureRect
 CanvasLayer
@@ -12,4 +12,3 @@ Interakcja
 Node2D
 Parallax2D
 StaticBody2D
-AudioStreamPlayer
