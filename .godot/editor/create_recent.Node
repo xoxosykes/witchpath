@@ -1,14 +1,14 @@
-TileMapLayer
+AnimatedSprite2D
+Node
 CollisionShape2D
 Label
 Panel
 Area2D
-AnimatedSprite2D
 Timer
 TextureRect
 CanvasLayer
+TileMapLayer
 Sprite2D
 VBoxContainer
 Interakcja
 Node2D
-Parallax2D
