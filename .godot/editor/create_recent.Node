@@ -1,14 +1,14 @@
 CollisionShape2D
+Label
+Panel
 Area2D
-Timer
 AnimatedSprite2D
+Timer
 TextureRect
 CanvasLayer
 TileMapLayer
 Sprite2D
-Label
 VBoxContainer
 Interakcja
 Node2D
 Parallax2D
-StaticBody2D

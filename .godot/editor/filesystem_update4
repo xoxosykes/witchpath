@@ -14,3 +14,5 @@ res://scripts/drugie_kolce.gd
 res://scripts/kolce_cienko.gd
 res://scripts/kolce_gora_dol_1.gd
 res://scripts/strefa_umieranka.gd
+res://scripts/main_menu.gd
+res://scripts/nature_level.gd
