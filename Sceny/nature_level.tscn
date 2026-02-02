@@ -1,8 +1,9 @@
-[gd_scene load_steps=42 format=4 uid="uid://nkb5qr2m3s47"]
+[gd_scene load_steps=54 format=4 uid="uid://nkb5qr2m3s47"]
 
 [ext_resource type="PackedScene" uid="uid://223q6wbe5cq6" path="res://Sceny/eath_gem.tscn" id="1_0c8fp"]
 [ext_resource type="Texture2D" uid="uid://o3hnxu2x4huh" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Floor Tiles1.png" id="1_0d3cb"]
 [ext_resource type="Texture2D" uid="uid://d3bgbjvxocvns" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 1.png" id="1_qrhn7"]
+[ext_resource type="Script" uid="uid://dbeuc7fcqa5x6" path="res://scripts/nature_level.gd" id="1_qxlbe"]
 [ext_resource type="Texture2D" uid="uid://d0uanlwlxxfl6" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Tree1.png" id="2_21842"]
 [ext_resource type="PackedScene" uid="uid://dg34884x4l4d2" path="res://Sceny/wiedzma.tscn" id="2_hoooe"]
 [ext_resource type="Texture2D" uid="uid://5phrwbnxgtg3" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 2.png" id="2_uf5ml"]
@@ -26,6 +27,8 @@
 [ext_resource type="FontFile" uid="uid://fa1tna2k1yhf" path="res://assety_nature/Yabeno-9MdgL.otf" id="18_oxb2l"]
 [ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="25_8gj3v"]
 [ext_resource type="Script" uid="uid://c2snhc48troab" path="res://Sceny/coin_display.gd" id="26_0k4rb"]
+[ext_resource type="Texture2D" uid="uid://dvlh78wgywgvi" path="res://assety_nature/Elementals_leaf_ranger_288x128_SpriteSheet.png" id="27_0k4rb"]
+[ext_resource type="PackedScene" uid="uid://cr3y81tuu863p" path="res://Manager/interakcja.tscn" id="28_ga1i2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_edcfr"]
 texture = ExtResource("9_atuq5")
@@ -566,7 +569,68 @@ font_color = Color(0.30588236, 0.26666668, 0.23921569, 1)
 font = ExtResource("25_8gj3v")
 font_size = 49
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ga1i2"]
+atlas = ExtResource("27_0k4rb")
+region = Rect2(0, 0, 301, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxlbe"]
+atlas = ExtResource("27_0k4rb")
+region = Rect2(0, 136, 301, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v2825"]
+atlas = ExtResource("27_0k4rb")
+region = Rect2(0, 272, 301, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f7rbg"]
+atlas = ExtResource("27_0k4rb")
+region = Rect2(0, 408, 301, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yh8mq"]
+atlas = ExtResource("27_0k4rb")
+region = Rect2(0, 544, 301, 136)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1d4ap"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ga1i2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxlbe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v2825")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f7rbg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yh8mq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qxlbe"]
+radius = 21.127693
+height = 87.29048
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qxlbe"]
+bg_color = Color(0, 0.70980394, 0.47058824, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.13654903, 0.39470482, 0.25107887, 1)
+shadow_size = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_v2825"]
+font = ExtResource("25_8gj3v")
+font_size = 40
+
 [node name="nature_level" type="Node2D"]
+script = ExtResource("1_qxlbe")
 
 [node name="background" type="Node2D" parent="."]
 
@@ -832,5 +896,35 @@ scale = Vector2(0.6668746, 0.6668746)
 text = "score: "
 label_settings = SubResource("LabelSettings_ga1i2")
 script = ExtResource("26_0k4rb")
+
+[node name="bozyszcze_lesne" type="AnimatedSprite2D" parent="."]
+position = Vector2(205.00002, 164.00002)
+scale = Vector2(1.9446642, 1.9446642)
+sprite_frames = SubResource("SpriteFrames_1d4ap")
+
+[node name="Interakcja" parent="bozyszcze_lesne" instance=ExtResource("28_ga1i2")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bozyszcze_lesne/Interakcja"]
+position = Vector2(-23.140251, 34.453243)
+rotation = -1.5625569
+shape = SubResource("CapsuleShape2D_qxlbe")
+
+[node name="bozyszczowe_bajdurzenie" type="Panel" parent="."]
+offset_left = 48.0
+offset_top = 154.0
+offset_right = 161.0
+offset_bottom = 198.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qxlbe")
+
+[node name="sekret_lasu" type="Label" parent="bozyszczowe_bajdurzenie"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 13.0
+offset_right = 139.0
+offset_bottom = 62.0
+scale = Vector2(0.32769457, 0.32769457)
+text = "heheszki papatki
+"
+label_settings = SubResource("LabelSettings_v2825")
 
 [connection signal="body_entered" from="kolce_die" to="kolce_die" method="_on_body_entered"]

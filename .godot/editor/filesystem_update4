@@ -1,6 +1,3 @@
-res://Sceny/bozek_ksiezyca.tscn
+res://Sceny/nature_level.tscn
 res://Sceny/test.tres
-res://Manager/interakcja_manager.tscn
-res://Sceny/wiedzma.tscn
-res://scripts/wiedzma.gd
-res://Sceny/water_level.tscn
+res://scripts/nature_level.gd
