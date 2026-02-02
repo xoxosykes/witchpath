@@ -71,7 +71,7 @@ frame_progress = 0.76161754
 [node name="wykrywanie" type="Area2D" parent="."]
 
 [node name="collisionportal" type="CollisionShape2D" parent="wykrywanie"]
-position = Vector2(7495, 255)
+position = Vector2(7490, 386)
 rotation = -1.5707964
 shape = SubResource("CapsuleShape2D_0c8fp")
 
