@@ -1,8 +1,8 @@
-res://scripts/water_level.gd
-res://Sceny/water_level.tscn
+res://Sceny/nature_level.tscn
 res://Sceny/test.tres
-res://Manager/interakcja_manager.gd
-res://Manager/interakcja.tscn
-res://Manager/interakcja.gd
-res://Manager/interakcja_manager.tscn
+res://Sceny/nature_god.tscn
+res://Sceny/bozek_ksiezyca.tscn
 res://Sceny/wiedzma.tscn
+res://scripts/wiedzma.gd
+res://scripts/game_controller.gd
+res://Sceny/moon_level.tscn

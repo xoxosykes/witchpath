@@ -1,8 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://dg34884x4l4d2"]
+[gd_scene load_steps=27 format=3 uid="uid://dg34884x4l4d2"]
 
 [ext_resource type="Script" uid="uid://bkchfafrucno2" path="res://scripts/wiedzma.gd" id="1_7u37v"]
 [ext_resource type="Texture2D" uid="uid://cc8j8pi6n1eso" path="res://Assety (testowe)/Blue_witch/B_witch_idle.png" id="2_hgy8x"]
 [ext_resource type="PackedScene" uid="uid://tru7emp03pfj" path="res://Sceny/wykrywanie_wody.tscn" id="3_hgy8x"]
+[ext_resource type="Texture2D" uid="uid://whgchps7q0n8" path="res://Assety (testowe)/Blue_witch/B_witch_run.png" id="3_xh26e"]
+[ext_resource type="Texture2D" uid="uid://doesmakb2wcij" path="res://Assety (testowe)/Blue_witch/B_witch_charge.png" id="4_iueal"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xh26e"]
 atlas = ExtResource("2_hgy8x")
@@ -28,6 +30,58 @@ region = Rect2(0, 192, 32, 48)
 atlas = ExtResource("2_hgy8x")
 region = Rect2(0, 240, 32, 48)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jus1"]
+atlas = ExtResource("3_xh26e")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1r6e1"]
+atlas = ExtResource("3_xh26e")
+region = Rect2(0, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_474ep"]
+atlas = ExtResource("3_xh26e")
+region = Rect2(0, 96, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sos8h"]
+atlas = ExtResource("3_xh26e")
+region = Rect2(0, 144, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtmg7"]
+atlas = ExtResource("3_xh26e")
+region = Rect2(0, 192, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4ydk"]
+atlas = ExtResource("3_xh26e")
+region = Rect2(0, 240, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08tc2"]
+atlas = ExtResource("3_xh26e")
+region = Rect2(0, 288, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dherl"]
+atlas = ExtResource("3_xh26e")
+region = Rect2(0, 336, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lc6i"]
+atlas = ExtResource("4_iueal")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apj67"]
+atlas = ExtResource("4_iueal")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjt34"]
+atlas = ExtResource("4_iueal")
+region = Rect2(0, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rur5s"]
+atlas = ExtResource("4_iueal")
+region = Rect2(0, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vu8nc"]
+atlas = ExtResource("4_iueal")
+region = Rect2(0, 192, 48, 48)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_0jus1"]
 animations = [{
 "frames": [{
@@ -51,7 +105,56 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 12.0
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jus1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1r6e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_474ep")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sos8h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qtmg7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d4ydk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08tc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dherl")
+}],
+"loop": true,
+"name": &"levitatin",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lc6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apj67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjt34")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rur5s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vu8nc")
+}],
+"loop": false,
+"name": &"magic",
+"speed": 8.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xh26e"]
@@ -61,13 +164,14 @@ height = 84.148994
 [node name="Wiedzma" type="CharacterBody2D"]
 script = ExtResource("1_7u37v")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="animacja" type="AnimatedSprite2D" parent="."]
 modulate = Color(1.51253, 0.65937954, 1.5013165, 1)
 scale = Vector2(1.815455, 1.815455)
 sprite_frames = SubResource("SpriteFrames_0jus1")
-animation = &"idle"
+animation = &"magic"
 autoplay = "idle"
-frame_progress = 0.8928128
+frame = 4
+frame_progress = 1.0
 
 [node name="Kapsula_wiedzmy" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 5)
@@ -81,5 +185,9 @@ limit_left = -180
 
 [node name="wykrywanie_wody" parent="." groups=["Wiedzma"] instance=ExtResource("3_hgy8x")]
 light_mask = 5
+
+[node name="CoyoteTimer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
 
 [connection signal="water_state_changed" from="wykrywanie_wody" to="." method="_on_wykrywanie_wody_water_state_changed"]

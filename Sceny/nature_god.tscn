@@ -1,0 +1,78 @@
+[gd_scene load_steps=15 format=3 uid="uid://dv034c42n1n84"]
+
+[ext_resource type="Texture2D" uid="uid://xwtitfbdftnh" path="res://assety_nature/PNG/idle/idle_1.png" id="1_dbtpy"]
+[ext_resource type="Texture2D" uid="uid://8i6ccqhh4r03" path="res://assety_nature/PNG/idle/idle_2.png" id="2_shdqe"]
+[ext_resource type="Texture2D" uid="uid://dtybdppgn2mwj" path="res://assety_nature/PNG/idle/idle_3.png" id="3_mk2ng"]
+[ext_resource type="Texture2D" uid="uid://puifaf42x6jy" path="res://assety_nature/PNG/idle/idle_4.png" id="4_hbt8s"]
+[ext_resource type="Texture2D" uid="uid://dolawncrivwu5" path="res://assety_nature/PNG/idle/idle_5.png" id="5_5mk1q"]
+[ext_resource type="Texture2D" uid="uid://c1suuht0vjxun" path="res://assety_nature/PNG/idle/idle_6.png" id="6_ugyt4"]
+[ext_resource type="Texture2D" uid="uid://7ny5lxv1wu3c" path="res://assety_nature/PNG/idle/idle_7.png" id="7_6so61"]
+[ext_resource type="Texture2D" uid="uid://brolmx6wr8yv1" path="res://assety_nature/PNG/idle/idle_9.png" id="8_1mqqy"]
+[ext_resource type="Texture2D" uid="uid://cqve4dfuouehw" path="res://assety_nature/PNG/idle/idle_8.png" id="9_6hppj"]
+[ext_resource type="Texture2D" uid="uid://b57y8617nnymn" path="res://assety_nature/PNG/idle/idle_10.png" id="10_41e6d"]
+[ext_resource type="Texture2D" uid="uid://dw1ti0gq6jtt6" path="res://assety_nature/PNG/idle/idle_11.png" id="11_tqb8v"]
+[ext_resource type="Texture2D" uid="uid://b70ehvne6mke1" path="res://assety_nature/PNG/idle/idle_12.png" id="12_pagog"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ugnw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dbtpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_shdqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mk2ng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hbt8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5mk1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ugyt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6so61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1mqqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_6hppj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_41e6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_tqb8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pagog")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dbtpy"]
+radius = 34.0
+height = 149.23082
+
+[node name="nature_god" type="Node2D"]
+scale = Vector2(2.2841358, 2.4960427)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7ugnw")
+autoplay = "default"
+frame_progress = 0.7339246
+flip_h = true
+
+[node name="pole_boze" type="Area2D" parent="AnimatedSprite2D"]
+
+[node name="boska_kolizja" type="CollisionShape2D" parent="AnimatedSprite2D/pole_boze"]
+position = Vector2(-2, 36)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_dbtpy")

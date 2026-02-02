@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://v61acop5f6ub" path="res://scripts/bozek_ksiezyca.gd" id="1_r5yfm"]
 [ext_resource type="Texture2D" uid="uid://b5lqj5iycd3tl" path="res://Assety_moon_level/Gemini_Generated_Image_g79o8xg79o8xg79o-removebg-preview.png" id="1_tqe3x"]
 
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_r5yfm"]
 atlas = ExtResource("1_tqe3x")
 region = Rect2(250, 250, 125, 125)

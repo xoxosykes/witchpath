@@ -1,7 +1,8 @@
-[gd_scene load_steps=39 format=4 uid="uid://nkb5qr2m3s47"]
+[gd_scene load_steps=42 format=4 uid="uid://nkb5qr2m3s47"]
 
 [ext_resource type="PackedScene" uid="uid://223q6wbe5cq6" path="res://Sceny/eath_gem.tscn" id="1_0c8fp"]
 [ext_resource type="Texture2D" uid="uid://o3hnxu2x4huh" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Floor Tiles1.png" id="1_0d3cb"]
+[ext_resource type="Script" uid="uid://516jaeor8fko" path="res://scripts/nature_level.gd" id="1_mvrrq"]
 [ext_resource type="Texture2D" uid="uid://d3bgbjvxocvns" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 1.png" id="1_qrhn7"]
 [ext_resource type="Texture2D" uid="uid://d0uanlwlxxfl6" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Tree1.png" id="2_21842"]
 [ext_resource type="PackedScene" uid="uid://dg34884x4l4d2" path="res://Sceny/wiedzma.tscn" id="2_hoooe"]
@@ -24,6 +25,8 @@
 [ext_resource type="Texture2D" uid="uid://cbtbbwu67bw7d" path="res://Assety_moon_level/clouds/PNG/Clouds_white/Shape5/cloud_shape5_1.png" id="14_xtqun"]
 [ext_resource type="PackedScene" uid="uid://dmx75iyx5nq6m" path="res://Sceny/portal_ziemia.tscn" id="17_0c8fp"]
 [ext_resource type="FontFile" uid="uid://fa1tna2k1yhf" path="res://assety_nature/Yabeno-9MdgL.otf" id="18_oxb2l"]
+[ext_resource type="PackedScene" uid="uid://cr7xu37bualx0" path="res://Sceny/score.tscn" id="26_8gj3v"]
+[ext_resource type="PackedScene" uid="uid://dv034c42n1n84" path="res://Sceny/nature_god.tscn" id="27_0k4rb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_edcfr"]
 texture = ExtResource("9_atuq5")
@@ -561,6 +564,7 @@ font_size = 100
 font_color = Color(0.30588236, 0.26666668, 0.23921569, 1)
 
 [node name="nature_level" type="Node2D"]
+script = ExtResource("1_mvrrq")
 
 [node name="background" type="Node2D" parent="."]
 
@@ -807,5 +811,10 @@ scale = Vector2(0.28332198, 0.28332198)
 theme_override_font_sizes/font_size = 16
 text = "Sandra Zienkiewicz"
 label_settings = SubResource("LabelSettings_qrhn7")
+
+[node name="Score" parent="." instance=ExtResource("26_8gj3v")]
+
+[node name="nature_god" parent="." instance=ExtResource("27_0k4rb")]
+position = Vector2(175, 122)
 
 [connection signal="body_entered" from="kolce_die" to="kolce_die" method="_on_body_entered"]

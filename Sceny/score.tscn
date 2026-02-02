@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr7xu37bualx0"]
+
+[ext_resource type="FontFile" uid="uid://xvfq4xbjm4ov" path="res://Assety (testowe)/Pixeboy-z8XGD.ttf" id="1_7ijx2"]
+[ext_resource type="Texture2D" uid="uid://buvopj4vhh465" path="res://assety_nature/Collectables-Sheet.png" id="2_gkbmx"]
+
+[node name="Score" type="CanvasLayer"]
+scale = Vector2(0.40940553, 0.40940553)
+transform = Transform2D(0.40940553, 0, 0, 0.40940553, 0, 0)
+
+[node name="ramka" type="VBoxContainer" parent="."]
+offset_left = 341.95923
+offset_top = 97.70264
+offset_right = 453.95923
+offset_bottom = 151.70265
+scale = Vector2(3.537964, 3.537964)
+
+[node name="wynik" type="Label" parent="ramka"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_7ijx2")
+theme_override_font_sizes/font_size = 71
+text = ": 0 "
+
+[node name="krysztalziemi" type="Sprite2D" parent="ramka"]
+position = Vector2(-41.619, 18.208311)
+scale = Vector2(3.59, 3.59)
+texture = ExtResource("2_gkbmx")
+hframes = 12
+vframes = 11
+frame = 108
