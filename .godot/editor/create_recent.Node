@@ -1,3 +1,6 @@
+TileMapLayer
+Node
+RichTextLabel
 CollisionShape2D
 Interakcja
 Label
@@ -7,6 +10,5 @@ Sprite2D
 Parallax2D
 AnimatedSprite2D
 StaticBody2D
-TileMapLayer
 AudioStreamPlayer
 AnimationPlayer

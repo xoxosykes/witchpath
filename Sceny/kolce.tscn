@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=4 uid="uid://dkmu5r3tjcsi4"]
+
+[ext_resource type="TileSet" uid="uid://2bpg8hdom1s6" path="res://Sceny/test.tres" id="1_tkerq"]
+
+[node name="kolce3" type="TileMapLayer"]
+tile_map_data = PackedByteArray("AAAMAB4ABAACAAAAAAAMAB8ABAACAAEAAAAOAB8ABAACAAAAAAAOACAABAACAAEAAAAIAB8ABAACAAAAAAAIACAABAACAAEAAAAJAB4ABAACAAAAAAAJAB8ABAACAAEAAAANAB4ABAACAAAAAAANAB8ABAACAAEAAAAKAB8ABAACAAAAAAAKACAABAACAAEAAAA=")
+tile_set = ExtResource("1_tkerq")
