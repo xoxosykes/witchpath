@@ -19,7 +19,6 @@ var in_water : bool = false
 var is_playing_magic_anim : bool = false
 
 func _ready():
-	GameController.current_player = self
 	update_ui(GameController.total_points)
 
 func _physics_process(delta: float) -> void:
