@@ -1,8 +1,3 @@
-res://scripts/water_level.gd
-res://Sceny/water_level.tscn
+res://Sceny/bozek_ksiezyca.tscn
 res://Sceny/test.tres
-res://Manager/interakcja_manager.gd
-res://Manager/interakcja.tscn
-res://Manager/interakcja.gd
-res://Manager/interakcja_manager.tscn
-res://Sceny/wiedzma.tscn
+res://Sceny/moon_level.tscn
