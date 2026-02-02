@@ -1,7 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://fb2n3qmo7pac"]
 
 [ext_resource type="Script" uid="uid://v61acop5f6ub" path="res://scripts/bozek_ksiezyca.gd" id="1_r5yfm"]
-[ext_resource type="Texture2D" uid="uid://b5lqj5iycd3tl" path="res://Assety_moon_level/Gemini_Generated_Image_g79o8xg79o8xg79o-removebg-preview.png" id="1_tqe3x"]
+[ext_resource type="Texture2D" uid="uid://d04ygftw5ijan" path="res://Assety_moon_level/Batxddd.png" id="1_tqe3x"]
+
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r5yfm"]
 atlas = ExtResource("1_tqe3x")

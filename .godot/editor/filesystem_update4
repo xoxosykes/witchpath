@@ -1,1 +1,3 @@
-res://Sceny/nature_level.tscn
+res://scripts/game_controller.gd
+res://scripts/wiedzma.gd
+res://Sceny/bozek_ksiezyca.tscn
