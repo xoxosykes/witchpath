@@ -3,7 +3,7 @@ extends CharacterBody2D
 class_name Wiedzma
 @export var SPEED = 210.0
 @export var JUMP_VELOCITY = -600.0
-@export var SWIM_JUMP : float = -300.0
+@export var SWIM_JUMP : float = -250.0 #pływanie w góre/skakanie w wodzie
 @export var SWIM_GRAVITY : float = 0.25 # Spowolnienie postaci, która pływa
 @export var SWIM_VELOCITY_CAP : float = 100.0 # Limit prędkości pływania
 

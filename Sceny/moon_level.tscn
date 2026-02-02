@@ -1,9 +1,8 @@
-[gd_scene load_steps=32 format=4 uid="uid://cvoknmj6ag844"]
+[gd_scene load_steps=33 format=4 uid="uid://cvoknmj6ag844"]
 
 [ext_resource type="Texture2D" uid="uid://biww8qrduel5h" path="res://Assety_moon_level/Background/Clouds 3/1.png" id="1_o376i"]
 [ext_resource type="Texture2D" uid="uid://cfsyh6gbgm0eh" path="res://Assety_moon_level/Background/Clouds 3/3.png" id="3_jgh3b"]
 [ext_resource type="Texture2D" uid="uid://bpaiao1mbaogy" path="res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_3.png" id="4_apefv"]
-[ext_resource type="Texture2D" uid="uid://b6f4jy7ap1v7w" path="res://Assety_moon_level/Background/Clouds 3/4.png" id="4_urq1c"]
 [ext_resource type="Texture2D" uid="uid://c653yi3tv232v" path="res://Assety_moon_level/clouds/PNG/Clouds_black/Shape2/cloud_shape2_3.png" id="5_s2f6d"]
 [ext_resource type="Texture2D" uid="uid://d2q8tdm45pq55" path="res://Assety_moon_level/clouds/PNG/Clouds_white/Shape2/cloud_shape2_3.png" id="6_b6sml"]
 [ext_resource type="Texture2D" uid="uid://ci1tonfgn0vk1" path="res://Assety_moon_level/Bn_UYJ (1).png" id="6_hg1cj"]
@@ -26,26 +25,34 @@ texture = ExtResource("4_apefv")
 5:0/0 = 0
 6:0/0 = 0
 7:0/0 = 0
-7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -5.75548, 6.115198, -2.87774, 5.935339, -0.5395775, 5.5756207, 1.978445, 6.2950554, 3.4173145, 8)
 8:0/0 = 0
 0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.3166103, -5.3957615, -2.1583061, -8, 0.71943474, -5.5756197, 3.4173145, -6.4749136, 8, -6.2950544, 8, 1.0791531, 8, 2.1583061, 3.5971737, 1.978447, 2.6978798, 0.5395775, -3.057599, 0.8992939, -6.4749146, -2.1583042)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 3.057598, -1.6187286, 1.978447, -8, -0.17985916)
+0:1/0/physics_layer_0/polygon_0/one_way = true
 1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.036045, -8, -1.2590122, -8, 3.7770329, -8, 8, -8, 8, 1.0791531, 8, 2.1583061, 8, 6.4749146, 4.6763268, 8, 2.1583042, 8, -0.35971832, 8, -0.8992939, 3.2374573, -3.057599, 0.5395775, -8, 1.4388714, -8, -5.3957615)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -0.5395775, 8, -3.057598, 2.6978817, -8, 2.5180225)
+1:1/0/physics_layer_0/polygon_0/one_way = true
 2:1/0 = 0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.036045, -8, -1.2590122, -8, 3.7770329, -8, 8, -8, 8, 1.0791531, 8, 2.1583061, 8, 6.4749146, 4.6763268, 8, 2.1583042, 8, -0.35971832, 8, -2.1583061, 5.3957634, -8, 8, -8, 1.4388714, -8, -5.3957615)
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, 1.2590103, 8, -2.1583061, 5.3957634, -8, 8)
+2:1/0/physics_layer_0/polygon_0/one_way = true
 3:1/0 = 0
-3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.036045, -8, -1.2590122, -8, 3.7770329, -8, 8, -8, 8, 1.0791531, 8, 2.1583061, 8, 6.4749146, 4.6763268, 8, 2.1583042, 8, -0.35971832, 8, -2.1583061, 5.3957634, -8, 8, -8, 1.4388714, -8, -8)
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -0.5395775, 6.2950554, -8, 8)
+3:1/0/physics_layer_0/polygon_0/one_way = true
 4:1/0 = 0
-4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.036045, -8, -1.2590122, -8, 3.7770329, -8, 8, -8, 8, 1.0791531, 8, 2.1583061, 8, 6.4749146, 5.755478, 5.5756207, 3.956892, 4.136751, 0.8992939, 2.8777409, -2.87774, 3.956892, -8, 8, -8, 1.4388714, -8, -8)
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0/physics_layer_0/polygon_0/one_way = true
 5:1/0 = 0
-5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.036045, -8, -1.2590122, -8, 3.7770329, -8, 8, -8, 8, 1.0791531, 8, 2.1583061, 8, 6.4749146, 5.755478, 5.5756207, 3.956892, 4.136751, 0.8992939, 2.8777409, -2.87774, 3.956892, -8, 8, -8, 1.4388714, -8, -8)
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.3166103, 0.5395756, 3.7770329, -8, 7.014492)
+5:1/0/physics_layer_0/polygon_0/one_way = true
 6:1/0 = 0
-6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.036045, -8, -1.2590122, -8, 3.7770329, -8, 8, -8, 8, 1.0791531, 8, 2.1583061, 8, 3.956892, 8, 4.4964695, 3.956892, 4.136751, 0.8992939, 2.8777409, -2.87774, 3.956892, -8, 8, -8, 1.4388714, -8, -8)
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.6763268, -0.8992939, 3.956892, -8, 4.856186)
+6:1/0/physics_layer_0/polygon_0/one_way = true
 7:1/0 = 0
-7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.036045, -8, -1.2590122, -8, 3.7770329, -8, 8, -8, 8, -2.3381624, 8, -0.8992939, 6.2950554, -0.8992939, 5.935337, 1.7985878, 3.7770329, 0.5395775, 0.8992939, 2.8777409, -2.87774, 2.3381634, -8, 2.8777409, -8, 1.4388714, -8, -8)
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.2374573, 1.2590103, 3.2374573, -8, 4.856186)
+7:1/0/physics_layer_0/polygon_0/one_way = true
 8:1/0 = 0
-8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.036045, -8, -1.2590122, -8, 3.7770329, -8, 8, -8, 8, -3.2374563, 1.0791512, -2.877739, -8, -2.6978807, -8, -8)
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.2374573, -8, -2.3381634)
+8:1/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSet" id="TileSet_urq1c"]
 physics_layer_0/collision_layer = 1
@@ -62,23 +69,32 @@ texture = ExtResource("5_s2f6d")
 7:0/0 = 0
 8:0/0 = 0
 0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -4.3166084, -3.2374573, -8, 8, -8, 8, 2.3381634, -8, 0.17985916)
+0:1/0/physics_layer_0/polygon_0/one_way = true
 1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -1.0791531, 8, -2.8777409, 1.7985878, -8, 1.6187286)
+1:1/0/physics_layer_0/polygon_0/one_way = true
 2:1/0 = 0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0/physics_layer_0/polygon_0/one_way = true
 3:1/0 = 0
-3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -0.35971832, 6.2950554, -8, 8)
+3:1/0/physics_layer_0/polygon_0/one_way = true
 4:1/0 = 0
 4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0/physics_layer_0/polygon_0/one_way = true
 5:1/0 = 0
-5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 5.3957634, -0.35971832, 3.7770329, -8, 8)
+5:1/0/physics_layer_0/polygon_0/one_way = true
 6:1/0 = 0
-6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 1.7985878, 0.899292, 2.3381634, -8, 2.8777409)
+6:1/0/physics_layer_0/polygon_0/one_way = true
 7:1/0 = 0
-7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 1.7985878, 0.899292, 2.3381634, -8, 2.8777409)
+7:1/0/physics_layer_0/polygon_0/one_way = true
 8:1/0 = 0
 8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSet" id="TileSet_lgvsn"]
 physics_layer_0/collision_layer = 1
@@ -95,23 +111,32 @@ texture = ExtResource("6_b6sml")
 7:0/0 = 0
 8:0/0 = 0
 0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -4.4964676, -4.856186, -8, 8, -8, 8, 2.5180225, 0.17985916, 2.8777409, -8, -0.5395756)
+0:1/0/physics_layer_0/polygon_0/one_way = true
 1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -0.8992939, 8, -3.057598, 3.057598, -8, 2.3381634)
+1:1/0/physics_layer_0/polygon_0/one_way = true
 2:1/0 = 0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0/physics_layer_0/polygon_0/one_way = true
 3:1/0 = 0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0/physics_layer_0/polygon_0/one_way = true
 4:1/0 = 0
 4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0/physics_layer_0/polygon_0/one_way = true
 5:1/0 = 0
 5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0/physics_layer_0/polygon_0/one_way = true
 6:1/0 = 0
-6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.136751, -0.17985916, 4.136751, -8, 5.3957634)
+6:1/0/physics_layer_0/polygon_0/one_way = true
 7:1/0 = 0
-7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.136751, -0.17985916, 4.136751, -8, 5.3957634)
+7:1/0/physics_layer_0/polygon_0/one_way = true
 8:1/0 = 0
-8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -2.877739, -8, -1.7985859)
+8:1/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSet" id="TileSet_ak10j"]
 physics_layer_0/collision_layer = 1
@@ -4179,7 +4204,42 @@ animations = [{
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_if4cw"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_r87p4"]
+font_size = 70
+
+[sub_resource type="LabelSettings" id="LabelSettings_if4cw"]
+font_size = 42
+font_color = Color(0.03529412, 0.18039216, 0.49803922, 1)
+
 [node name="moon_level" type="Node2D"]
+
+[node name="Moon_paralax" type="Parallax2D" parent="."]
+scale = Vector2(0.5030496, 0.5030496)
+scroll_offset = Vector2(-2451, 0)
+repeat_size = Vector2(3800.538, 1000)
+repeat_times = 6
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Moon_paralax"]
+position = Vector2(989, -1667)
+scale = Vector2(6.623, 10.401)
+texture = ExtResource("1_o376i")
+
+[node name="chmury" type="Parallax2D" parent="."]
+scale = Vector2(1.9213817, 1.8320086)
+scroll_offset = Vector2(12.245, 92.46)
+repeat_size = Vector2(648.63, 0)
+repeat_times = 5
+
+[node name="Sprite2D3" type="Sprite2D" parent="chmury"]
+position = Vector2(439.27808, -51.015068)
+scale = Vector2(1.1264321, 1.1264324)
+texture = ExtResource("3_jgh3b")
+
+[node name="Sprite2D2" type="Sprite2D" parent="chmury"]
+position = Vector2(198.47229, 34.11576)
+scale = Vector2(1.1264323, 1.1264324)
+texture = ExtResource("3_jgh3b")
 
 [node name="Portal" parent="." instance=ExtResource("15_ak10j")]
 position = Vector2(2442, -2536)
@@ -4269,61 +4329,6 @@ tile_set = ExtResource("7_cva2i")
 [node name="moons" type="TileMapLayer" parent="tilesety"]
 tile_set = SubResource("TileSet_r87p4")
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="Niebo" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(0, 3)
-motion_mirroring = Vector2(576, 324)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Niebo"]
-position = Vector2(989, 186.75006)
-scale = Vector2(3.4538548, 5.424383)
-texture = ExtResource("1_o376i")
-
-[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/Niebo"]
-position = Vector2(989, -1515)
-scale = Vector2(3.4538548, 5.424383)
-texture = ExtResource("1_o376i")
-
-[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Niebo"]
-position = Vector2(989, -3180)
-scale = Vector2(3.4538548, 5.424383)
-texture = ExtResource("1_o376i")
-
-[node name="Chmurki" type="ParallaxLayer" parent="ParallaxBackground"]
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Chmurki"]
-position = Vector2(989, 866)
-scale = Vector2(3.4538548, 3.2932103)
-texture = ExtResource("3_jgh3b")
-
-[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/Chmurki"]
-position = Vector2(989, -790.0001)
-scale = Vector2(3.4538548, 3.2932103)
-texture = ExtResource("3_jgh3b")
-
-[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Chmurki"]
-position = Vector2(989, -2425.0002)
-scale = Vector2(3.4538548, 3.2932103)
-texture = ExtResource("3_jgh3b")
-
-[node name="Ciemne_chmurki" type="ParallaxLayer" parent="ParallaxBackground"]
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Ciemne_chmurki"]
-position = Vector2(989, 862)
-scale = Vector2(3.4538548, 3.2932103)
-texture = ExtResource("4_urq1c")
-
-[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/Ciemne_chmurki"]
-position = Vector2(989, -770.0001)
-scale = Vector2(3.4538548, 3.2932103)
-texture = ExtResource("4_urq1c")
-
-[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/Ciemne_chmurki"]
-position = Vector2(993, -2372.0002)
-scale = Vector2(3.4538548, 3.2932103)
-texture = ExtResource("4_urq1c")
-
 [node name="zones" type="Node" parent="."]
 
 [node name="killzone" type="Area2D" parent="zones"]
@@ -4361,46 +4366,42 @@ position = Vector2(113, 85)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
-frame = 3
-frame_progress = 1.0
+frame_progress = 0.38428777
 
 [node name="gwiazdka2" type="AnimatedSprite2D" parent="gwiazdky"]
 position = Vector2(318, 138)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
-frame = 3
-frame_progress = 1.0
+frame_progress = 0.9731482
 
 [node name="gwiazdka3" type="AnimatedSprite2D" parent="gwiazdky"]
 position = Vector2(547, 63.000004)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
-frame = 3
-frame_progress = 1.0
+frame_progress = 0.95028436
 
 [node name="gwiazdka4" type="AnimatedSprite2D" parent="gwiazdky"]
 position = Vector2(898, 43.000008)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
-frame = 3
-frame_progress = 1.0
+frame_progress = 0.9373879
 
 [node name="gwiazdka5" type="AnimatedSprite2D" parent="gwiazdky"]
 position = Vector2(760, -121.99998)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
-frame_progress = 0.04641461
+frame_progress = 0.69727665
 
 [node name="gwiazdka6" type="AnimatedSprite2D" parent="gwiazdky"]
 position = Vector2(1066, -270)
 scale = Vector2(0.62500006, 0.6896552)
 sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
-frame_progress = 0.04641461
+frame_progress = 0.88984615
 
 [node name="gwiazdka7" type="AnimatedSprite2D" parent="gwiazdky"]
 position = Vector2(1009, -192.00002)
@@ -4542,11 +4543,115 @@ sprite_frames = SubResource("SpriteFrames_r87p4")
 autoplay = "default"
 frame_progress = 0.04641461
 
+[node name="gwiazdka27" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(759.99994, -1385.9655)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.15078515
+
+[node name="gwiazdka28" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(964.99994, -1332.9655)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.7396435
+
+[node name="gwiazdka29" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(1194, -1407.9655)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.71677977
+
+[node name="gwiazdka30" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(1545, -1427.9655)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.7038829
+
+[node name="gwiazdka31" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(1407, -1592.9655)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.46377409
+
+[node name="gwiazdka32" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(1390.9999, -2635.9656)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.15078515
+
+[node name="gwiazdka33" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(1595.9999, -2582.9656)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.7396435
+
+[node name="gwiazdka34" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(1824.9999, -2657.9656)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.71677977
+
+[node name="gwiazdka35" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(2176, -2677.9656)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.7038829
+
+[node name="gwiazdka36" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(2037.9999, -2842.9656)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.46377409
+
+[node name="gwiazdka37" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(607, -1858.9655)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.15078515
+
+[node name="gwiazdka38" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(812, -1805.9655)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.7396435
+
+[node name="gwiazdka39" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(1041, -1880.9655)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.71677977
+
+[node name="gwiazdka40" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(1392, -1900.9655)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.7038829
+
+[node name="gwiazdka41" type="AnimatedSprite2D" parent="gwiazdky"]
+position = Vector2(1254, -2065.9653)
+scale = Vector2(0.62500006, 0.6896552)
+sprite_frames = SubResource("SpriteFrames_r87p4")
+autoplay = "default"
+frame_progress = 0.46377409
+
 [node name="Bozek_ksiezyca" parent="." instance=ExtResource("16_if4cw")]
 position = Vector2(444, 248)
 
 [node name="boza_wiadomosc" type="Panel" parent="."]
-visible = false
 offset_left = 284.0
 offset_top = 166.0
 offset_right = 407.0
@@ -4554,10 +4659,21 @@ offset_bottom = 206.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_if4cw")
 
 [node name="hejka" type="Label" parent="boza_wiadomosc"]
-visible = false
 layout_mode = 0
-offset_right = 123.0
-offset_bottom = 38.0
+offset_left = 3.0000005
+offset_top = 7.000001
+offset_right = 491.0
+offset_bottom = 103.0
+scale = Vector2(0.23817901, 0.23817901)
 text = "hejka naklejka"
+label_settings = SubResource("LabelSettings_r87p4")
+
+[node name="Olikow" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 72.0
+offset_right = 364.0
+offset_bottom = 130.0
+text = "Oliwia Kowalczyk"
+label_settings = SubResource("LabelSettings_if4cw")
 
 [connection signal="body_entered" from="zones/killzone" to="zones/killzone" method="_on_body_entered"]

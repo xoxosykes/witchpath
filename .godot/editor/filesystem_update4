@@ -3,3 +3,10 @@ res://Sceny/pauza.tscn
 res://Sceny/test.tres
 res://Sceny/water_level.tscn
 res://scripts/kolce_die.gd
+res://Sceny/animowana_chmura.tscn
+res://Sceny/moon_level.tscn
+res://scripts/water_level.gd
+res://Physics/wykrywanie_wody.gd
+res://scripts/wiedzma.gd
+res://Sceny/chmurkowosc.tscn
+res://scripts/killzone.gd

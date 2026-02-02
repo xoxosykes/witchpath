@@ -1,3 +1,6 @@
+Parallax2D
+Panel
+Label
 CollisionShape2D
 AnimatedSprite2D
 Node2D
@@ -6,4 +9,3 @@ Area2D
 TileMapLayer
 AudioStreamPlayer
 AnimationPlayer
-Parallax2D
