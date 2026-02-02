@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://w1cuodefo2x8"]
+[gd_scene load_steps=47 format=4 uid="uid://w1cuodefo2x8"]
 
 [ext_resource type="Texture2D" uid="uid://cdf6hawl1pnoq" path="res://Assety (testowe)/background.png" id="1_04l41"]
 [ext_resource type="Script" uid="uid://ctahej4wsl3sw" path="res://scripts/water_level.gd" id="1_j78rw"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c24s406sgb7ab" path="res://Assety (testowe)/Horse_fullcolor_White.png" id="6_vqebx"]
 [ext_resource type="AudioStream" uid="uid://fjih5bhtdfth" path="res://Assety (testowe)/island-holiday-182905.mp3" id="7_m300q"]
 [ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="9_5djc6"]
+[ext_resource type="PackedScene" uid="uid://cr3y81tuu863p" path="res://Manager/interakcja.tscn" id="9_j78rw"]
 
 [sub_resource type="Animation" id="Animation_vqebx"]
 resource_name = "fale"
@@ -80,6 +81,10 @@ font = ExtResource("9_5djc6")
 font_size = 70
 outline_size = 20
 outline_color = Color(0.035285052, 0.22619814, 0.24580854, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_m300q"]
+font_size = 122
+font_color = Color(0.324179, 0.86700964, 0.75724316, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m300q"]
 atlas = ExtResource("6_vqebx")
@@ -273,13 +278,9 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m300q"]
-radius = 24.848581
-height = 70.186325
-
-[sub_resource type="LabelSettings" id="LabelSettings_m300q"]
-font_size = 122
-font_color = Color(0.324179, 0.86700964, 0.75724316, 1)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5djc6"]
+radius = 27.492504
+height = 131.80368
 
 [node name="water_level" type="Node2D"]
 script = ExtResource("1_j78rw")
@@ -392,25 +393,6 @@ label_settings = SubResource("LabelSettings_oeudw")
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="Kon_morski" type="AnimatedSprite2D" parent="."]
-modulate = Color(1.9651731, 1.4793282, 1.1980497, 1)
-position = Vector2(170, -47.85263)
-scale = Vector2(2.4733553, 2.4733553)
-sprite_frames = SubResource("SpriteFrames_7jhql")
-animation = &"Idle"
-autoplay = "Idle"
-frame_progress = 0.058295082
-flip_h = true
-
-[node name="Area2D" type="Area2D" parent="Kon_morski"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Kon_morski/Area2D"]
-modulate = Color(0, 0.55335534, 1.1990644, 1)
-position = Vector2(-0.5396769, 9.714187)
-rotation = -1.5282427
-shape = SubResource("CapsuleShape2D_m300q")
-one_way_collision_margin = 9.7
-
 [node name="Wiedzma" parent="." instance=ExtResource("3_a3j5c")]
 position = Vector2(-107, 7)
 
@@ -437,4 +419,21 @@ scale = Vector2(0.22361013, 0.22361013)
 text = "Gabriela Stromidło"
 label_settings = SubResource("LabelSettings_m300q")
 
-[connection signal="input_event" from="Kon_morski/Area2D" to="." method="_on_area_2d_input_event"]
+[node name="Kon_morski" type="AnimatedSprite2D" parent="."]
+modulate = Color(1.9651731, 1.4793282, 1.1980497, 1)
+position = Vector2(170, -47.85263)
+scale = Vector2(2.4733553, 2.4733553)
+sprite_frames = SubResource("SpriteFrames_7jhql")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.058295082
+flip_h = true
+
+[node name="Interakcja" parent="Kon_morski" groups=["Wiedzma"] instance=ExtResource("9_j78rw")]
+position = Vector2(0.8086181, -4.9112916)
+action_name = "kon_gada"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kon_morski/Interakcja"]
+position = Vector2(-23.854235, 8.430907)
+rotation = -1.5720189
+shape = SubResource("CapsuleShape2D_5djc6")

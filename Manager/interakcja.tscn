@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cr3y81tuu863p"]
+
+[ext_resource type="Script" uid="uid://dop4lo1vjnptu" path="res://Manager/interakcja.gd" id="1_gfh44"]
+
+[node name="Interakcja" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_gfh44")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

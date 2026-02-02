@@ -70,7 +70,6 @@ autoplay = "idle"
 frame_progress = 0.8928128
 
 [node name="Kapsula_wiedzmy" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(-1, 5)
 scale = Vector2(1, 0.59418416)
 shape = SubResource("CapsuleShape2D_xh26e")
@@ -80,6 +79,7 @@ position = Vector2(3.975, -116.33)
 zoom = Vector2(2.215, 2.215)
 limit_left = -180
 
-[node name="wykrywanie_wody" parent="." instance=ExtResource("3_hgy8x")]
+[node name="wykrywanie_wody" parent="." groups=["Wiedzma"] instance=ExtResource("3_hgy8x")]
+light_mask = 5
 
 [connection signal="water_state_changed" from="wykrywanie_wody" to="." method="_on_wykrywanie_wody_water_state_changed"]

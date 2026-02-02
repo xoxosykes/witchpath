@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769984718
+::res://::1770040367
 icon.svg::CompressedTexture2D::6312138812413043583::1769294303::1769294303::1::::<><><>0<>0<>aa8a5b37c5c46553281f705cc2f892c4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assety (testowe)/::1769992314
 background.png::CompressedTexture2D::4995624548924529432::1769823449::1769823532::1::::<><><>0<>0<>352a0d0747a1b72b3f1e008549947101<>res://.godot/imported/background.png-938befd490612665f93bdf1edabc5150.ctex::
@@ -278,7 +278,7 @@ lightning2.png::CompressedTexture2D::5287567246792396907::1769281950::1769283717
 lightning3.png::CompressedTexture2D::2645875442966976101::1769281950::1769283717::1::::<><><>0<>0<>4e2c3fcc378d679fadc8028cffafbdb1<>res://.godot/imported/lightning3.png-85e72954d858542cd72178cf01fe9c3e.ctex::
 lightning4.png::CompressedTexture2D::2212338190388156605::1769281950::1769283717::1::::<><><>0<>0<>4aea04e7316b46573e232e75d4d22de3<>res://.godot/imported/lightning4.png-54613f66bb05034f552947d91ba57825.ctex::
 lightning5.png::CompressedTexture2D::1093928382734281150::1769281950::1769283717::1::::<><><>0<>0<>c83c537be181c0bdcf207f20ebb7b6ef<>res://.godot/imported/lightning5.png-14a77626fe58feb6f77450b2109a7408.ctex::
-::res://assety_nature/::1769992315
+::res://assety_nature/::1769992318
 Collectables-Sheet.png::CompressedTexture2D::3834426832569595320::1769976785::1769976795::1::::<><><>0<>0<>3bef65491155c9848d2cc629b862a20b<>res://.godot/imported/Collectables-Sheet.png-5fb9e28bdfa6115b65e9e0af2df34fd7.ctex::
 Nature_tileset_v_0.2.png::CompressedTexture2D::7912430850211853710::1769963126::1769963152::1::::<><><>0<>0<>5b7fff6e5d7c44e7d3d3d484b5a9f49c<>res://.godot/imported/Nature_tileset_v_0.2.png-e20b1e0970b14983115dda78f02608b0.ctex::
 Yabeno-9MdgL.otf::FontFile::352557474131004579::1769992315::1769992318::1::::<><><>0<>0<>3cdb4cfca830ed699eb4ed018fae5fc0<>res://.godot/imported/Yabeno-9MdgL.otf-588935839e97cb366dbe5e19d927741d.fontdata::
@@ -357,8 +357,8 @@ GandalfHardcore Background layers_layer 4.png::CompressedTexture2D::378887606921
 GandalfHardcore Background layers_layer 5.png::CompressedTexture2D::2192090761719979981::1769823449::1769823533::1::::<><><>0<>0<>79147cc5f654a946b74d142fdf4a6b38<>res://.godot/imported/GandalfHardcore Background layers_layer 5.png-95cd48075e0074460cfd1541cc65be92.ctex::
 ::res://Physics/::1769981951
 wykrywanie_wody.gd::GDScript::2145068219728523725::1769981951::0::1::::<>Area2D<><>0<>0<><>::
-::res://Sceny/::1769992315
-animowana_chmura.tscn::PackedScene::3659477429007797249::1769992315::0::1::::<><><>0<>0<><>::uid://c2jmle3tbrh7q::::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_1.png
+::res://Sceny/::1769992588
+animowana_chmura.tscn::PackedScene::3659477429007797249::1769992397::0::1::::<><><>0<>0<><>::uid://c2jmle3tbrh7q::::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_1.png
 bozek_ksiezyca.tscn::PackedScene::354672666005563422::1769297278::0::1::::<><><>0<>0<><>::uid://v61acop5f6ub::::res://scripts/bozek_ksiezyca.gd<>uid://b5lqj5iycd3tl::::res://Assety_moon_level/Gemini_Generated_Image_g79o8xg79o8xg79o-removebg-preview.png
 chmurkowosc.tscn::PackedScene::9177393076493679903::1769985662::0::1::::<><><>0<>0<><>::uid://c2jmle3tbrh7q::::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_1.png
 chmursa_2.tscn::PackedScene::8310004105084114410::1769281950::0::1::::<><><>0<>0<><>::uid://bsexb80gri1u8::::res://Sceny/animowana_chmura.tscn<>uid://c2jmle3tbrh7q::::res://Assety_moon_level/clouds/PNG/Clouds_gray/Shape2/cloud_shape2_1.png
@@ -378,10 +378,10 @@ pauza.tscn::PackedScene::4096388195714984389::1769972781::0::1::::<><><>0<>0<><>
 platforma_kwiat.tscn::PackedScene::3449962780074175153::1769963126::0::1::::<><><>0<>0<><>::uid://di7sqgunehxbn::::res://scripts/kwiat.gd<>uid://cns25bt3m1xc3::::res://Assety (testowe)/Terrain&Pickups/Terrain&Pickups/e20b6a42-41db-49b9-8bea-5bc52cc64c3e ÔÇö kopia.png<>uid://ddmb8mdtrpcrj::::res://Assety (testowe)/e20b6a42-41db-49b9-8bea-5bc52cc64c3e.png
 portal.tscn::PackedScene::7372202719222925571::1769823449::0::1::::<><><>0<>0<><>::uid://djdckj31tp6lp::::res://scripts/portal.gd<>uid://bmfvtsdars44m::::res://Assety_moon_level/Dimensional_Portal.png
 portal_ziemia.tscn::PackedScene::-1::1769992315::0::1::::<><><>0<>0<><>::
-test.tres::TileSet::1898086369875563467::1769973850::0::1::::<><><>0<>0<><>::uid://bl4jute4t53gp::::res://Assety (testowe)/tilemap_new_softy_sand.png<>uid://e5yydnchguew::::res://Assety (testowe)/Tileset_Grass/Tileset_grass_128x80_x2.png<>uid://c1je48agsh1uh::::res://Assety (testowe)/GandalfHardcore Water Tiles sheet.png
+test.tres::TileSet::1898086369875563467::1769992588::0::1::::<><><>0<>0<><>::uid://bl4jute4t53gp::::res://Assety (testowe)/tilemap_new_softy_sand.png<>uid://e5yydnchguew::::res://Assety (testowe)/Tileset_Grass/Tileset_grass_128x80_x2.png<>uid://c1je48agsh1uh::::res://Assety (testowe)/GandalfHardcore Water Tiles sheet.png
 test.tscn::PackedScene::5918945949152501282::1769962762::0::1::::<><><>0<>0<><>::uid://fvogmc4pkxmu::::res://scripts/test.gd<>uid://e5yydnchguew::::res://Assety (testowe)/Tileset_Grass/Tileset_grass_128x80_x2.png<>uid://dg34884x4l4d2::::res://Sceny/wiedzma.tscn<>uid://2bpg8hdom1s6::::res://Sceny/test.tres<>uid://magl7qwpv8u7::::res://scripts/killzone.gd<>uid://05d5dn0ipge4::::res://Assety (testowe)/Flowers/Flowers/Flowers_Separated/Flowers_Without_Outline/Cosmo.png<>uid://87usfhyi82n7::::res://scripts/sprites.gd<>uid://bpfgnaxfd6sc4::::res://Sceny/platforma_kwiat.tscn<>uid://bq8jef8io10rg::::res://Sceny/moving_chmury.tscn<>uid://drfn780xgnsnp::::res://Assety (testowe)/Terrain&Pickups/Terrain&Pickups/Nature ÔÇö kopia.png<>uid://c6fhxa2458a18::::res://Sceny/coin.tscn<>uid://hqk7ikc1v1h7::::res://Assety (testowe)/Nature ÔÇö kopia.png
 water_level.tscn::PackedScene::1597986271656218395::1769992225::0::1::::<><><>0<>0<><>::uid://cdf6hawl1pnoq::::res://Assety (testowe)/background.png<>uid://ctahej4wsl3sw::::res://scripts/water_level.gd<>uid://2bpg8hdom1s6::::res://Sceny/test.tres<>uid://dg34884x4l4d2::::res://Sceny/wiedzma.tscn<>uid://bmfvtsdars44m::::res://Assety_moon_level/Dimensional_Portal.png<>uid://c24s406sgb7ab::::res://Assety (testowe)/Horse_fullcolor_White.png<>uid://fjih5bhtdfth::::res://Assety (testowe)/island-holiday-182905.mp3<>uid://bo14usnt6i2u7::::res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf
-wiedzma.tscn::PackedScene::7640019193164377533::1769992315::0::1::::<><><>0<>0<><>::uid://bkchfafrucno2::::res://scripts/wiedzma.gd<>uid://cv6waewhkx3vn::::res://icon.svg<>uid://tru7emp03pfj::::res://Sceny/wykrywanie_wody.tscn
+wiedzma.tscn::PackedScene::7640019193164377533::1769992315::0::1::::<><><>0<>0<><>::uid://bkchfafrucno2::::res://scripts/wiedzma.gd<>uid://cc8j8pi6n1eso::::res://Assety (testowe)/Blue_witch/B_witch_idle.png<>uid://tru7emp03pfj::::res://Sceny/wykrywanie_wody.tscn
 wykrywanie_wody.tscn::PackedScene::1369954165549028799::1769992315::0::1::::<><><>0<>0<><>::uid://5tc7v76265gb::::res://Physics/wykrywanie_wody.gd
 ::res://scripts/::1769992315
 bozek_ksiezyca.gd::GDScript::1539540195982277773::1769296521::0::1::::<>Node2D<><>0<>0<><>::
@@ -401,7 +401,7 @@ options.gd::GDScript::3330561085013775533::1769299381::0::1::::<>Control<><>0<>0
 pauza.gd::GDScript::3305992123663118625::1769972781::0::1::::<>CanvasLayer<><>0<>0<><>::
 portal.gd::GDScript::7797294586180367977::1769992315::0::1::::<>Node2D<><>0<>0<><>::
 portal_ziemia.gd::GDScript::-1::1769976785::0::1::::<>Node2D<><>0<>0<><>::
-water_level.gd::GDScript::6106862077167380322::1769992155::0::1::::<>Node2D<><>0<>0<><>::
 sprites.gd::GDScript::2383538686863450126::1769294134::0::1::::<>Node2D<><>0<>0<><>::
 test.gd::GDScript::395157538395480040::1769294134::0::1::::<>Node2D<><>0<>0<><>::
+water_level.gd::GDScript::6106862077167380322::1769992155::0::1::::<>Node2D<><>0<>0<><>::
 wiedzma.gd::GDScript::3092871832023679323::1769982705::0::1::::Wiedzma<>CharacterBody2D<><>0<>0<><>::
