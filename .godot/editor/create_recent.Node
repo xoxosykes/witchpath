@@ -1,5 +1,5 @@
-CollisionShape2D
-Sprite2D
+AudioStreamPlayer
+Camera2D
 Label
 Panel
 ColorRect
@@ -7,8 +7,9 @@ TileMapLayer
 TileMap
 AnimatedSprite2D
 Node
+CollisionShape2D
 Area2D
 Timer
 TextureRect
 CanvasLayer
-VBoxContainer
+Sprite2D

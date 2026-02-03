@@ -1,7 +1,6 @@
-res://Sceny/moon_level.tscn
+res://Sceny/krabsy.tscn
 res://Sceny/test.tres
-res://scripts/moon_level.gd
-res://Scrolls/scroll.tscn
-res://Scrolls/scroll.gd
-res://Scrolls/scroll_moon.tscn
-res://Scrolls/scroll_moon.gd
+res://Sceny/the_end.tscn
+res://Sceny/water_level.tscn
+res://Sceny/moon_level.tscn
+res://Sceny/main_menu.tscn
