@@ -1321,7 +1321,7 @@ shape = SubResource("RectangleShape2D_kluwu")
 position = Vector2(2914, 673.5)
 shape = SubResource("RectangleShape2D_ffy6r")
 
-[node name="kolce_cienko" type="Area2D" parent="."]
+[node name="kolce_cienko" type="Area2D" parent="." groups=["Wiedzma"]]
 script = ExtResource("19_lx8it")
 
 [node name="kolce_collision4" type="CollisionShape2D" parent="kolce_cienko"]
