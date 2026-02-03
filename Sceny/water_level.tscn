@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=4 uid="uid://w1cuodefo2x8"]
+[gd_scene load_steps=80 format=4 uid="uid://w1cuodefo2x8"]
 
 [ext_resource type="Texture2D" uid="uid://cdf6hawl1pnoq" path="res://Assety (testowe)/background.png" id="1_04l41"]
 [ext_resource type="Script" uid="uid://ctahej4wsl3sw" path="res://scripts/water_level.gd" id="1_j78rw"]
@@ -21,6 +21,7 @@
 [ext_resource type="Script" uid="uid://k8li06qu2jbo" path="res://scripts/kolce_gora_dol_2.gd" id="18_kluwu"]
 [ext_resource type="Script" uid="uid://h11enois75xr" path="res://scripts/kolce_cienko.gd" id="19_lx8it"]
 [ext_resource type="Script" uid="uid://c8p5oj8bwlp8k" path="res://scripts/kolce_glebiny.gd" id="20_7iwil"]
+[ext_resource type="PackedScene" uid="uid://c5322ssv0oflp" path="res://Sceny/krabsy.tscn" id="22_lx8it"]
 
 [sub_resource type="Animation" id="Animation_vqebx"]
 resource_name = "fale"
@@ -1396,6 +1397,30 @@ shape = SubResource("RectangleShape2D_lx8it")
 visible = false
 position = Vector2(4364, 2442)
 shape = SubResource("RectangleShape2D_lx8it")
+
+[node name="krabsy" parent="." instance=ExtResource("22_lx8it")]
+position = Vector2(1084, 440)
+
+[node name="krabsy2" parent="." instance=ExtResource("22_lx8it")]
+position = Vector2(1006, 790)
+
+[node name="krabsy3" parent="." instance=ExtResource("22_lx8it")]
+position = Vector2(1961, 769)
+
+[node name="krabsy4" parent="." instance=ExtResource("22_lx8it")]
+position = Vector2(2533, 748)
+
+[node name="krabsy5" parent="." instance=ExtResource("22_lx8it")]
+position = Vector2(3525, 370)
+
+[node name="krabsy6" parent="." instance=ExtResource("22_lx8it")]
+position = Vector2(4355, 799)
+
+[node name="krabsy7" parent="." instance=ExtResource("22_lx8it")]
+position = Vector2(3612, 1469)
+
+[node name="krabsy8" parent="." instance=ExtResource("22_lx8it")]
+position = Vector2(4658, 2269)
 
 [connection signal="body_entered" from="strefa_umieranka" to="strefa_umieranka" method="_on_body_entered"]
 [connection signal="body_entered" from="Drugie_kolce" to="Drugie_kolce" method="_on_body_entered"]
