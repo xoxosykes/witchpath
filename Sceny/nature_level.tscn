@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=4 uid="uid://nkb5qr2m3s47"]
+[gd_scene load_steps=94 format=4 uid="uid://nkb5qr2m3s47"]
 
 [ext_resource type="PackedScene" uid="uid://223q6wbe5cq6" path="res://Sceny/eath_gem.tscn" id="1_0c8fp"]
 [ext_resource type="Texture2D" uid="uid://o3hnxu2x4huh" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Floor Tiles1.png" id="1_0d3cb"]
@@ -50,6 +50,8 @@
 [ext_resource type="Texture2D" uid="uid://b70ehvne6mke1" path="res://assety_nature/idle/idle_12.png" id="38_gl4dp"]
 [ext_resource type="Texture2D" uid="uid://bbejatdai2422" path="res://assety_nature/galaz.png" id="41_0ko10"]
 [ext_resource type="AudioStream" uid="uid://bny3o6ccg8w3t" path="res://assety_nature/fairies-in-the-garden-115-bpm-f-minor-399126 (1).mp3" id="44_da56u"]
+[ext_resource type="PackedScene" uid="uid://bsevldh8req2n" path="res://scroll_dolek.tscn" id="51_i6cgr"]
+[ext_resource type="PackedScene" uid="uid://clgocxxuvu6k4" path="res://scroll_nagorze.tscn" id="52_gl4dp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gl4dp"]
 texture = ExtResource("18_r8aj3")
@@ -2049,9 +2051,9 @@ modulate = Color(0.96395415, 0.00043240667, 0.89736766, 1)
 texture = ExtResource("41_0ko10")
 
 [node name="bozyszczowe_bajdurzenie" type="Panel" parent="."]
-offset_left = 2.0
+offset_left = -7.0
 offset_top = 132.0
-offset_right = 124.0
+offset_right = 137.0
 offset_bottom = 183.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_qxlbe")
 
@@ -2059,17 +2061,24 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_qxlbe")
 layout_mode = 0
 offset_left = 3.0
 offset_top = 2.0
-offset_right = 358.0
+offset_right = 431.0
 offset_bottom = 158.0
 scale = Vector2(0.32769457, 0.32769457)
-text = "Pamiętaj o tym,
+text = "Rachelo, pamiętaj o tym,
 by zaufać roślinom...
 "
 label_settings = SubResource("LabelSettings_v2825")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("44_da56u")
+volume_db = -7.656
 autoplay = true
 parameters/looping = true
+
+[node name="scroll_dolek" parent="." instance=ExtResource("51_i6cgr")]
+position = Vector2(1552, 873)
+
+[node name="scroll_nagorze" parent="." instance=ExtResource("52_gl4dp")]
+position = Vector2(1967, 139)
 
 [connection signal="body_entered" from="kolce_die" to="kolce_die" method="_on_body_entered"]

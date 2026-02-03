@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dqrohongbkq7k" path="res://Manager/interakcja_manager.gd" id="1_hgamk"]
 
-[node name="Interakcja_manager" type="Node2D"]
+[node name="Interakcja_manager" type="Node2D" groups=["Wiedzma"]]
 script = ExtResource("1_hgamk")
 
 [node name="Interakcja_label" type="RichTextLabel" parent="."]
