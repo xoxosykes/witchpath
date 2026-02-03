@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=4 uid="uid://cvoknmj6ag844"]
+[gd_scene load_steps=45 format=4 uid="uid://cvoknmj6ag844"]
 
 [ext_resource type="Texture2D" uid="uid://biww8qrduel5h" path="res://Assety_moon_level/Background/Clouds 3/1.png" id="1_o376i"]
 [ext_resource type="Script" uid="uid://riim15fjyq8" path="res://scripts/moon_level.gd" id="1_uovgp"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://ddbfdps7on4cd" path="res://Sceny/portal.tscn" id="15_ak10j"]
 [ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="16_r87p4"]
 [ext_resource type="Script" uid="uid://c2snhc48troab" path="res://scripts/coin_display.gd" id="17_r87p4"]
+[ext_resource type="FontFile" uid="uid://xvfq4xbjm4ov" path="res://Assety (testowe)/Pixeboy-z8XGD.ttf" id="19_egll1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4h7xc"]
 atlas = ExtResource("5_egll1")
@@ -4265,7 +4266,7 @@ font_size = 24
 font_color = Color(0.03529412, 0.18039216, 0.49803922, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_0kn6c"]
-font = ExtResource("16_r87p4")
+font = ExtResource("19_egll1")
 font_size = 49
 
 [node name="moon_level" type="Node2D"]
@@ -4756,12 +4757,13 @@ text = "Oliwia Kowalczyk"
 label_settings = SubResource("LabelSettings_if4cw")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+scale = Vector2(2.5, 2.5)
+transform = Transform2D(2.5, 0, 0, 2.5, 0, 0)
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 135.0
-offset_right = 175.0
+offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="CoinDisplay" type="Label" parent="CanvasLayer/Control"]

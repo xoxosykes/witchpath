@@ -2,3 +2,14 @@ res://Sceny/moon_level.tscn
 res://Sceny/test.tres
 res://Sceny/water_level.tscn
 res://Sceny/nature_level.tscn
+res://scripts/wiedzma.gd
+res://scripts/kolce_glebiny.gd
+res://scripts/kolce_cienko.gd
+res://scripts/umieranko_kolce_big.gd
+res://scripts/drugie_kolce.gd
+res://scripts/kolce_gora_dol_1.gd
+res://scripts/kolce_gora_dol_2.gd
+res://scripts/strefa_umieranka.gd
+res://scripts/eath_gem.gd
+res://krabsy.gd
+res://scripts/kolce_die.gd

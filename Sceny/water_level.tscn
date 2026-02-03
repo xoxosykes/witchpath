@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=4 uid="uid://w1cuodefo2x8"]
+[gd_scene load_steps=81 format=4 uid="uid://w1cuodefo2x8"]
 
 [ext_resource type="Texture2D" uid="uid://cdf6hawl1pnoq" path="res://Assety (testowe)/background.png" id="1_04l41"]
 [ext_resource type="Script" uid="uid://ctahej4wsl3sw" path="res://scripts/water_level.gd" id="1_j78rw"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://c1je48agsh1uh" path="res://Assety (testowe)/GandalfHardcore Water Tiles sheet.png" id="12_88isx"]
 [ext_resource type="Texture2D" uid="uid://urtftbid6aog" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Pine Trees.png" id="13_xljt2"]
 [ext_resource type="Script" uid="uid://ccmuy8tjq5v8u" path="res://scripts/kolce_gora_dol_1.gd" id="14_2ubdv"]
+[ext_resource type="FontFile" uid="uid://xvfq4xbjm4ov" path="res://Assety (testowe)/Pixeboy-z8XGD.ttf" id="14_7iwil"]
 [ext_resource type="Script" uid="uid://c7kj3x6qdrb" path="res://scripts/strefa_umieranka.gd" id="14_f46hj"]
 [ext_resource type="Script" uid="uid://c2snhc48troab" path="res://scripts/coin_display.gd" id="15_88isx"]
 [ext_resource type="Script" uid="uid://dnurm5achwwe2" path="res://scripts/drugie_kolce.gd" id="16_pfvji"]
@@ -902,7 +903,7 @@ sources/2 = SubResource("TileSetAtlasSource_sd0d3")
 sources/3 = SubResource("TileSetAtlasSource_wa3u3")
 
 [sub_resource type="LabelSettings" id="LabelSettings_xljt2"]
-font = ExtResource("9_5djc6")
+font = ExtResource("14_7iwil")
 font_size = 49
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_88isx"]
@@ -1266,6 +1267,8 @@ tile_map_data = PackedByteArray("AAAOAB0AAwACAAAAAAAOAB4AAwACAAEAAAALABwAAwACAAA
 tile_set = SubResource("TileSet_60dxf")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+scale = Vector2(2.5, 2.5)
+transform = Transform2D(2.5, 0, 0, 2.5, 0, 0)
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
@@ -1321,7 +1324,7 @@ shape = SubResource("RectangleShape2D_kluwu")
 position = Vector2(2914, 673.5)
 shape = SubResource("RectangleShape2D_ffy6r")
 
-[node name="kolce_cienko" type="Area2D" parent="." groups=["Wiedzma"]]
+[node name="kolce_cienko" type="Area2D" parent="."]
 script = ExtResource("19_lx8it")
 
 [node name="kolce_collision4" type="CollisionShape2D" parent="kolce_cienko"]
@@ -1335,65 +1338,57 @@ script = ExtResource("20_7iwil")
 position = Vector2(4244.5, 1487)
 shape = SubResource("RectangleShape2D_pfvji")
 
-[node name="Umieranko_kolce_BIG" type="Area2D" parent="."]
+[node name="Duze_kolce" type="Area2D" parent="."]
 script = ExtResource("16_xljt2")
 
-[node name="CollisionShape2D8" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
-visible = false
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Duze_kolce"]
 position = Vector2(3885, 2297)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D9" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
-visible = false
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Duze_kolce"]
 position = Vector2(3981, 2233)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D10" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
-visible = false
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Duze_kolce"]
 position = Vector2(4077, 2328)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D11" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
-visible = false
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Duze_kolce"]
 position = Vector2(4174, 2201)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D12" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
-visible = false
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Duze_kolce"]
 position = Vector2(4270, 2105)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D13" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
-visible = false
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Duze_kolce"]
 position = Vector2(4365, 2329)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D14" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
-visible = false
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Duze_kolce"]
 position = Vector2(3884, 2408)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D15" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
-visible = false
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Duze_kolce"]
 position = Vector2(3980, 2345)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D16" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Duze_kolce"]
 visible = false
 position = Vector2(4076, 2441)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D17" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Duze_kolce"]
 visible = false
 position = Vector2(4172, 2313)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D18" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Duze_kolce"]
 visible = false
 position = Vector2(4269, 2217)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="CollisionShape2D19" type="CollisionShape2D" parent="Umieranko_kolce_BIG"]
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Duze_kolce"]
 visible = false
 position = Vector2(4364, 2442)
 shape = SubResource("RectangleShape2D_lx8it")
@@ -1428,4 +1423,4 @@ position = Vector2(4658, 2269)
 [connection signal="body_entered" from="kolce_gora_dol2" to="kolce_gora_dol2" method="_on_body_entered"]
 [connection signal="body_entered" from="kolce_cienko" to="kolce_cienko" method="_on_body_entered"]
 [connection signal="body_entered" from="Kolce_glebiny" to="Kolce_glebiny" method="_on_body_entered"]
-[connection signal="body_entered" from="Umieranko_kolce_BIG" to="Umieranko_kolce_BIG" method="_on_body_entered"]
+[connection signal="body_entered" from="Duze_kolce" to="Duze_kolce" method="_on_body_entered"]

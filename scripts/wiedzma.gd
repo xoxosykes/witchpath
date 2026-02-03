@@ -10,16 +10,12 @@ class_name Wiedzma
 @export var SWIM_VELOCITY_CAP : float = 100.0 
 
 # --- REFERENCJE ---
-@onready var score_label = %wynik
 @onready var CoyoteTimer: Timer = $CoyoteTimer
 @onready var sprite = $animacja
 
 # --- STANY ---
 var in_water : bool = false
 var is_playing_magic_anim : bool = false
-
-func _ready():
-	update_ui(GameController.total_points)
 
 func _physics_process(delta: float) -> void:
 	# Zapamiętujemy czy stała na ziemi przed ruchem (potrzebne do Coyote Time)
@@ -119,7 +115,3 @@ func interact_with_closest():
 func _on_wykrywanie_wody_water_state_changed(new_in_water: bool) -> void:
 	self.in_water = new_in_water
 	print("W wodzie: ", in_water)
-
-func update_ui(new_score: int):
-	if score_label:
-		score_label.text = ":" + str(new_score)
