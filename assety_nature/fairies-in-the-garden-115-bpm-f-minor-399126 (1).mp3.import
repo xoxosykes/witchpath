@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bny3o6ccg8w3t"
+path="res://.godot/imported/fairies-in-the-garden-115-bpm-f-minor-399126 (1).mp3-abb0e4e0090ae91613ddbcee90bd0659.mp3str"
+
+[deps]
+
+source_file="res://assety_nature/fairies-in-the-garden-115-bpm-f-minor-399126 (1).mp3"
+dest_files=["res://.godot/imported/fairies-in-the-garden-115-bpm-f-minor-399126 (1).mp3-abb0e4e0090ae91613ddbcee90bd0659.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

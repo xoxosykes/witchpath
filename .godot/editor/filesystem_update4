@@ -1,8 +1,5 @@
-res://Sceny/the_end.tscn
-res://Sceny/test.tres
 res://Manager/interakcja_manager.tscn
-res://Scrolls/scroll_water.gd
-res://Scrolls/scroll_water.tscn
-res://Sceny/water_level.tscn
-res://Scrolls/scroll_moon.tscn
-res://scripts/kolce_cienko.gd
+res://Sceny/main_menu.tscn
+res://Sceny/nature_level.tscn
+res://scroll_dolek.tscn
+res://scroll_nagorze.tscn
