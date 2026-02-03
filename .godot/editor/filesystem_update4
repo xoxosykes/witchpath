@@ -13,3 +13,5 @@ res://scripts/strefa_umieranka.gd
 res://scripts/eath_gem.gd
 res://krabsy.gd
 res://scripts/kolce_die.gd
+res://scripts/water_level.gd
+res://Sceny/the_end.tscn
