@@ -1,0 +1,109 @@
+[gd_scene load_steps=9 format=3 uid="uid://c2c28xe8i4fd"]
+
+[ext_resource type="Texture2D" uid="uid://2b8bnejjafo6" path="res://Assety (testowe)/MenuAssets/background.png" id="1_oa8l5"]
+[ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="2_1tt3k"]
+[ext_resource type="Texture2D" uid="uid://c6ra4fdy6cx5f" path="res://Assety (testowe)/MenuAssets/1704929574_SingingBibbleBarbie.png" id="3_1lgqu"]
+[ext_resource type="Texture2D" uid="uid://cggbfjxaljiry" path="res://Assety (testowe)/MenuAssets/bg_f8f8f8-flat_750x_075_f-pad_750x1000_f8f8f8-removebg-preview.png" id="4_hr24o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l0t28"]
+bg_color = Color(0.17239073, 0.15246731, 0.25794423, 0.7294118)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_ego6d"]
+font = ExtResource("2_1tt3k")
+font_size = 70
+outline_size = 14
+outline_color = Color(0.27032894, 0.066275045, 0.43362454, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rlc75"]
+font = ExtResource("2_1tt3k")
+font_size = 70
+
+[sub_resource type="LabelSettings" id="LabelSettings_8o4dj"]
+font = ExtResource("2_1tt3k")
+font_size = 70
+
+[node name="The_end" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.37645373, 0.30565983, 0.69242704, 1)
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(318, 180)
+scale = Vector2(0.64994556, 0.6952034)
+texture = ExtResource("1_oa8l5")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 43.0
+offset_right = 569.0
+offset_bottom = 311.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_l0t28")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 22.0
+offset_right = 610.0
+offset_bottom = 93.0
+scale = Vector2(0.65673995, 0.65673995)
+text = "Wrozka Rachela "
+label_settings = SubResource("LabelSettings_ego6d")
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 18.000002
+offset_top = 87.00001
+offset_right = 1714.0
+offset_bottom = 500.0
+scale = Vector2(0.27273405, 0.27273405)
+text = "Aby dowiedzieć się więcej o swojej ścieżce podaj 9 cyfr 
+z przodu swojej karty kredytowej oraz 3 z jej tyłu 
+
+
+"
+label_settings = SubResource("LabelSettings_rlc75")
+
+[node name="Label3" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 134.00002
+offset_top = 227.0
+offset_right = 1111.0
+offset_bottom = 321.0
+scale = Vector2(0.23863512, 0.23863512)
+text = "(darmowy horoskop w pakiecie)"
+label_settings = SubResource("LabelSettings_8o4dj")
+
+[node name="1704929574SingingBibbleBarbie" type="Sprite2D" parent="."]
+position = Vector2(104.00001, 274.00003)
+scale = Vector2(0.05043281, 0.05043281)
+texture = ExtResource("3_1lgqu")
+
+[node name="BgF8f8f8Flat750x075FPad750x1000F8f8f8RemovebgPreview" type="Sprite2D" parent="."]
+position = Vector2(544, 277)
+scale = Vector2(0.42572904, 0.42572904)
+texture = ExtResource("4_hr24o")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(315, 180)
+zoom = Vector2(2.902, 2.902)
+limit_left = -10
+limit_top = 0
+limit_right = 645
+limit_bottom = 362

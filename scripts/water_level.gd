@@ -16,3 +16,8 @@ func _ready() -> void:
 func _on_interact():
 	konskie_gadanko.visible = !konskie_gadanko.visible
 	print("Działa")
+
+
+func _on_portal_area_body_entered(body: Node2D) -> void:
+	if body is Wiedzma:
+		get_tree().change_scene_to_file("res://Sceny/the_end.tscn")
