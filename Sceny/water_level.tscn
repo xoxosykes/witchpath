@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=4 uid="uid://w1cuodefo2x8"]
+[gd_scene load_steps=83 format=4 uid="uid://w1cuodefo2x8"]
 
 [ext_resource type="Texture2D" uid="uid://cdf6hawl1pnoq" path="res://Assety (testowe)/background.png" id="1_04l41"]
 [ext_resource type="Script" uid="uid://ctahej4wsl3sw" path="res://scripts/water_level.gd" id="1_j78rw"]
@@ -23,6 +23,7 @@
 [ext_resource type="Script" uid="uid://h11enois75xr" path="res://scripts/kolce_cienko.gd" id="19_lx8it"]
 [ext_resource type="Script" uid="uid://c8p5oj8bwlp8k" path="res://scripts/kolce_glebiny.gd" id="20_7iwil"]
 [ext_resource type="PackedScene" uid="uid://c5322ssv0oflp" path="res://Sceny/krabsy.tscn" id="22_lx8it"]
+[ext_resource type="PackedScene" uid="uid://cfmu01tudy6vo" path="res://Scrolls/scroll_water.tscn" id="24_sd0d3"]
 
 [sub_resource type="Animation" id="Animation_vqebx"]
 resource_name = "fale"
@@ -1113,7 +1114,7 @@ rotation = -1.5720189
 shape = SubResource("CapsuleShape2D_5djc6")
 
 [node name="Wiedzma" parent="." instance=ExtResource("3_a3j5c")]
-position = Vector2(-81, -5)
+position = Vector2(192, 844)
 
 [node name="kolce4" type="TileMapLayer" parent="."]
 position = Vector2(-20, 2)
@@ -1405,29 +1406,34 @@ visible = false
 position = Vector2(4364, 2442)
 shape = SubResource("RectangleShape2D_lx8it")
 
-[node name="krabsy" parent="." instance=ExtResource("22_lx8it")]
+[node name="Kraby" type="Node" parent="."]
+
+[node name="krabsy" parent="Kraby" instance=ExtResource("22_lx8it")]
 position = Vector2(1045, 498)
 
-[node name="krabsy2" parent="." instance=ExtResource("22_lx8it")]
+[node name="krabsy2" parent="Kraby" instance=ExtResource("22_lx8it")]
 position = Vector2(1001, 850)
 
-[node name="krabsy3" parent="." instance=ExtResource("22_lx8it")]
+[node name="krabsy3" parent="Kraby" instance=ExtResource("22_lx8it")]
 position = Vector2(1955, 882)
 
-[node name="krabsy4" parent="." instance=ExtResource("22_lx8it")]
+[node name="krabsy4" parent="Kraby" instance=ExtResource("22_lx8it")]
 position = Vector2(2508, 786)
 
-[node name="krabsy5" parent="." instance=ExtResource("22_lx8it")]
+[node name="krabsy5" parent="Kraby" instance=ExtResource("22_lx8it")]
 position = Vector2(3612, 402)
 
-[node name="krabsy6" parent="." instance=ExtResource("22_lx8it")]
+[node name="krabsy6" parent="Kraby" instance=ExtResource("22_lx8it")]
 position = Vector2(4355, 799)
 
-[node name="krabsy7" parent="." instance=ExtResource("22_lx8it")]
+[node name="krabsy7" parent="Kraby" instance=ExtResource("22_lx8it")]
 position = Vector2(3612, 1469)
 
-[node name="krabsy8" parent="." instance=ExtResource("22_lx8it")]
+[node name="krabsy8" parent="Kraby" instance=ExtResource("22_lx8it")]
 position = Vector2(4582, 2418)
+
+[node name="Scroll_water" parent="." instance=ExtResource("24_sd0d3")]
+position = Vector2(48, 858)
 
 [connection signal="body_entered" from="Portal_dzialajacy/portal_area" to="." method="_on_portal_area_body_entered"]
 [connection signal="body_entered" from="strefa_umieranka" to="strefa_umieranka" method="_on_body_entered"]

@@ -1,6 +1,8 @@
-res://Sceny/krabsy.tscn
-res://Sceny/test.tres
 res://Sceny/the_end.tscn
+res://Sceny/test.tres
+res://Manager/interakcja_manager.tscn
+res://Scrolls/scroll_water.gd
+res://Scrolls/scroll_water.tscn
 res://Sceny/water_level.tscn
-res://Sceny/moon_level.tscn
-res://Sceny/main_menu.tscn
+res://Scrolls/scroll_moon.tscn
+res://scripts/kolce_cienko.gd

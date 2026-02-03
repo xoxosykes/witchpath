@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfmu01tudy6vo"]
+
+[ext_resource type="Script" uid="uid://obuaf40oaoas" path="res://Scrolls/scroll_water.gd" id="1_21srk"]
+[ext_resource type="Texture2D" uid="uid://42sno5k771xc" path="res://Assety (testowe)/SpellBookDemo1.png" id="1_c4ikx"]
+[ext_resource type="PackedScene" uid="uid://cr3y81tuu863p" path="res://Manager/interakcja.tscn" id="3_kyqlr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4laxl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_21srk"]
+font_size = 41
+
+[node name="Scroll_water" type="Node2D"]
+script = ExtResource("1_21srk")
+
+[node name="Scroll" type="Sprite2D" parent="."]
+texture = ExtResource("1_c4ikx")
+region_enabled = true
+region_rect = Rect2(304.53854, 44.942734, 30.809723, 36.339706)
+
+[node name="Interakcja" parent="Scroll" instance=ExtResource("3_kyqlr")]
+scale = Vector2(0.8816081, 0.8816081)
+
+[node name="Water_scroll_colision" type="CollisionShape2D" parent="Scroll/Interakcja"]
+position = Vector2(0.5, 0.5)
+scale = Vector2(5.842877, 5.842877)
+shape = SubResource("CircleShape2D_4laxl")
+
+[node name="Scroll_wiadomosc" type="Panel" parent="."]
+modulate = Color(3.348689, 3.5313227, 4.260478, 1)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -78.0
+offset_top = -131.0
+offset_right = -15.719238
+offset_bottom = -113.69513
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.5283484, 5.431997)
+
+[node name="Slowa" type="Label" parent="Scroll_wiadomosc"]
+clip_contents = true
+layout_mode = 0
+offset_left = 1.977576
+offset_top = 1.8409438
+offset_right = 565.9203
+offset_bottom = 246.43414
+scale = Vector2(0.104043506, 0.057954468)
+text = "deep lore polega na tym że Rachela ma dead mame ;C
+"
+label_settings = SubResource("LabelSettings_21srk")
+horizontal_alignment = 1
+autowrap_mode = 3
+clip_text = true
