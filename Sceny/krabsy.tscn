@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://c5322ssv0oflp"]
 
-[ext_resource type="Script" uid="uid://dj787ujkt57wt" path="res://krabsy.gd" id="1_a2gt7"]
+[ext_resource type="Script" uid="uid://dj787ujkt57wt" path="res://scripts/krabsy.gd" id="1_a2gt7"]
 [ext_resource type="Texture2D" uid="uid://bfpmh434wn1ic" path="res://Assety (testowe)/Crab Sprite Sheet.png" id="1_bi07y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a2gt7"]

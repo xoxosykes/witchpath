@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b678xssoqc70f"
+path="res://.godot/imported/lofi-mediterranea-the-yume-collective-haunted-echoes-415510 (2).mp3-299bc56751ea0d42dca70c8a8ff5dea9.mp3str"
+
+[deps]
+
+source_file="res://Assety_moon_level/lofi-mediterranea-the-yume-collective-haunted-echoes-415510 (2).mp3"
+dest_files=["res://.godot/imported/lofi-mediterranea-the-yume-collective-haunted-echoes-415510 (2).mp3-299bc56751ea0d42dca70c8a8ff5dea9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
