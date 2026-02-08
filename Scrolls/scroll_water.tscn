@@ -21,6 +21,7 @@ region_rect = Rect2(304.53854, 44.942734, 30.809723, 36.339706)
 scale = Vector2(0.8816081, 0.8816081)
 
 [node name="Water_scroll_colision" type="CollisionShape2D" parent="Scroll/Interakcja"]
+light_mask = 0
 position = Vector2(0.5, 0.5)
 scale = Vector2(5.842877, 5.842877)
 shape = SubResource("CircleShape2D_4laxl")

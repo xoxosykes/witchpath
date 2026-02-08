@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://b0ye46ry4fwwm"]
+[gd_scene load_steps=8 format=3 uid="uid://b0ye46ry4fwwm"]
 
 [ext_resource type="Script" uid="uid://q5r5kelx1u2g" path="res://scripts/credits.gd" id="1_01xi0"]
 [ext_resource type="FontFile" uid="uid://bo14usnt6i2u7" path="res://Assety (testowe)/MenuAssets/Varnyx-Regular.ttf" id="1_pookd"]
 [ext_resource type="Texture2D" uid="uid://bg475g0y133cj" path="res://Assety (testowe)/MenuAssets/Projekt bez nazwy (3) (1).png" id="2_bjdo2"]
 [ext_resource type="Texture2D" uid="uid://2b8bnejjafo6" path="res://Assety (testowe)/MenuAssets/background.png" id="3_gxw2s"]
-[ext_resource type="AudioStream" uid="uid://lo54lw6jke78" path="res://Assety (testowe)/MenuAssets/the-foyer-mirror-425079.mp3" id="5_gxw2s"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_psrg0"]
 texture = ExtResource("3_gxw2s")
@@ -115,11 +114,5 @@ theme_override_fonts/font = ExtResource("1_pookd")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_6ar4y")
 text = "back"
-
-[node name="BGmusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_gxw2s")
-autoplay = true
-mix_target = 2
-parameters/looping = true
 
 [connection signal="pressed" from="Credits/back_button" to="." method="_on_back_button_pressed"]

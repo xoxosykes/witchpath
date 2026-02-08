@@ -1114,7 +1114,7 @@ rotation = -1.5720189
 shape = SubResource("CapsuleShape2D_5djc6")
 
 [node name="Wiedzma" parent="." instance=ExtResource("3_a3j5c")]
-position = Vector2(192, 844)
+position = Vector2(-106, -7)
 
 [node name="kolce4" type="TileMapLayer" parent="."]
 position = Vector2(-20, 2)

@@ -1,27 +1,28 @@
-[gd_scene load_steps=5 format=3 uid="uid://clgocxxuvu6k4"]
+[gd_scene load_steps=6 format=3 uid="uid://dnnjn7fdcrx7"]
 
-[ext_resource type="Texture2D" uid="uid://42sno5k771xc" path="res://Assety (testowe)/SpellBookDemo1.png" id="1_ukjsn"]
-[ext_resource type="PackedScene" uid="uid://cr3y81tuu863p" path="res://Manager/interakcja.tscn" id="2_0sgvg"]
+[ext_resource type="Script" uid="uid://g50q0smep4gk" path="res://Scrolls/scroll_gora.gd" id="1_btj4w"]
+[ext_resource type="Texture2D" uid="uid://42sno5k771xc" path="res://Assety (testowe)/SpellBookDemo1.png" id="1_xfyqu"]
+[ext_resource type="PackedScene" uid="uid://cr3y81tuu863p" path="res://Manager/interakcja.tscn" id="2_btj4w"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_wcfcr"]
-radius = 5.584009
+[sub_resource type="CircleShape2D" id="CircleShape2D_xg0hw"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_jnw42"]
+[sub_resource type="LabelSettings" id="LabelSettings_ddws8"]
 font_size = 41
 
-[node name="scroll_nagorze" type="Node2D"]
+[node name="Scroll_gora" type="Node2D"]
+script = ExtResource("1_btj4w")
 
 [node name="Scroll" type="Sprite2D" parent="."]
-texture = ExtResource("1_ukjsn")
+texture = ExtResource("1_xfyqu")
 region_enabled = true
 region_rect = Rect2(304.53854, 44.942734, 30.809723, 36.339706)
 
-[node name="Interakcja" parent="Scroll" instance=ExtResource("2_0sgvg")]
+[node name="Interakcja" parent="Scroll" instance=ExtResource("2_btj4w")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scroll/Interakcja"]
 position = Vector2(0.5, 0.5)
 scale = Vector2(5.842877, 5.842877)
-shape = SubResource("CircleShape2D_wcfcr")
+shape = SubResource("CircleShape2D_xg0hw")
 
 [node name="Scroll_wiadomosc" type="Panel" parent="."]
 modulate = Color(3.348689, 3.5313227, 4.260478, 1)
@@ -48,7 +49,7 @@ offset_bottom = 246.43414
 scale = Vector2(0.104043506, 0.057954468)
 text = "Rachelo, wiedz, że gdy tylko będziesz tego chciała, nawet chmury Cię wesprą...
 - Mama"
-label_settings = SubResource("LabelSettings_jnw42")
+label_settings = SubResource("LabelSettings_ddws8")
 horizontal_alignment = 1
 autowrap_mode = 3
 clip_text = true

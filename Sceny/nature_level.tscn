@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=4 uid="uid://nkb5qr2m3s47"]
+[gd_scene load_steps=93 format=4 uid="uid://nkb5qr2m3s47"]
 
 [ext_resource type="PackedScene" uid="uid://223q6wbe5cq6" path="res://Sceny/eath_gem.tscn" id="1_0c8fp"]
 [ext_resource type="Texture2D" uid="uid://o3hnxu2x4huh" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Floor Tiles1.png" id="1_0d3cb"]
@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://b72dro13wur46" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 4.png" id="4_mvrrq"]
 [ext_resource type="Texture2D" uid="uid://b6hin5esqvpjw" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 5.png" id="5_8gj3v"]
 [ext_resource type="Script" uid="uid://87usfhyi82n7" path="res://scripts/sprites.gd" id="5_ohimj"]
-[ext_resource type="Texture2D" uid="uid://b58pc3rrldut0" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/GandalfHardcore Background layers/Normal BG/Background Castle .png" id="6_4s0c3"]
 [ext_resource type="Texture2D" uid="uid://drfn780xgnsnp" path="res://Assety (testowe)/Terrain&Pickups/Terrain&Pickups/Nature ÔÇö kopia.png" id="6_cpyvs"]
 [ext_resource type="Texture2D" uid="uid://hqk7ikc1v1h7" path="res://Assety (testowe)/Nature ÔÇö kopia.png" id="7_rdrun"]
 [ext_resource type="Texture2D" uid="uid://urtftbid6aog" path="res://assety_nature/GandalfHardcore FREE Platformer Assets/Pine Trees.png" id="9_atuq5"]
@@ -50,8 +49,8 @@
 [ext_resource type="Texture2D" uid="uid://b70ehvne6mke1" path="res://assety_nature/idle/idle_12.png" id="38_gl4dp"]
 [ext_resource type="Texture2D" uid="uid://bbejatdai2422" path="res://assety_nature/galaz.png" id="41_0ko10"]
 [ext_resource type="AudioStream" uid="uid://bny3o6ccg8w3t" path="res://assety_nature/fairies-in-the-garden-115-bpm-f-minor-399126 (1).mp3" id="44_da56u"]
-[ext_resource type="PackedScene" uid="uid://bsevldh8req2n" path="res://scroll_dolek.tscn" id="51_i6cgr"]
-[ext_resource type="PackedScene" uid="uid://clgocxxuvu6k4" path="res://scroll_nagorze.tscn" id="52_gl4dp"]
+[ext_resource type="PackedScene" uid="uid://bsevldh8req2n" path="res://Scrolls/scroll_dolek.tscn" id="51_i6cgr"]
+[ext_resource type="PackedScene" uid="uid://dnnjn7fdcrx7" path="res://Scrolls/scroll_gora.tscn" id="52_gl4dp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gl4dp"]
 texture = ExtResource("18_r8aj3")
@@ -1605,39 +1604,71 @@ script = ExtResource("1_qxlbe")
 
 [node name="background" type="Node2D" parent="."]
 
-[node name="warstwa1" type="Parallax2D" parent="background"]
-scroll_offset = Vector2(6328, 59)
-repeat_size = Vector2(1000, 0)
+[node name="las_bg2" type="Parallax2D" parent="background"]
+texture_filter = 1
+scale = Vector2(5.413, 4.688)
+scroll_scale = Vector2(1.44, 1.44)
+scroll_offset = Vector2(-184.51135, 222.99988)
+repeat_size = Vector2(319.925, 0)
+repeat_times = 4
+limit_begin = Vector2(-250, -10000000)
 
-[node name="Sprite2D" type="Sprite2D" parent="background/warstwa1"]
-position = Vector2(1915, 610.99994)
-scale = Vector2(4.6122394, 4.6122394)
-texture = ExtResource("1_qrhn7")
-
-[node name="GandalfHardcoreBackgroundLayersLayer2" type="Sprite2D" parent="background"]
-position = Vector2(263, 3134)
-scale = Vector2(4.187577, 4.187577)
-texture = ExtResource("2_uf5ml")
-
-[node name="GandalfHardcoreBackgroundLayersLayer3" type="Sprite2D" parent="background"]
-position = Vector2(5536, 2924)
-scale = Vector2(5.0592127, 5.0592127)
-texture = ExtResource("3_4s0c3")
-
-[node name="GandalfHardcoreBackgroundLayersLayer4" type="Sprite2D" parent="background"]
-position = Vector2(2388, 4329)
-scale = Vector2(4.3294797, 4.3294797)
-texture = ExtResource("4_mvrrq")
-
-[node name="GandalfHardcoreBackgroundLayersLayer5" type="Sprite2D" parent="background"]
-position = Vector2(8163, 5124)
-scale = Vector2(5.9768786, 5.9768786)
+[node name="BG_niebo" type="Sprite2D" parent="background/las_bg2"]
+scale = Vector2(3.1003978, 3.1003978)
 texture = ExtResource("5_8gj3v")
 
-[node name="BackgroundCastle" type="Sprite2D" parent="background"]
-position = Vector2(10474.999, 3663)
-scale = Vector2(7.1849713, 7.1849713)
-texture = ExtResource("6_4s0c3")
+[node name="las_bg4" type="Parallax2D" parent="background"]
+texture_filter = 1
+scale = Vector2(5.413, 4.688)
+scroll_scale = Vector2(1.44, 1.44)
+scroll_offset = Vector2(-184.51135, 222.99988)
+repeat_size = Vector2(319.925, 0)
+repeat_times = 4
+limit_begin = Vector2(-250, -10000000)
+
+[node name="gory" type="Sprite2D" parent="background/las_bg4"]
+position = Vector2(847.4988, -280.93)
+texture = ExtResource("4_mvrrq")
+
+[node name="las_bg5" type="Parallax2D" parent="background"]
+texture_filter = 1
+scale = Vector2(5.413, 4.688)
+scroll_scale = Vector2(1.44, 1.44)
+scroll_offset = Vector2(-184.51135, 222.99988)
+repeat_size = Vector2(319.925, 0)
+repeat_times = 4
+limit_begin = Vector2(-250, -10000000)
+
+[node name="GandalfHardcoreBackgroundLayersLayer3" type="Sprite2D" parent="background/las_bg5"]
+position = Vector2(373.0854, -117.7474)
+texture = ExtResource("3_4s0c3")
+
+[node name="las_bg3" type="Parallax2D" parent="background"]
+texture_filter = 1
+scale = Vector2(5.413, 2.983)
+scroll_scale = Vector2(1.44, 1.44)
+scroll_offset = Vector2(-184.51135, 222.99988)
+repeat_size = Vector2(319.925, 0)
+repeat_times = 4
+limit_begin = Vector2(-250, -10000000)
+
+[node name="drzewa tyl" type="Sprite2D" parent="background/las_bg3"]
+position = Vector2(441.99356, -6.3693867)
+scale = Vector2(0.77361465, 1.4038138)
+texture = ExtResource("2_uf5ml")
+
+[node name="las_bg" type="Parallax2D" parent="background"]
+texture_filter = 1
+scale = Vector2(1.9277779, 1.9277778)
+scroll_offset = Vector2(1766, 222.99988)
+repeat_size = Vector2(319.925, 0)
+repeat_times = 4
+limit_begin = Vector2(-2000, -10000000)
+
+[node name="Las" type="Sprite2D" parent="background/las_bg"]
+position = Vector2(416.80704, 203.343)
+scale = Vector2(2.392516, 2.392516)
+texture = ExtResource("1_qrhn7")
 
 [node name="collectibles" type="Node2D" parent="."]
 
@@ -1645,7 +1676,7 @@ texture = ExtResource("6_4s0c3")
 position = Vector2(-13, 618)
 
 [node name="eath_gem2" parent="collectibles" instance=ExtResource("1_0c8fp")]
-position = Vector2(7220, -762)
+position = Vector2(6980, -819)
 
 [node name="eath_gem3" parent="collectibles" instance=ExtResource("1_0c8fp")]
 position = Vector2(2862, 336)
@@ -1654,7 +1685,7 @@ position = Vector2(2862, 336)
 position = Vector2(5438, -784)
 
 [node name="eath_gem5" parent="collectibles" instance=ExtResource("1_0c8fp")]
-position = Vector2(1775, 179)
+position = Vector2(1918, 152)
 
 [node name="eath_gem6" parent="collectibles" instance=ExtResource("1_0c8fp")]
 position = Vector2(4704, -274)
@@ -2034,7 +2065,7 @@ rotation = -1.5625569
 shape = SubResource("CapsuleShape2D_qxlbe")
 
 [node name="Wiedzma" parent="." instance=ExtResource("2_hoooe")]
-position = Vector2(-55, 234)
+position = Vector2(-99, 228)
 
 [node name="galaz" type="Node2D" parent="."]
 position = Vector2(-166, -521)
@@ -2071,14 +2102,15 @@ label_settings = SubResource("LabelSettings_v2825")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("44_da56u")
-volume_db = -7.656
+volume_db = -10.77
 autoplay = true
 parameters/looping = true
 
 [node name="scroll_dolek" parent="." instance=ExtResource("51_i6cgr")]
-position = Vector2(1552, 873)
+light_mask = 0
+position = Vector2(478, 564)
 
-[node name="scroll_nagorze" parent="." instance=ExtResource("52_gl4dp")]
-position = Vector2(1967, 139)
+[node name="Scroll_gora" parent="." instance=ExtResource("52_gl4dp")]
+position = Vector2(6127, -1064)
 
 [connection signal="body_entered" from="kolce_die" to="kolce_die" method="_on_body_entered"]

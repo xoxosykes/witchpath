@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bsevldh8req2n"]
+[gd_scene load_steps=6 format=3 uid="uid://bsevldh8req2n"]
 
+[ext_resource type="Script" uid="uid://84nk2kxp0ri3" path="res://Scrolls/scroll_dolek.gd" id="1_u1117"]
 [ext_resource type="Texture2D" uid="uid://42sno5k771xc" path="res://Assety (testowe)/SpellBookDemo1.png" id="1_vwe36"]
 [ext_resource type="PackedScene" uid="uid://cr3y81tuu863p" path="res://Manager/interakcja.tscn" id="2_u1117"]
 
@@ -9,6 +10,7 @@
 font_size = 41
 
 [node name="scroll_dolek" type="Node2D"]
+script = ExtResource("1_u1117")
 
 [node name="Scroll" type="Sprite2D" parent="."]
 texture = ExtResource("1_vwe36")
